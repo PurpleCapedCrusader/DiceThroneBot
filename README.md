@@ -1,1 +1,1 @@
-# DiceThroneBot
+# DiceThrontBot

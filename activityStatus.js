@@ -1,0 +1,67 @@
+const boardGames = [
+  "Santorini",
+  "Dice Throne",
+  "Dice Throne Adventures",
+  "Steampunk Rally",
+  "Steampunk Rally Fusion",
+  "Super Motherload",
+  "Gorilla Marketing",
+  "Dice: Birmingham",
+  "Brass: Birmingham",
+  "Brass: Lancashire",
+  "SKYRISE",
+  "Santorini App",
+  "RadLands",
+  "as Barbarian",
+  "as Moon Elf",
+  "as Pyromancer",
+  "as Shadow Thief",
+  "as Monk",
+  "as Paladin",
+  "as Ninja",
+  "as Treant",
+  "as Gunslinger",
+  "as Samurai",
+  "as Tactician",
+  "as Huntress",
+  "as Cursed Pirate",
+  "as Artificer",
+  "as Seraph",
+  "as Vampire Lord",
+  ];
+
+const movies = [
+  "Rahdo Runs Through",
+  "The Undead Viking",
+  "Watch It Played",
+  "Tantrum House",
+  "Man Vs. Meeple",
+  "The Cardboard Kid",
+  "Gaming With Edo",
+  "Shut Up & Sit Down",
+  "LoadingReadyRun",
+  "Actualol",
+  "No Pun Included",
+  "Drive Thru Review",
+  "The Game Boy Geek",
+  "The Dice Tower",
+  "Jon Gets Games",
+  "Heavy Cardboard",
+  "Roxley's YouTube Channel",
+  "Board Game Revolution",
+  "Geek & Sundry",
+  "Meeple University",
+  "Conan the Barbarian",
+  "Conan the Destroyer",
+  ];
+
+const songs = [
+  "Tumbling Dice, by The Rolling Stones",
+  "Roll of the Dice, by the Boss",
+  ];
+
+module.exports = {
+    boardGames: boardGames,
+    movies: movies,
+    songs: songs
+}
