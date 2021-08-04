@@ -1,5 +1,5 @@
 // trouble connecting database
-const Discord = require("discord.js");
+const { Client, Intents } = require("discord.js");
 const config = require("./config.json");
 const dbCreds = require("./dbCreds.js");
 const pkg = require("./package.json");
@@ -15,31 +15,35 @@ const { Pool } = require("pg");
 const standardResponse = require("./standardResponse.js");
 // const { version } = require("os");
 const pool = new Pool(dbCreds);
-const bot = new Discord.Client();
+const client = new Client({
+  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+});
+module.exports = client;
+
 
 // Ready statement
-bot.on("ready", async () => {
+client.once("ready", async () => {
   console.log(
     `${getTimeStamp()} :: DiceThroneBot is ready to serve on ${
-      bot.guilds.cache.size
-    } servers, for ${bot.users.cache.size} users.`
+      client.guilds.cache.size
+    } servers, for ${client.users.cache.size} users.`
   );
 
-  updateStatus();
+  // updateStatus();
   adminNotify(`DiceThroneBot version ${pkg.version} started: ${getTimeStamp()}`);
-  databaseCheck.createDatabaseTablesIfNotExist;
+  // databaseCheck.createDatabaseTablesIfNotExist;
 });
 
 // error catch-all
-bot.on("error", (err) => console.error(`${getTimeStamp()} :: ${err}`));
-bot.on("warn", (err) => console.warn(`${getTimeStamp()} :: ${err}`));
-bot.on("debug", (err) => console.info(`${getTimeStamp()} :: ${err}`));
+client.on("error", (err) => console.error(`${getTimeStamp()} :: ${err}`));
+client.on("warn", (err) => console.warn(`${getTimeStamp()} :: ${err}`));
+client.on("debug", (err) => console.info(`${getTimeStamp()} :: ${err}`));
 
-// Link to God data
-bot.godData = require("./godData.json");
-bot.allHeroesArray = require("./allHeroesArray.js");
-bot.standardResponse = require("./standardResponse.js");
-const heroArray = bot.allHeroesArray.allHeroes;
+// Link to hero data
+client.godData = require("./godData.json");
+client.allHeroesArray = require("./allHeroesArray.js");
+client.standardResponse = require("./standardResponse.js");
+const heroArray = client.allHeroesArray.allHeroes;
 
 // JOIN ME ONLINE Interval check
 setInterval(function () {
@@ -47,31 +51,31 @@ setInterval(function () {
 }, 60000); // 60000 = 1min
 
 setInterval(function () {
-  updateStatus();
+  // updateStatus();
 }, 900000); // 60000 = 1min
 
-bot.on("guildMemberAdd", (member) => {
+client.on("guildMemberAdd", (member) => {
   standardResponse.welcome(member)
 });
 
 // Main Args/Response
-bot.on("message", (message) => {
-  if (!message.author.bot) {
-    if (message.channel.type === "dm") {
-      dmArchive(message);
+client.on('interactionCreate', (interaction) => {
+  if (!interaction.author.client) {
+    if (interaction.channel.type === "dm") {
+      dmArchive(interaction);
     } else {
-      messageArchive(message);
+      messageArchive(interaction);
     }
   }
-
+  console.log(JSON.stringify({ interaction }))
   // react with emojis for mentioned gods
   if (
-    message.channel.type != "dm" &&
-    message.guild.id === config.guildId &&
-    !message.author.bot
+    interaction.channel.type != "dm" &&
+    interaction.guild.id === config.guildId &&
+    !interaction.author.bot
   ) {
     try {
-      let messageArray = (message.content)
+      let messageArray = (interaction.content)
       .replace(/'s+/g, ` `)
       .replace(/[\.,-\/#!$%\^&\*;":{}=\-_`\'\\~()@\+\?><\[\]\+]/g, '')
       .replace(/\s+/g, ' ')
@@ -182,6 +186,34 @@ bot.on("message", (message) => {
   //   }
   // }
 
+
+//SLASH COMMANDS
+client.on('messageCreate', async message => {
+	if (!client.application?.owner) await client.application?.fetch();
+
+	if (message.content.toLowerCase() === '!deploy' && message.author.id === client.application?.owner.id) {
+		const data = [
+			{
+				name: 'ping',
+				description: 'Replies with Pong!',
+			},
+			{
+				name: 'pong',
+				description: 'Replies with Ping!',
+			},
+		];
+
+		const commands = await client.application?.commands.set(data);
+		console.log(commands);
+	}
+});
+
+
+
+
+
+
+
   let args = message.content.substring(PREFIX.length).split(/ +/g);
 
   if (
@@ -272,33 +304,33 @@ bot.on("message", (message) => {
       case "update-info": // todo: make this response a DM back to the author
       var arrayLength = heroArray.length;
       for (var i = 0; i < arrayLength; i++) {
-        if (bot.godData[i].update == "Updated") {
+        if (client.godData[i].update == "Updated") {
           const embed = new Discord.MessageEmbed()
             .attachFiles([
-              "../ErisBot/images/" + bot.godData[i].imageName + ".jpg",
+              "../ErisBot/images/" + client.godData[i].imageName + ".jpg",
             ])
-            .setColor("0x" + bot.godData[i].borderColor)
-            .addField(bot.godData[i].name, bot.godData[i].title + "\n\u200b")
+            .setColor("0x" + client.godData[i].borderColor)
+            .addField(client.godData[i].name, client.godData[i].title + "\n\u200b")
             .addField(
               "Ability(updated):",
-              bot.godData[i].updatedAbilityFormatted + "\n\u200b"
+              client.godData[i].updatedAbilityFormatted + "\n\u200b"
             )
             .addField(
               "Ability(original):",
-              bot.godData[i].originalAbilityFormatted + "\n\u200b"
+              client.godData[i].originalAbilityFormatted + "\n\u200b"
             )
-            .addField("Banned Opponents:", bot.godData[i].banned + "\n\u200b")
+            .addField("Banned Opponents:", client.godData[i].banned + "\n\u200b")
             .addField(
               "Character Category:",
-              bot.godData[i].group + "\n\u200b"
+              client.godData[i].group + "\n\u200b"
             )
             .addField(
               "App Availability:",
-              bot.godData[i].inAppPurchase + "\n\u200b"
+              client.godData[i].inAppPurchase + "\n\u200b"
             )
-            .addField("Compatible with", bot.godData[i].compatability)
+            .addField("Compatible with", client.godData[i].compatability)
             .setThumbnail(
-              "attachment://" + bot.godData[i].imageName + ".jpg"
+              "attachment://" + client.godData[i].imageName + ".jpg"
             );
           message.author.send(embed).catch(console.error);
         }
@@ -341,76 +373,76 @@ bot.on("message", (message) => {
         for (var i = 0; i < arrayLength; i++) {
           if (heroArray[i] == lowerCase(args[0])) {
             var godSearched = heroArray.indexOf(lowerCase(args[0]));
-            if (bot.godData[godSearched].update == "Updated") {
+            if (client.godData[godSearched].update == "Updated") {
               const embed = new Discord.MessageEmbed()
                 .attachFiles([
                   "../ErisBot/images/" +
-                    bot.godData[godSearched].imageName +
+                    client.godData[godSearched].imageName +
                     ".jpg",
                 ])
                 .attachFiles([
                   "../ErisBot/images/" +
-                    bot.godData[godSearched].imageName +
+                    client.godData[godSearched].imageName +
                     "_card.jpg",
                 ])
-                .setColor("0x" + bot.godData[godSearched].borderColor)
+                .setColor("0x" + client.godData[godSearched].borderColor)
                 .addField(
-                  bot.godData[godSearched].name,
-                  bot.godData[godSearched].title + "\n\u200b"
+                  client.godData[godSearched].name,
+                  client.godData[godSearched].title + "\n\u200b"
                 )
                 .addField(
                   "Ability(updated):",
-                  bot.godData[godSearched].updatedAbilityFormatted + "\n\u200b"
+                  client.godData[godSearched].updatedAbilityFormatted + "\n\u200b"
                 )
                 .addField(
                   "Ability(original):",
-                  bot.godData[godSearched].originalAbilityFormatted + "\n\u200b"
+                  client.godData[godSearched].originalAbilityFormatted + "\n\u200b"
                 )
                 .addFields(
-                  { name:"Character Category:", value: bot.godData[godSearched].group, inline: true },
-                  { name:"App Availability:", value: bot.godData[godSearched].inAppPurchase, inline: true },
+                  { name:"Character Category:", value: client.godData[godSearched].group, inline: true },
+                  { name:"App Availability:", value: client.godData[godSearched].inAppPurchase, inline: true },
                   { name: '\u200B', value: '\u200B' },
-                  { name:"Banned Opponents:", value: bot.godData[godSearched].banned, inline: true },
-                  { name:"Compatible with:", value:  bot.godData[godSearched].compatability, inline: true },
+                  { name:"Banned Opponents:", value: client.godData[godSearched].banned, inline: true },
+                  { name:"Compatible with:", value:  client.godData[godSearched].compatability, inline: true },
                 )
-                .setImage("attachment://" + bot.godData[godSearched].imageName + "_card.jpg")
+                .setImage("attachment://" + client.godData[godSearched].imageName + "_card.jpg")
                 .setThumbnail(
-                  "attachment://" + bot.godData[godSearched].imageName + ".jpg"
+                  "attachment://" + client.godData[godSearched].imageName + ".jpg"
                 );
               message.channel.send(embed).catch(console.error);
               break;
-            } else if (bot.godData[godSearched].update == "Same") {
+            } else if (client.godData[godSearched].update == "Same") {
               const embed = new Discord.MessageEmbed()
               .attachFiles([
                 "../ErisBot/images/" +
-                  bot.godData[godSearched].imageName +
+                  client.godData[godSearched].imageName +
                   ".jpg",
               ])
               .attachFiles([
                 "../ErisBot/images/" +
-                  bot.godData[godSearched].imageName +
+                  client.godData[godSearched].imageName +
                   "_card.jpg",
               ])
-              .setColor("0x" + bot.godData[godSearched].borderColor)
+              .setColor("0x" + client.godData[godSearched].borderColor)
               .addField(
-                bot.godData[godSearched].name,
-                bot.godData[godSearched].title + "\n\u200b"
+                client.godData[godSearched].name,
+                client.godData[godSearched].title + "\n\u200b"
               )
               .addField(
                 "Ability:",
-                bot.godData[godSearched].originalAbilityFormatted + "\n\u200b"
+                client.godData[godSearched].originalAbilityFormatted + "\n\u200b"
               )
               .addFields(
-                { name:"Character Category:", value: bot.godData[godSearched].group, inline: true },
+                { name:"Character Category:", value: client.godData[godSearched].group, inline: true },
                 // { name: '\u200B', value: '\u200B' },
-                { name:"App Availability:", value: bot.godData[godSearched].inAppPurchase, inline: true },
+                { name:"App Availability:", value: client.godData[godSearched].inAppPurchase, inline: true },
                 { name: '\u200B', value: '\u200B' },
-                { name:"Banned Opponents:", value: bot.godData[godSearched].banned, inline: true },
-                { name:"Compatible with:", value:  bot.godData[godSearched].compatability, inline: true },
+                { name:"Banned Opponents:", value: client.godData[godSearched].banned, inline: true },
+                { name:"Compatible with:", value:  client.godData[godSearched].compatability, inline: true },
               )
-              .setImage("attachment://" + bot.godData[godSearched].imageName + "_card.jpg")
+              .setImage("attachment://" + client.godData[godSearched].imageName + "_card.jpg")
               .setThumbnail(
-                "attachment://" + bot.godData[godSearched].imageName + ".jpg"
+                "attachment://" + client.godData[godSearched].imageName + ".jpg"
               );
             message.channel.send(embed).catch(console.error);
             break;
@@ -426,15 +458,21 @@ bot.on("message", (message) => {
 });
 
 function dmError(err) {
-	let adminUser = bot.users.cache.get(`${config.adminID}`);
-	adminUser.send(`ERROR: ${getTimeStamp()} :: ${err.stack}`);
+	let adminUser = client.users.fetch(`${config.adminID}`);
+	adminUser.createDM(`ERROR: ${getTimeStamp()} :: ${err.stack}`);
 	console.log(`ERROR: ${getTimeStamp()} :: ${err.stack}`);
 }
 
-function adminNotify(msg) {
-	//Admin user object for DM notifications
-	let adminUser = bot.users.cache.get(`${config.adminId}`);
-	adminUser.send(msg);
+async function adminNotify(msg) {
+  try {
+    //Admin user object for DM notifications
+    console.log(`adminId = ${config.adminId}`)
+    let adminUser = client.users.fetch(`${config.adminId}`);
+    console.log(`adminUser = ${JSON.stringify(adminUser)}`)
+    await createDM.adminUser(msg);
+  } catch (err) {
+    dmError(err);
+  }
 }
 
 function getTimeStamp() {
@@ -451,8 +489,8 @@ async function removeTempOnlineRole() {
         `SELECT * FROM dicethrone_schema.online_role_tracking WHERE remove_time < ${currentTime} AND status = true`
       );
       query.rows.forEach((row) => {
-        let member = bot.guilds.cache.get(row.guild_id).member(row.author_id);
-        let role_id = bot.guilds.cache
+        let member = client.guilds.cache.get(row.guild_id).member(row.author_id);
+        let role_id = client.guilds.cache
           .get(row.guild_id)
           .roles.cache.find((rName) => rName.id === row.temp_role_id);
         member.roles.remove(role_id).catch(console.error);
@@ -662,31 +700,31 @@ async function dmArchive(message) {
 	}
 }
 
-async function updateStatus() {
-	var watchPlay = [0, 1, 2, 3, 4];
-	shuffle(watchPlay);
-	if (watchPlay[0] == 0 || watchPlay[0] == 1) {
-		var statusArray = activityStatus.boardGames;
-		var activityType = "PLAYING";
-	} else if (watchPlay[0] == 2 || watchPlay[0] == 3) {
-		var statusArray = activityStatus.movies;
-		var activityType = "WATCHING";
-	} else if (watchPlay[0] == 4) {
-		var statusArray = activityStatus.songs;
-		var activityType = "LISTENING";
-	}
-	shuffle(statusArray);
-	bot.user
-		.setActivity(`${statusArray[0]}`, {
-			type: activityType,
-		})
-		.then((presence) =>
-			console.log(`${activityType} ${presence.activities[0].name}`)
-		)
-		.catch((err) => {
-			dmError(err);
-		});
-}
+// async function updateStatus() {
+// 	var watchPlay = [0, 1, 2, 3, 4];
+// 	shuffle(watchPlay);
+// 	if (watchPlay[0] == 0 || watchPlay[0] == 1) {
+// 		var statusArray = activityStatus.boardGames;
+// 		var activityType = "PLAYING";
+// 	} else if (watchPlay[0] == 2 || watchPlay[0] == 3) {
+// 		var statusArray = activityStatus.movies;
+// 		var activityType = "WATCHING";
+// 	} else if (watchPlay[0] == 4) {
+// 		var statusArray = activityStatus.songs;
+// 		var activityType = "LISTENING";
+// 	}
+// 	shuffle(statusArray);
+// 	client.user
+// 		.setActivity(`${statusArray[0]}`, {
+// 			type: activityType,
+// 		})
+// 		.then((presence) =>
+// 			console.log(`${activityType} ${presence.activities[0].name}`)
+// 		)
+// 		.catch((err) => {
+// 			dmError(err);
+// 		});
+// }
 
 // Super Secret Token!!!
-bot.login(config.token);
+client.login(config.token);

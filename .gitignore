@@ -8,3 +8,4 @@ PiNodeServerSetup.txt
 eris.js
 basic_cards.json
 *.txt
+.DS_Store

@@ -16,14 +16,20 @@
     "url": "https://github.com/PurpleCapedCrusader/DiceThroneBot/issues"
   },
   "engines": {
-    "node": "10.16.0"
+    "node": "v16.6.1"
   },
   "homepage": "https://github.com/PurpleCapedCrusader/DiceThroneBot#readme",
   "dependencies": {
+    "@hapi/cryptiles": "^5.1.0",
+    "bl": "^5.0.0",
+    "brace-expansion": "^2.0.1",
     "check-types": "^11.1.2",
-    "discord.js": "^12.5.1",
+    "discord.js": "^13.0.0-dev.t1628035429.00d5cee",
+    "latest": "^0.2.0",
     "lodash": "^4.17.20",
     "lower-case": "^2.0.2",
-    "pg": "^8.5.1"
+    "newest": "^2.0.13",
+    "pg": "^8.5.1",
+    "tough-cookie": "^4.0.0"
   }
 }
