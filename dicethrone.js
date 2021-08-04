@@ -1,5 +1,5 @@
 // trouble connecting database
-const { Client, Intents } = require("discord.js");
+const { Client, Collection, Intents } = require("discord.js");
 const config = require("./config.json");
 const dbCreds = require("./dbCreds.js");
 const pkg = require("./package.json");
@@ -8,7 +8,7 @@ const check = require("check-types");
 const databaseCheck = require("./databaseBuilder.js");
 const { lowerCase } = require("lower-case");
 const diceThroneReactions = require("./diceThroneReactions.js");
-// const fs = require("fs");
+const fs = require("fs");
 const _ = require("lodash");
 const PREFIX = config.prefix;
 const { Pool } = require("pg");
@@ -16,10 +16,18 @@ const standardResponse = require("./standardResponse.js");
 // const { version } = require("os");
 const pool = new Pool(dbCreds);
 const client = new Client({
-  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+  intents: [Intents.FLAGS.GUILDS,
+    Intents.FLAGS.GUILD_MESSAGES,
+    Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
+    Intents.FLAGS.DIRECT_MESSAGES,
+    Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
+    Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS
+  ]
 });
 module.exports = client;
-
+client.commands = new Collection();
+client.slashCommands = new Collection();
+require("./handler")(client);
 
 // Ready statement
 client.once("ready", async () => {
@@ -46,36 +54,37 @@ client.standardResponse = require("./standardResponse.js");
 const heroArray = client.allHeroesArray.allHeroes;
 
 // JOIN ME ONLINE Interval check
-setInterval(function () {
-  removeTempOnlineRole();
-}, 60000); // 60000 = 1min
+// setInterval(function () {
+//   removeTempOnlineRole();
+// }, 60000); // 60000 = 1min
 
-setInterval(function () {
-  // updateStatus();
-}, 900000); // 60000 = 1min
+// setInterval(function () {
+//   // updateStatus();
+// }, 900000); // 60000 = 1min
 
 client.on("guildMemberAdd", (member) => {
   standardResponse.welcome(member)
 });
 
 // Main Args/Response
-client.on('interactionCreate', (interaction) => {
-  if (!interaction.author.client) {
-    if (interaction.channel.type === "dm") {
-      dmArchive(interaction);
+client.on('interactionCreate', (message) => {
+  console.log(`interaction = ${JSON.stringify(message.content)}`)
+  if (!message.member.client) {
+    if (message.channel.type === "dm") {
+      dmArchive(message);
     } else {
-      messageArchive(interaction);
+      messageArchive(message);
     }
   }
-  console.log(JSON.stringify({ interaction }))
+  console.log(JSON.stringify({ message }))
   // react with emojis for mentioned gods
   if (
-    interaction.channel.type != "dm" &&
-    interaction.guild.id === config.guildId &&
-    !interaction.author.bot
+    message.channel.type != "dm" &&
+    message.guild.id === config.guildId &&
+    !message.member.client
   ) {
     try {
-      let messageArray = (interaction.content)
+      let messageArray = (message.content)
       .replace(/'s+/g, ` `)
       .replace(/[\.,-\/#!$%\^&\*;":{}=\-_`\'\\~()@\+\?><\[\]\+]/g, '')
       .replace(/\s+/g, ' ')
@@ -83,11 +92,11 @@ client.on('interactionCreate', (interaction) => {
       .toLowerCase()
       .trim()
       .split(/ +/g);
-      var intersection = _.intersection(
+      var message = _.intersection(
         messageArray,
         diceThroneReactions.diceThroneReactionsArray
       );
-      for (let i = 0; i < intersection.length; i++) {
+      for (let i = 0; i < message.length; i++) {
         const reactionEmoji = message.guild.emojis.cache.find(
           (emoji) => emoji.name === intersection[i]
         );
@@ -98,7 +107,7 @@ client.on('interactionCreate', (interaction) => {
     }
   }
 
-  if (!message.content.startsWith(PREFIX) || message.author.bot) {
+  if (!message.content.startsWith(PREFIX) || message.member.client) {
     return;
   }
 
@@ -187,26 +196,26 @@ client.on('interactionCreate', (interaction) => {
   // }
 
 
-//SLASH COMMANDS
-client.on('messageCreate', async message => {
-	if (!client.application?.owner) await client.application?.fetch();
+  //SLASH COMMANDS
+  // client.on('messageCreate', async message => {
+  // 	if (!client.application?.owner) await client.application?.fetch();
 
-	if (message.content.toLowerCase() === '!deploy' && message.author.id === client.application?.owner.id) {
-		const data = [
-			{
-				name: 'ping',
-				description: 'Replies with Pong!',
-			},
-			{
-				name: 'pong',
-				description: 'Replies with Ping!',
-			},
-		];
+  // 	if (message.content.toLowerCase() === '!deploy' && message.author.id === client.application?.owner.id) {
+  // 		const data = [
+  // 			{
+  // 				name: 'ping',
+  // 				description: 'Replies with Pong!',
+  // 			},
+  // 			{
+  // 				name: 'pong',
+  // 				description: 'Replies with Ping!',
+  // 			},
+  // 		];
 
-		const commands = await client.application?.commands.set(data);
-		console.log(commands);
-	}
-});
+  // 		const commands = await client.application?.commands.set(data);
+  // 		console.log(commands);
+  // 	}
+  // });
 
 
 
@@ -457,19 +466,21 @@ client.on('messageCreate', async message => {
   }
 });
 
-function dmError(err) {
-	let adminUser = client.users.fetch(`${config.adminID}`);
-	adminUser.createDM(`ERROR: ${getTimeStamp()} :: ${err.stack}`);
-	console.log(`ERROR: ${getTimeStamp()} :: ${err.stack}`);
+async function dmError(err) {
+  try {
+    const adminUser = client.users.fetch(`${config.adminId}`);
+    (await adminUser).send(`ERROR: ${getTimeStamp()} :: ${err.stack}`);
+    console.log(`ERROR: ${getTimeStamp()} :: ${err.stack}`);
+  } catch (err) {
+    console.log("ERROR in dmError(err)");
+  }
 }
 
 async function adminNotify(msg) {
   try {
     //Admin user object for DM notifications
-    console.log(`adminId = ${config.adminId}`)
-    let adminUser = client.users.fetch(`${config.adminId}`);
-    console.log(`adminUser = ${JSON.stringify(adminUser)}`)
-    await createDM.adminUser(msg);
+    const adminUser = client.users.fetch(`${config.adminId}`);
+    (await adminUser).send(msg);
   } catch (err) {
     dmError(err);
   }
