@@ -11,7 +11,7 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, interaction, args) => {
-        console.log("SlashCommand/ping.js -----------------------------------------------")
+        // console.log("SlashCommand/ping.js -----------------------------------------------")
         interaction.followUp({ content: `${client.ws.ping}ms!` });
     },
 };

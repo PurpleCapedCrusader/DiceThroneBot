@@ -39,7 +39,7 @@ module.exports = async (client) => {
     });
     client.on("ready", async () => {
         // Register for a single guild
-        console.log("handler/index.js -----------------------------------------------")
+        // console.log("handler/index.js -----------------------------------------------")
         await client.guilds.cache
             .get("395558493752393728")
             .commands.set(arrayOfSlashCommands);
