@@ -9,7 +9,7 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-        console.log("commands/ping.js -----------------------------------------------")
+        // console.log("commands/ping.js -----------------------------------------------")
         message.channel.send(`${client.ws.ping} ws ping`);
     },
 };

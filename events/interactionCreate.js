@@ -2,7 +2,7 @@ const client = require("../dicethrone.js");
 
 client.on("interactionCreate", async (interaction) => {
     // Slash Command Handling
-    console.log("minteractionCreate.js -----------------------------------------------")
+    // console.log("interactionCreate.js -----------------------------------------------")
     if (interaction.isCommand()) {
         await interaction.defer({ ephemeral: false }).catch(() => {});
 

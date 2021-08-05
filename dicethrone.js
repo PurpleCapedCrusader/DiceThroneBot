@@ -37,9 +37,9 @@ client.once("ready", async () => {
     } servers, for ${client.users.cache.size} users.`
   );
 
-  // updateStatus();
+  updateStatus();
   adminNotify(`DiceThroneBot version ${pkg.version} started: ${getTimeStamp()}`);
-  // databaseCheck.createDatabaseTablesIfNotExist;
+  databaseCheck.createSchemaIfNotExist;
 });
 
 // error catch-all
@@ -58,32 +58,33 @@ const heroArray = client.allHeroesArray.allHeroes;
 //   removeTempOnlineRole();
 // }, 60000); // 60000 = 1min
 
-// setInterval(function () {
-//   // updateStatus();
-// }, 900000); // 60000 = 1min
+setInterval(function () {
+  updateStatus();
+}, 900000); // 60000 = 1min
 
 client.on("guildMemberAdd", (member) => {
   standardResponse.welcome(member)
 });
 
 // Main Args/Response
-client.on('interactionCreate', (message) => {
-  console.log(`interaction = ${JSON.stringify(message.content)}`)
-  if (!message.member.client) {
-    if (message.channel.type === "dm") {
+client.on('messageCreate', (message) => {
+  // console.log(`message = ${JSON.stringify(message)}`)
+  if (!message.author.bot) {
+    if (message.channel.type === "DM") {
       dmArchive(message);
     } else {
       messageArchive(message);
     }
   }
-  console.log(JSON.stringify({ message }))
+  // console.log(`MESSAGE = ${ message.channel.type }`)
   // react with emojis for mentioned gods
   if (
-    message.channel.type != "dm" &&
+    message.channel.type != "DM" &&
     message.guild.id === config.guildId &&
-    !message.member.client
-  ) {
+    !message.author.bot
+  ){
     try {
+      console.log(`NEW MESSAGE = ${ message }`)
       let messageArray = (message.content)
       .replace(/'s+/g, ` `)
       .replace(/[\.,-\/#!$%\^&\*;":{}=\-_`\'\\~()@\+\?><\[\]\+]/g, '')
@@ -92,13 +93,14 @@ client.on('interactionCreate', (message) => {
       .toLowerCase()
       .trim()
       .split(/ +/g);
-      var message = _.intersection(
+      var emojiNamesInMessage = _.intersection(
         messageArray,
         diceThroneReactions.diceThroneReactionsArray
       );
-      for (let i = 0; i < message.length; i++) {
+      // console.log(`emojis = ${ JSON.stringify(message.guild.emojis.cache) }`)
+      for (let i = 0; i < emojiNamesInMessage.length; i++) {
         const reactionEmoji = message.guild.emojis.cache.find(
-          (emoji) => emoji.name === intersection[i]
+          (emoji) => emoji.name === emojiNamesInMessage[i]
         );
         message.react(reactionEmoji);
       }
@@ -106,11 +108,11 @@ client.on('interactionCreate', (message) => {
       dmError(err);
     }
   }
-
-  if (!message.content.startsWith(PREFIX) || message.member.client) {
+  if (toString(!message.content).startsWith(PREFIX) || message.author.bot) {
     return;
   }
-
+  // console.log(`content = ${message.content}`)
+  // console.log(`DIDN'T RETURN`)
   // Add God Role (remove old god role if exists)
   if (message.content.slice(0, 4).toLowerCase() === "!iam") {
     if (message.channel.name === "dicethrone-bot") {
@@ -164,7 +166,7 @@ client.on('interactionCreate', (message) => {
       }
     } else {
       message.channel.send(
-        "Head over to the #eris-bot channel for role updates."
+        "Head over to the #dicethrone-bot channel for role updates."
       );
     }
   }
@@ -195,34 +197,6 @@ client.on('interactionCreate', (message) => {
   //   }
   // }
 
-
-  //SLASH COMMANDS
-  // client.on('messageCreate', async message => {
-  // 	if (!client.application?.owner) await client.application?.fetch();
-
-  // 	if (message.content.toLowerCase() === '!deploy' && message.author.id === client.application?.owner.id) {
-  // 		const data = [
-  // 			{
-  // 				name: 'ping',
-  // 				description: 'Replies with Pong!',
-  // 			},
-  // 			{
-  // 				name: 'pong',
-  // 				description: 'Replies with Ping!',
-  // 			},
-  // 		];
-
-  // 		const commands = await client.application?.commands.set(data);
-  // 		console.log(commands);
-  // 	}
-  // });
-
-
-
-
-
-
-
   let args = message.content.substring(PREFIX.length).split(/ +/g);
 
   if (
@@ -247,7 +221,7 @@ client.on('interactionCreate', (message) => {
       break;
 
       case "❤️":
-        if (message.channel.type === "dm") {
+        if (message.channelType === "DM") {
           message.channel
             .send(`This command doesn't work as a DM.`)
             .catch(console.error);
@@ -711,31 +685,32 @@ async function dmArchive(message) {
 	}
 }
 
-// async function updateStatus() {
-// 	var watchPlay = [0, 1, 2, 3, 4];
-// 	shuffle(watchPlay);
-// 	if (watchPlay[0] == 0 || watchPlay[0] == 1) {
-// 		var statusArray = activityStatus.boardGames;
-// 		var activityType = "PLAYING";
-// 	} else if (watchPlay[0] == 2 || watchPlay[0] == 3) {
-// 		var statusArray = activityStatus.movies;
-// 		var activityType = "WATCHING";
-// 	} else if (watchPlay[0] == 4) {
-// 		var statusArray = activityStatus.songs;
-// 		var activityType = "LISTENING";
-// 	}
-// 	shuffle(statusArray);
-// 	client.user
-// 		.setActivity(`${statusArray[0]}`, {
-// 			type: activityType,
-// 		})
-// 		.then((presence) =>
-// 			console.log(`${activityType} ${presence.activities[0].name}`)
-// 		)
-// 		.catch((err) => {
-// 			dmError(err);
-// 		});
-// }
+async function updateStatus() {
+  try {
+	var watchPlay = [0, 1, 2, 3, 4];
+	shuffle(watchPlay);
+	if (watchPlay[0] == 0 || watchPlay[0] == 1) {
+		var statusArray = activityStatus.boardGames;
+		var activityType = "PLAYING";
+	} else if (watchPlay[0] == 2 || watchPlay[0] == 3) {
+		var statusArray = activityStatus.movies;
+		var activityType = "WATCHING";
+	} else if (watchPlay[0] == 4) {
+		var statusArray = activityStatus.songs;
+		var activityType = "LISTENING";
+	}
+	shuffle(statusArray);
+	client.user
+		.setActivity(`${statusArray[0]}`, {
+			type: activityType,
+		})
+		// .then((presence) =>
+		// 	console.log(`${activityType} ${presence.activities[0].name}`)
+		// )
+  } catch(err) {
+			dmError(err);
+		};
+}
 
 // Super Secret Token!!!
 client.login(config.token);
