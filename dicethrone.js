@@ -53,11 +53,6 @@ client.allHeroesArray = require("./allHeroesArray.js");
 client.standardResponse = require("./standardResponse.js");
 const heroArray = client.allHeroesArray.allHeroes;
 
-// JOIN ME ONLINE Interval check
-// setInterval(function () {
-//   removeTempOnlineRole();
-// }, 60000); // 60000 = 1min
-
 setInterval(function () {
   updateStatus();
 }, 900000); // 60000 = 1min
