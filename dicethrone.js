@@ -15,19 +15,18 @@ const { Pool } = require("pg");
 const standardResponse = require("./standardResponse.js");
 // const { version } = require("os");
 const pool = new Pool(dbCreds);
-const client = new Client({
-  intents: [Intents.FLAGS.GUILDS,
-    Intents.FLAGS.GUILD_MESSAGES,
-    Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
-    Intents.FLAGS.DIRECT_MESSAGES,
-    Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
-    Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS
-  ]
-});
+const client = new Client({ intents: 32767 });
+
 module.exports = client;
 client.commands = new Collection();
 client.slashCommands = new Collection();
 require("./handler")(client);
+
+// Link to hero data
+client.heroCards = require("./heroCards.json")
+client.allHeroesArray = require("./allHeroesArray.js");
+client.standardResponse = require("./standardResponse.js");
+const heroArray = client.allHeroesArray.allHeroes;
 
 // Ready statement
 client.once("ready", async () => {
@@ -36,7 +35,7 @@ client.once("ready", async () => {
       client.guilds.cache.size
     } servers, for ${client.users.cache.size} users.`
   );
-
+  console.log(client.heroCards["1"].title)
   updateStatus();
   adminNotify(`DiceThroneBot version ${pkg.version} started: ${getTimeStamp()}`);
   databaseCheck.createSchemaIfNotExist;
@@ -47,11 +46,7 @@ client.on("error", (err) => console.error(`${getTimeStamp()} :: ${err}`));
 client.on("warn", (err) => console.warn(`${getTimeStamp()} :: ${err}`));
 client.on("debug", (err) => console.info(`${getTimeStamp()} :: ${err}`));
 
-// Link to hero data
-client.godData = require("./godData.json");
-client.allHeroesArray = require("./allHeroesArray.js");
-client.standardResponse = require("./standardResponse.js");
-const heroArray = client.allHeroesArray.allHeroes;
+
 
 setInterval(function () {
   updateStatus();
@@ -165,32 +160,6 @@ client.on('messageCreate', (message) => {
       );
     }
   }
-
-  // // Add Online Role and remove after a time
-  // if (message.content.slice(0, 7).toLowerCase() === "!online") {
-  //   if (message.channel.name === "eris-bot") {
-  //     const args = message.content
-  //       .slice(PREFIX.length)
-  //       .toLowerCase()
-  //       .trim()
-  //       .split(/ +/g);
-  //     var roleRequested = "Join Me Online";
-  //     var durationRequested = Number(args[1]);
-  //     if (
-  //       check.integer(Number(durationRequested)) &&
-  //       check.between(Number(durationRequested), 0, 61)
-  //     ) {
-  //       setTempOnlineRole(durationRequested, message, roleRequested);
-  //     } else {
-  //       message.channel.send(
-  //         `${args[1]} is not a valid input. You must use a number between 1 and 60. "!online 15" means you're avaialble to play online for the next 15 minutes.`
-  //       );
-  //       return;
-  //     }
-  //   } else {
-  //     message.channel.send(`That command only works in the #eris-bot channel.`);
-  //   }
-  // }
 
   let args = message.content.substring(PREFIX.length).split(/ +/g);
 
@@ -460,129 +429,6 @@ function getTimeStamp() {
   return "[" + now.toLocaleString() + "]";
 }
 
-async function removeTempOnlineRole() {
-  (async () => {
-    const client = await pool.connect();
-    try {
-      let currentTime = Date.now();
-      const query = await client.query(
-        `SELECT * FROM dicethrone_schema.online_role_tracking WHERE remove_time < ${currentTime} AND status = true`
-      );
-      query.rows.forEach((row) => {
-        let member = client.guilds.cache.get(row.guild_id).member(row.author_id);
-        let role_id = client.guilds.cache
-          .get(row.guild_id)
-          .roles.cache.find((rName) => rName.id === row.temp_role_id);
-        member.roles.remove(role_id).catch(console.error);
-        client.query(
-          `UPDATE dicethrone_schema.online_role_tracking SET status = false WHERE onlineroletracking_id = ${row.onlineroletracking_id}`
-        );
-        console.log(
-          `${row.author_username} was removed from the ${row.temp_role} role group in the ${row.guild_name} channel.`
-        );
-      });
-    } catch (err) {
-      await client.query("ROLLBACK");
-      dmError(err);
-    } finally {
-      client.release();
-    }
-  })().catch((err) => dmError(err.stack));
-}
-
-async function setTempOnlineRole(durationRequested, message, roleRequested) {
-  (async () => {
-    const client = await pool.connect();
-    try {
-      let temp_role_id = await message.guild.roles.cache.find(
-        (role) => role.name === roleRequested
-      ).id;
-      let timeOfRequest = Date.now();
-      const onlineRequest = {
-        guild_name: message.guild.name,
-        guild_id: message.guild.id,
-        channel_name: message.channel.name,
-        channel_id: message.channel.id,
-        message_id: message.id,
-        author_username: message.author.username,
-        author_id: message.author.id,
-        member_nickname: message.member.nickname,
-        readable_timestamp: getTimeStamp(),
-        start_time: timeOfRequest,
-        duration_requested: durationRequested,
-        remove_time: timeOfRequest + durationRequested * 60000,
-        status: 1,
-      };
-      await client.query("BEGIN");
-      const insertTempRoleRequestText =
-        "INSERT INTO dicethrone_schema.online_role_tracking(guild_name, guild_id, channel_name, channel_id, message_id, author_username, author_id, member_nickname, temp_role, temp_role_id, readable_timestamp, start_time, duration_requested, remove_time, status) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)";
-      const insertTempRoleRequestValues = [
-        onlineRequest.guild_name,
-        onlineRequest.guild_id,
-        onlineRequest.channel_name,
-        onlineRequest.channel_id,
-        onlineRequest.message_id,
-        onlineRequest.author_username,
-        onlineRequest.author_id,
-        onlineRequest.member_nickname,
-        roleRequested,
-        temp_role_id,
-        onlineRequest.readable_timestamp,
-        onlineRequest.start_time,
-        onlineRequest.duration_requested,
-        onlineRequest.remove_time,
-        onlineRequest.status,
-      ];
-      await client.query(
-        insertTempRoleRequestText,
-        insertTempRoleRequestValues
-      );
-      await client.query("COMMIT");
-      const getGodRole = message.guild.roles.cache.find((role) =>
-        roleRequested.includes(role.name)
-      );
-      message.member.roles.add(getGodRole).catch(console.error);
-      // TODO update online time if not false
-      if (roleRequested == "Join Me Online") {
-        let online_notify_role_id = await message.guild.roles.cache.find(
-          (role) => role.name === "Online Notify"
-        ).id;
-        let membersWithRole = message.guild.roles.cache
-          .get(online_notify_role_id)
-          .members.map((m) => m.user);
-        await membersWithRole.forEach((member) => {
-          console.log(`member.username = ${member.username}`);
-          if (member.id == message.author.id) {
-            member.send(
-              `I told everyone in the Online Notify group that you are available for the next ${onlineRequest.duration_requested} min.`
-            );
-          }
-          if (member.id != message.author.id) {
-            if (message.member.nickname != null) {
-              member.send(
-                `${message.member.nickname} is playing Santorini online for the next ${onlineRequest.duration_requested} min. If you want me to stop sending you these updates, use the !notifyOFF command in the #eris-bot channel.`
-              );
-            } else {
-              member.send(
-                `${onlineRequest.author_username} is playing Santorini online for the next ${onlineRequest.duration_requested} min. If you want me to stop sending you these updates, use the !notifyOFF command in the #eris-bot channel.`
-              );
-            }
-          }
-        });
-        let role = await message.guild.roles.cache.find(
-          (r) => r.name === "Online Notify"
-        );
-        await message.member.roles.add(role).catch(console.error);
-      }
-    } catch (err) {
-      await client.query("ROLLBACK");
-      dmError(err);
-    } finally {
-      client.release();
-    }
-  })().catch((err) => console.log(err.stack));
-}
-
 function shuffle(array) {
   var currentIndex = array.length,
     temporaryValue,
@@ -706,6 +552,8 @@ async function updateStatus() {
 			dmError(err);
 		};
 }
-
+// module.exports = {
+//   dmError
+//  }
 // Super Secret Token!!!
 client.login(config.token);

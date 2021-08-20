@@ -2,7 +2,6 @@ const client = require("../dicethrone.js");
 const config = require("../config.json");
 
 client.on("messageCreate", async (message) => {
-    // console.log("messageCreate.js -----------------------------------------------")
     if (
         message.author.bot ||
         !message.guild ||

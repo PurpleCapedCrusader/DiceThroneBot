@@ -1,7 +1,7 @@
 const { Message, Client } = require("discord.js");
 
 module.exports = {
-    name: "ping",
+    name: "token",
     /**
      *
      * @param {Client} client
@@ -10,6 +10,6 @@ module.exports = {
      */
     run: async (client, message, args) => {
         // console.log("commands/ping.js -----------------------------------------------")
-        message.channel.send(`${client.ws.ping} ws ping`);
+        console.log(message.guild.emojis.cache)
     },
 };

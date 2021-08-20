@@ -2,9 +2,8 @@ const client = require("../dicethrone.js");
 
 client.on("interactionCreate", async (interaction) => {
     // Slash Command Handling
-    // console.log("interactionCreate.js -----------------------------------------------")
     if (interaction.isCommand()) {
-        await interaction.defer({ ephemeral: false }).catch(() => {});
+        await interaction.deferReply({ ephemeral: false }).catch(() => {});
 
         const cmd = client.slashCommands.get(interaction.commandName);
         if (!cmd)
@@ -17,6 +16,7 @@ client.on("interactionCreate", async (interaction) => {
                 if (option.name) args.push(option.name);
                 option.options?.forEach((x) => {
                     if (x.value) args.push(x.value);
+                    console.log(x.value);
                 });
             } else if (option.value) args.push(option.value);
         }
