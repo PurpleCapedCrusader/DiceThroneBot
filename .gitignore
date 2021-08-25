@@ -10,3 +10,4 @@ basic_cards.json
 *.txt
 heroCards.json
 .DS_Store
+/node_modules/
