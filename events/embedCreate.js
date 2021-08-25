@@ -7,7 +7,6 @@ const { MessageAttachment, MessageEmbed } = require('discord.js');
 const client = require('../dicethrone.js');
 const { get } = require('lodash');
 
-
 async function embedCreate(client, interaction, args) {
   const response = JSON.parse(args);
   // console.log(`CLIENT = ${JSON.stringify(client)}`);
