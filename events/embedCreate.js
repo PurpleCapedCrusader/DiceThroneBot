@@ -94,43 +94,36 @@ async function cardEmbed1(user, interaction, args) {
   try {
     const response = JSON.parse(args)
     const cardImage = new MessageAttachment(`./images/${response.cardId}.jpg`);
-    const cardThumbnail = new MessageAttachment(`./images/poison_token.gif`);
+    const cardThumbnail = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].symbol1}.png`);
     // const cardThumbnail = new MessageAttachment(`./images/Apollo.jpg`);
     const embed = new MessageEmbed()
-      .setColor(Client.heroCards[response.arrayNumber].diceColor)
-      .setAuthor(Client.heroCards[response.arrayNumber].hero)
-      .setTitle(`${Client.heroCards[response.arrayNumber].title} \n\u200b`)
-      // .setDescription(`${Client.heroCards[response.arrayNumber].cardType} \n\u200b`)
-      .addFields({
-        name: 'Phase:',
-        value: `${Client.heroCards[response.arrayNumber].cardType}`,
-        inline: true
-      }, {
-      //   name: '\u200B',
-      //   value: '\u200B',
-      //   inline: true
-      // }, {
-        name:'Cost:',
-        value: `**${Client.heroCards[response.arrayNumber].cost}** <:cp_icon:876984072654684200>`,
-        inline: true
-      }, {
-      //   name: '\u200B',
-      //   value: '\u200B',
-      //   inline: true
-      // }, {
-        name:'Location:',
-        value: `${Client.heroCards[response.arrayNumber].location}\n\u200b`,
-        inline: true
-      })
-      .addFields({
-        name:'Action:',
-        value: `${Client.heroCards[response.arrayNumber].text}`,
-        inline: true
-      })
-      .setImage(`attachment://${response.cardId}.jpg`)
-      .setThumbnail('attachment://poison_token.gif')
-      .setTimestamp()
-      .setFooter('Some footer text here', 'https://i.imgur.com/AfFp7pu.png');
+    .setColor(Client.heroCards[response.arrayNumber].diceColor)
+    .setAuthor(Client.heroCards[response.arrayNumber].hero)
+    .setTitle(`${Client.heroCards[response.arrayNumber].title}`)
+    .setDescription(`${Client.heroCards[response.arrayNumber].cardType} \n\u200b`)
+    .addFields({
+    //   name: 'Phase:',
+    //   value: `${Client.heroCards[response.arrayNumber].cardType}`,
+    //   inline: true
+    // }, {
+    //   name: '\u200B',
+    //   value: '\u200B'
+    // }, {
+      name:'Cost:',
+      value: `**${Client.heroCards[response.arrayNumber].cost}** <:cp_icon:876984072654684200>`,
+      inline: true
+    }, {
+      name:'Location:',
+      value: `${Client.heroCards[response.arrayNumber].location}`,
+      inline: true
+    }, {
+      name:'Action:',
+      value: `${Client.heroCards[response.arrayNumber].text}`
+    })
+    .setImage(`attachment://${response.cardId}.jpg`)
+    .setThumbnail(`attachment://${Client.heroCards[response.arrayNumber].symbol1}.png`)
+    // .setTimestamp()
+    // .setFooter('Some footer text here', 'https://i.imgur.com/AfFp7pu.png');
 
     await interaction.followUp({
       embeds: [embed],
