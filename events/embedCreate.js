@@ -26,6 +26,8 @@ async function embedCreate(client, interaction, args) {
     cardEmbed1245(client, interaction, args)
   } else if ( response.embedType === 12345 ) {
     cardEmbed12345(client, interaction, args)
+  } else if ( response.embedType === "basic" ) {
+    cardEmbedBasic(client, interaction, args)
   }
 }
 
@@ -44,64 +46,125 @@ function customEmoji(interaction, emojiName) {
 //   return thisEmoji;
 // }
 
-async function cardEmbed1(user, interaction, args) {
-  // try {
-    // interaction.channel.send(`The emoji used was: <:barbarian:876912760766734426>`)
-    // const barbarianEmoji = interaction.guild.emojis.cache.find((emoji) => emoji.name === "barbarian");
-
-    // const barbarianEmoji = "<:barbarian:848107249460314114>"
-    console.log(interaction.guild.emojis.cache)
-    // const emoji = interaction.guild.emojis.cache.get('barbarian')
-    // console.log(JSON.stringify(emoji))
+async function cardEmbedBasic(user, interaction, args) {
+  try {
     const response = JSON.parse(args)
     const cardImage = new MessageAttachment(`./images/${response.cardId}.jpg`);
+    const cardThumbnail = new MessageAttachment(`./images/poison_token.gif`);
+    // const cardThumbnail = new MessageAttachment(`./images/Apollo.jpg`);
     const embed = new MessageEmbed()
       .setColor(Client.heroCards[response.arrayNumber].diceColor)
-      .setTitle(Client.heroCards[response.arrayNumber].title)
-      .setURL('https://discord.js.org/')
-      .setAuthor(Client.heroCards[response.arrayNumber].cardType)
-      .setDescription('Some description here')
-      // .setThumbnail(':barbarian:')
+      .setAuthor(Client.heroCards[response.arrayNumber].hero)
+      .setTitle(`${Client.heroCards[response.arrayNumber].title}`)
+      .setDescription(`${Client.heroCards[response.arrayNumber].cardType} \n\u200b`)
       .addFields({
-        name:'Card Text',
+      //   name: 'Phase:',
+      //   value: `${Client.heroCards[response.arrayNumber].cardType}`,
+      //   inline: true
+      // }, {
+      //   name: '\u200B',
+      //   value: '\u200B'
+      // }, {
+        name:'Cost:',
+        value: `**${Client.heroCards[response.arrayNumber].cost}** <:cp_icon:876984072654684200>`,
+        inline: true
+      }, {
+        name:'Location:',
+        value: `${Client.heroCards[response.arrayNumber].location}`,
+        inline: true
+      }, {
+        name:'Action:',
         value: `${Client.heroCards[response.arrayNumber].text}`
-      }, {
-        name: '\u200B',
-        value: '\u200B'
-      }, {
-        name: 'Inline field title',
-        value: `Text then more text`,
-        inline: true
-      }, {
-        name: 'Inline field title',
-        value: 'Some value here',
-        inline: true
-      }, )
-      .addField('Inline field title', 'Some value here', true)
+      })
       .setImage(`attachment://${response.cardId}.jpg`)
+      .setThumbnail('attachment://poison_token.gif')
+      // .setTimestamp()
+      // .setFooter('Some footer text here', 'https://i.imgur.com/AfFp7pu.png');
+
+    await interaction.followUp({
+      embeds: [embed],
+      files: [cardImage, cardThumbnail]
+    });
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+async function cardEmbed1(user, interaction, args) {
+  try {
+    const response = JSON.parse(args)
+    const cardImage = new MessageAttachment(`./images/${response.cardId}.jpg`);
+    const cardThumbnail = new MessageAttachment(`./images/poison_token.gif`);
+    // const cardThumbnail = new MessageAttachment(`./images/Apollo.jpg`);
+    const embed = new MessageEmbed()
+      .setColor(Client.heroCards[response.arrayNumber].diceColor)
+      .setAuthor(Client.heroCards[response.arrayNumber].hero)
+      .setTitle(`${Client.heroCards[response.arrayNumber].title} \n\u200b`)
+      // .setDescription(`${Client.heroCards[response.arrayNumber].cardType} \n\u200b`)
+      .addFields({
+        name: 'Phase:',
+        value: `${Client.heroCards[response.arrayNumber].cardType}`,
+        inline: true
+      }, {
+      //   name: '\u200B',
+      //   value: '\u200B',
+      //   inline: true
+      // }, {
+        name:'Cost:',
+        value: `**${Client.heroCards[response.arrayNumber].cost}** <:cp_icon:876984072654684200>`,
+        inline: true
+      }, {
+      //   name: '\u200B',
+      //   value: '\u200B',
+      //   inline: true
+      // }, {
+        name:'Location:',
+        value: `${Client.heroCards[response.arrayNumber].location}\n\u200b`,
+        inline: true
+      })
+      .addFields({
+        name:'Action:',
+        value: `${Client.heroCards[response.arrayNumber].text}`,
+        inline: true
+      })
+      .setImage(`attachment://${response.cardId}.jpg`)
+      .setThumbnail('attachment://poison_token.gif')
       .setTimestamp()
       .setFooter('Some footer text here', 'https://i.imgur.com/AfFp7pu.png');
 
     await interaction.followUp({
       embeds: [embed],
-      files: [cardImage]
+      files: [cardImage, cardThumbnail]
     });
-  // } catch (err) {
-  //   dicethrone.dmError(err);
-  // }
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 async function cardEmbed12(client, interaction, args) {
-  console.log("12")
-  const response = JSON.parse(args)
+  try {
+    const response = JSON.parse(args)
     const cardImage = new MessageAttachment(`./images/${response.cardId}.jpg`);
+    const cardThumbnail = new MessageAttachment(`./images/poison_token.gif`);
+    // const cardThumbnail = new MessageAttachment(`./images/Apollo.jpg`);
     const embed = new MessageEmbed()
       .setColor(Client.heroCards[response.arrayNumber].diceColor)
+      .setAuthor(Client.heroCards[response.arrayNumber].hero)
       .setTitle(Client.heroCards[response.arrayNumber].title)
-      .setURL('https://discord.js.org/')
-      .setAuthor(Client.heroCards[response.arrayNumber].cardType)
-      .setDescription('Some description here')
-      // .setThumbnail(':barbarian:')
+      .setDescription(`${Client.heroCards[response.arrayNumber].cardType} \n\u200b`)
+      .addFields({
+        name:'Cost',
+        value: `**${Client.heroCards[response.arrayNumber].cost}** <:cp_icon:876984072654684200>\n\u200b`,
+        inline: true
+      }, {
+        name: 'Card Text 1',
+        value: `${Client.heroCards[response.arrayNumber].text}`,
+        inline: true
+      }, {
+        name: 'Inline field title 3',
+        value: 'Some value here',
+        inline: true
+      }, )
       .addFields({
         name:'Card Text',
         value: `${Client.heroCards[response.arrayNumber].text}`
@@ -109,23 +172,27 @@ async function cardEmbed12(client, interaction, args) {
         name: '\u200B',
         value: '\u200B'
       }, {
-        name: 'Inline field title',
-        value: `Text then more text`,
+        name: 'Card Text 1',
+        value: `${Client.heroCards[response.arrayNumber].text}`,
         inline: true
       }, {
-        name: 'Inline field title',
+        name: 'Inline field title 3',
         value: 'Some value here',
         inline: true
       }, )
-      .addField('Inline field title', 'Some value here', true)
+      .addField('Inline field title 3', 'Some value here', true)
       .setImage(`attachment://${response.cardId}.jpg`)
+      .setThumbnail('attachment://poison_token.gif')
       .setTimestamp()
       .setFooter('Some footer text here', 'https://i.imgur.com/AfFp7pu.png');
 
     await interaction.followUp({
       embeds: [embed],
-      files: [cardImage]
+      files: [cardImage, cardThumbnail]
     });
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 async function cardEmbed123(client, interaction, args) {

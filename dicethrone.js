@@ -552,6 +552,8 @@ async function updateStatus() {
 			dmError(err);
 		};
 }
-
+// module.exports = {
+//   dmError
+//  }
 // Super Secret Token!!!
 client.login(config.token);

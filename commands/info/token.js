@@ -1,7 +1,7 @@
 const { Message, Client } = require("discord.js");
 
 module.exports = {
-    name: "tokens",
+    name: "token",
     /**
      *
      * @param {Client} client
@@ -10,6 +10,6 @@ module.exports = {
      */
     run: async (client, message, args) => {
         // console.log("commands/ping.js -----------------------------------------------")
-        message.channel.send(`<a:poison_token:877706741947723807>  <a:evasive_token:877653552355479572> `);
+        console.log(message.guild.emojis.cache)
     },
 };
