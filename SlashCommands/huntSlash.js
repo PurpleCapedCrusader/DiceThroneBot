@@ -13,79 +13,79 @@ module.exports = {
         choices: [
           {
             name: "ANIMALISTIC",
-            value: JSON.stringify({'card': 'hunt_animalistic', 'embed_type': 12, 'array_number': 106})
+            value: JSON.stringify({'cardId': 'hunt_animalistic', 'embedType': 134, 'arrayNumber': 105})
           },
           {
             name: "BLOOD BOND!",
-            value: JSON.stringify({'card': 'hunt28', 'embed_type': 1, 'array_number': 107})
+            value: JSON.stringify({'cardId': 'hunt28', 'embedType': 2, 'arrayNumber': 106})
           },
           {
             name: "FERAL",
-            value: JSON.stringify({'card': 'hunt_feral', 'embed_type': 123, 'array_number': 108})
+            value: JSON.stringify({'cardId': 'hunt_feral', 'embedType': 12345, 'arrayNumber': 107})
           },
           {
             name: "FERAL INSTINCTS",
-            value: JSON.stringify({'card': 'hunt_feral_instincts', 'embed_type': 123, 'array_number': 109})
+            value: JSON.stringify({'cardId': 'hunt_feral_instincts', 'embedType': 12345, 'arrayNumber': 108})
           },
           {
             name: "FEROCIOUS",
-            value: JSON.stringify({'card': 'hunt_ferocious', 'embed_type': 23, 'array_number': 110})
+            value: JSON.stringify({'cardId': 'hunt_ferocious', 'embedType': 12345, 'arrayNumber': 109})
           },
           {
             name: "HUNT",
-            value: JSON.stringify({'card': 'hunt_hunt', 'embed_type': 23, 'array_number': 111})
+            value: JSON.stringify({'cardId': 'hunt_hunt', 'embedType': 12345, 'arrayNumber': 110})
           },
           {
             name: "JUGULAR",
-            value: JSON.stringify({'card': 'hunt_jugular', 'embed_type': 23, 'array_number': 112})
+            value: JSON.stringify({'cardId': 'hunt_jugular', 'embedType': 12345, 'arrayNumber': 111})
           },
           {
             name: "JUNGLE FURY!",
-            value: JSON.stringify({'card': 'hunt_ult', 'embed_type': 1, 'array_number': 113})
+            value: JSON.stringify({'cardId': 'hunt_ult', 'embedType': 12, 'arrayNumber': 112})
           },
           {
             name: "MATERNAL BOND",
-            value: JSON.stringify({'card': 'hunt_maternal_bond', 'embed_type': 124, 'array_number': 114})
+            value: JSON.stringify({'cardId': 'hunt_maternal_bond', 'embedType': 12346, 'arrayNumber': 113})
           },
           {
             name: "ONSLAUGHT",
-            value: JSON.stringify({'card': 'hunt_onslaught', 'embed_type': 12, 'array_number': 115})
+            value: JSON.stringify({'cardId': 'hunt_onslaught', 'embedType': 1234, 'arrayNumber': 114})
           },
           {
             name: "POUNCE!",
-            value: JSON.stringify({'card': 'hunt30', 'embed_type': 1, 'array_number': 116})
+            value: JSON.stringify({'cardId': 'hunt30', 'embedType': 12, 'arrayNumber': 115})
           },
           {
             name: "PREDATORY ADVANCE",
-            value: JSON.stringify({'card': 'hunt_predatory_advance', 'embed_type': 123, 'array_number': 117})
+            value: JSON.stringify({'cardId': 'hunt_predatory_advance', 'embedType': 12345, 'arrayNumber': 116})
           },
           {
             name: "PRIMAL ROAR!",
-            value: JSON.stringify({'card': 'hunt33', 'embed_type': 1, 'array_number': 118})
+            value: JSON.stringify({'cardId': 'hunt33', 'embedType': 2, 'arrayNumber': 117})
           },
           {
             name: "PROWL!",
-            value: JSON.stringify({'card': 'hunt31', 'embed_type': 1, 'array_number': 119})
+            value: JSON.stringify({'cardId': 'hunt31', 'embedType': 12, 'arrayNumber': 118})
           },
           {
             name: "RESILIENT!",
-            value: JSON.stringify({'card': 'hunt32', 'embed_type': 1, 'array_number': 120})
+            value: JSON.stringify({'cardId': 'hunt32', 'embedType': 2, 'arrayNumber': 119})
           },
           {
             name: "RESUSCITATE",
-            value: JSON.stringify({'card': 'hunt_resuscitate', 'embed_type': 12, 'array_number': 121})
+            value: JSON.stringify({'cardId': 'hunt_resuscitate', 'embedType': 1234, 'arrayNumber': 120})
           },
           {
             name: "SAVAGE",
-            value: JSON.stringify({'card': 'hunt_savage', 'embed_type': 123, 'array_number': 122})
+            value: JSON.stringify({'cardId': 'hunt_savage', 'embedType': 12345, 'arrayNumber': 121})
           },
           {
             name: "SAVAGE SLASH!",
-            value: JSON.stringify({'card': 'hunt29', 'embed_type': 1, 'array_number': 123})
+            value: JSON.stringify({'cardId': 'hunt29', 'embedType': 2, 'arrayNumber': 122})
           },
           {
             name: "SWIPE",
-            value: JSON.stringify({'card': 'hunt_swipe', 'embed_type': 23, 'array_number': 124})
+            value: JSON.stringify({'cardId': 'hunt_swipe', 'embedType': 12345, 'arrayNumber': 123})
           }
         ]
     }],

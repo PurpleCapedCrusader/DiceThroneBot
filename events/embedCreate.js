@@ -14,73 +14,53 @@ async function embedCreate(client, interaction, args) {
   console.log(`card = ${response.cardId}`);
   console.log(`embedType = ${response.embedType}`);
   console.log(`array_number = ${response.arrayNumber}`);
-  if ( response.embedType === 1 ) {
-    cardEmbed1(client, interaction, args)
+  if ( response.embedType === 2 ) {
+    cardEmbed2(client, interaction, args)
   } else if ( response.embedType === 12 ) {
     cardEmbed12(client, interaction, args)
-  } else if ( response.embedType === 123 ) {
-    cardEmbed123(client, interaction, args)
-  } else if ( response.embedType === 124 ) {
-    cardEmbed124(client, interaction, args)
-  } else if ( response.embedType === 1245 ) {
-    cardEmbed1245(client, interaction, args)
+  } else if ( response.embedType === 134 ) {
+    cardEmbed134(client, interaction, args)
+  } else if ( response.embedType === 136 ) {
+    cardEmbed136(client, interaction, args)
+  } else if ( response.embedType === 1234 ) {
+    cardEmbed1234(client, interaction, args)
+  } else if ( response.embedType === 1346 ) {
+    cardEmbed1346(client, interaction, args)
   } else if ( response.embedType === 12345 ) {
     cardEmbed12345(client, interaction, args)
-  } else if ( response.embedType === "basic" ) {
-    cardEmbedBasic(client, interaction, args)
+  } else if ( response.embedType === 12346 ) {
+    cardEmbed12346(client, interaction, args)
+  } else if ( response.embedType === 13567 ) {
+    cardEmbed13567(client, interaction, args)
+  } else if ( response.embedType === 123467 ) {
+    cardEmbed123467(client, interaction, args)
   }
 }
 
-function customEmoji(interaction, emojiName) {
-    const thisEmoji = interaction.guild.emojis.cache.find(
-      (emoji) => emoji.name === emojiName)
-    return thisEmoji;
-}
-
-// function customEmojiDecoder(interaction, emojiName) {
-//   customEmoji(interaction, emojiName)
-//     .then((results) => {
-//       thisEmoji = results;
-//     })
-//   console.log(`thisEmoji = ${thisEmoji}`)
-//   return thisEmoji;
-// }
-
-async function cardEmbedBasic(user, interaction, args) {
+async function cardEmbed2(user, interaction, args) {
   try {
     const response = JSON.parse(args)
     const cardImage = new MessageAttachment(`./images/${response.cardId}.jpg`);
-    const cardThumbnail = new MessageAttachment(`./images/poison_token.gif`);
-    // const cardThumbnail = new MessageAttachment(`./images/Apollo.jpg`);
+    const cardThumbnail = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].thumbnail}`);
     const embed = new MessageEmbed()
       .setColor(Client.heroCards[response.arrayNumber].diceColor)
       .setAuthor(Client.heroCards[response.arrayNumber].hero)
       .setTitle(`${Client.heroCards[response.arrayNumber].title}`)
       .setDescription(`${Client.heroCards[response.arrayNumber].cardType} \n\u200b`)
       .addFields({
-      //   name: 'Phase:',
-      //   value: `${Client.heroCards[response.arrayNumber].cardType}`,
-      //   inline: true
-      // }, {
-      //   name: '\u200B',
-      //   value: '\u200B'
-      // }, {
         name:'Cost:',
         value: `**${Client.heroCards[response.arrayNumber].cost}** <:cp_icon:876984072654684200>`,
         inline: true
       }, {
         name:'Location:',
-        value: `${Client.heroCards[response.arrayNumber].location}`,
+        value: `${Client.heroCards[response.arrayNumber].location} \n\u200b`,
         inline: true
       }, {
-        name:'Action:',
+        name:'Ability Description:',
         value: `${Client.heroCards[response.arrayNumber].text}`
       })
       .setImage(`attachment://${response.cardId}.jpg`)
-      .setThumbnail('attachment://poison_token.gif')
-      // .setTimestamp()
-      // .setFooter('Some footer text here', 'https://i.imgur.com/AfFp7pu.png');
-
+      .setThumbnail(`attachment://${Client.heroCards[response.arrayNumber].thumbnail}`)
     await interaction.followUp({
       embeds: [embed],
       files: [cardImage, cardThumbnail]
@@ -90,95 +70,33 @@ async function cardEmbedBasic(user, interaction, args) {
   }
 }
 
-async function cardEmbed1(user, interaction, args) {
+async function cardEmbed12(user, interaction, args) {
   try {
     const response = JSON.parse(args)
     const cardImage = new MessageAttachment(`./images/${response.cardId}.jpg`);
-    const cardThumbnail = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].symbol1}.png`);
-    // const cardThumbnail = new MessageAttachment(`./images/Apollo.jpg`);
-    const embed = new MessageEmbed()
-    .setColor(Client.heroCards[response.arrayNumber].diceColor)
-    .setAuthor(Client.heroCards[response.arrayNumber].hero)
-    .setTitle(`${Client.heroCards[response.arrayNumber].title}`)
-    .setDescription(`${Client.heroCards[response.arrayNumber].cardType} \n\u200b`)
-    .addFields({
-    //   name: 'Phase:',
-    //   value: `${Client.heroCards[response.arrayNumber].cardType}`,
-    //   inline: true
-    // }, {
-    //   name: '\u200B',
-    //   value: '\u200B'
-    // }, {
-      name:'Cost:',
-      value: `**${Client.heroCards[response.arrayNumber].cost}** <:cp_icon:876984072654684200>`,
-      inline: true
-    }, {
-      name:'Location:',
-      value: `${Client.heroCards[response.arrayNumber].location}`,
-      inline: true
-    }, {
-      name:'Action:',
-      value: `${Client.heroCards[response.arrayNumber].text}`
-    })
-    .setImage(`attachment://${response.cardId}.jpg`)
-    .setThumbnail(`attachment://${Client.heroCards[response.arrayNumber].symbol1}.png`)
-    // .setTimestamp()
-    // .setFooter('Some footer text here', 'https://i.imgur.com/AfFp7pu.png');
-
-    await interaction.followUp({
-      embeds: [embed],
-      files: [cardImage, cardThumbnail]
-    });
-  } catch (err) {
-    console.log(err);
-  }
-}
-
-async function cardEmbed12(client, interaction, args) {
-  try {
-    const response = JSON.parse(args)
-    const cardImage = new MessageAttachment(`./images/${response.cardId}.jpg`);
-    const cardThumbnail = new MessageAttachment(`./images/poison_token.gif`);
-    // const cardThumbnail = new MessageAttachment(`./images/Apollo.jpg`);
+    const cardThumbnail = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].thumbnail}`);
     const embed = new MessageEmbed()
       .setColor(Client.heroCards[response.arrayNumber].diceColor)
       .setAuthor(Client.heroCards[response.arrayNumber].hero)
-      .setTitle(Client.heroCards[response.arrayNumber].title)
+      .setTitle(`${Client.heroCards[response.arrayNumber].title}`)
       .setDescription(`${Client.heroCards[response.arrayNumber].cardType} \n\u200b`)
       .addFields({
-        name:'Cost',
-        value: `**${Client.heroCards[response.arrayNumber].cost}** <:cp_icon:876984072654684200>\n\u200b`,
+        name:'Cost:',
+        value: `**${Client.heroCards[response.arrayNumber].cost}** <:cp_icon:876984072654684200>`,
         inline: true
       }, {
-        name: 'Card Text 1',
-        value: `${Client.heroCards[response.arrayNumber].text}`,
+        name:'Location:',
+        value: `${Client.heroCards[response.arrayNumber].location} \n\u200b`,
         inline: true
       }, {
-        name: 'Inline field title 3',
-        value: 'Some value here',
-        inline: true
-      }, )
-      .addFields({
-        name:'Card Text',
+        name:'Activation Requirement:',
+        value: `${Client.heroCards[response.arrayNumber].req} \n\u200b`
+      }, {
+        name:'Ability Description:',
         value: `${Client.heroCards[response.arrayNumber].text}`
-      }, {
-        name: '\u200B',
-        value: '\u200B'
-      }, {
-        name: 'Card Text 1',
-        value: `${Client.heroCards[response.arrayNumber].text}`,
-        inline: true
-      }, {
-        name: 'Inline field title 3',
-        value: 'Some value here',
-        inline: true
-      }, )
-      .addField('Inline field title 3', 'Some value here', true)
+      })
       .setImage(`attachment://${response.cardId}.jpg`)
-      .setThumbnail('attachment://poison_token.gif')
-      .setTimestamp()
-      .setFooter('Some footer text here', 'https://i.imgur.com/AfFp7pu.png');
-
+      .setThumbnail(`attachment://${Client.heroCards[response.arrayNumber].thumbnail}`)
     await interaction.followUp({
       embeds: [embed],
       files: [cardImage, cardThumbnail]
@@ -188,77 +106,262 @@ async function cardEmbed12(client, interaction, args) {
   }
 }
 
-async function cardEmbed123(client, interaction, args) {
-  console.log("123")
+async function cardEmbed134(client, interaction, args) {
   const response = JSON.parse(args)
-  await interaction.followUp(`card = ${response.cardId} embedType = ${response.embedType}`);
+  try {
+    const cardImage = new MessageAttachment(`./images/${response.cardId}.jpg`);
+    const cardThumbnail = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].thumbnail}`);
+    const embed = new MessageEmbed()
+      .setColor(Client.heroCards[response.arrayNumber].diceColor)
+      .setAuthor(Client.heroCards[response.arrayNumber].hero)
+      .setTitle(`${Client.heroCards[response.arrayNumber].title}`)
+      .setDescription(`${Client.heroCards[response.arrayNumber].cardType} \n\u200b`)
+      .addFields({
+        name:'Cost:',
+        value: `**${Client.heroCards[response.arrayNumber].cost}** <:cp_icon:876984072654684200>`,
+        inline: true
+      }, {
+        name:'Location:',
+        value: `${Client.heroCards[response.arrayNumber].location} \n\u200b`,
+        inline: true
+      }, {
+        name:'Activation Requirement:',
+        value: `${Client.heroCards[response.arrayNumber].req} \n\u200b`
+      }, {
+        name:'Ability Description:',
+        value: `${Client.heroCards[response.arrayNumber].text}`
+      })
+      .setImage(`attachment://${response.cardId}.jpg`)
+      .setThumbnail(`attachment://${Client.heroCards[response.arrayNumber].thumbnail}`)
+    await interaction.followUp({
+      embeds: [embed],
+      files: [cardImage, cardThumbnail]
+    });
+  } catch (err) {
+    console.log(err);
+  }
+  try {
+    const cardImage2 = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].cardIdB}.jpg`);
+    const cardThumbnail2 = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].thumbnailB}`);
+    const embed2 = new MessageEmbed()
+      .setColor(Client.heroCards[response.arrayNumber].diceColor)
+      .setAuthor(Client.heroCards[response.arrayNumber].hero)
+      .setTitle(`${Client.heroCards[response.arrayNumber].titleB}`)
+      .setDescription(`${Client.heroCards[response.arrayNumber].cardTypeB} \n\u200b`)
+      .addFields({
+        name:'Cost:',
+        value: `**${Client.heroCards[response.arrayNumber].costB}** <:cp_icon:876984072654684200>`,
+        inline: true
+      }, {
+        name:'Location:',
+        value: `${Client.heroCards[response.arrayNumber].locationB} \n\u200b`,
+        inline: true
+      }, {
+        name:'Activation Requirement:',
+        value: `${Client.heroCards[response.arrayNumber].reqB} \n\u200b`
+      }, {
+        name:'Ability Description:',
+        value: `${Client.heroCards[response.arrayNumber].textB}`
+      })
+      .setImage(`attachment://${Client.heroCards[response.arrayNumber].cardIdB}.jpg`)
+      .setThumbnail(`attachment://${Client.heroCards[response.arrayNumber].thumbnailB}`)
+    await interaction.followUp({
+      embeds: [embed2],
+      files: [cardImage2, cardThumbnail2]
+    });
+  } catch (err) {
+    console.log(err);
+  }
 }
 
-async function cardEmbed124(client, interaction, args) {
-  console.log("124")
+async function cardEmbed136(client, interaction, args) {
   const response = JSON.parse(args)
-  await interaction.followUp(`card = ${response.cardId} embedType = ${response.embedType}`);
+  try {
+    const cardImage = new MessageAttachment(`./images/${response.cardId}.jpg`);
+    const cardThumbnail = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].thumbnail}`);
+    const embed = new MessageEmbed()
+      .setColor(Client.heroCards[response.arrayNumber].diceColor)
+      .setAuthor(Client.heroCards[response.arrayNumber].hero)
+      .setTitle(`${Client.heroCards[response.arrayNumber].title}`)
+      .setDescription(`${Client.heroCards[response.arrayNumber].cardType} \n\u200b`)
+      .addFields({
+        name:'Cost:',
+        value: `**${Client.heroCards[response.arrayNumber].cost}** <:cp_icon:876984072654684200>`,
+        inline: true
+      }, {
+        name:'Location:',
+        value: `${Client.heroCards[response.arrayNumber].location} \n\u200b`,
+        inline: true
+      }, {
+        name:'Activation Requirement:',
+        value: `${Client.heroCards[response.arrayNumber].req} \n\u200b`
+      }, {
+        name:'Ability Description:',
+        value: `${Client.heroCards[response.arrayNumber].text}`
+      })
+      .setImage(`attachment://${response.cardId}.jpg`)
+      .setThumbnail(`attachment://${Client.heroCards[response.arrayNumber].thumbnail}`)
+    await interaction.followUp({
+      embeds: [embed],
+      files: [cardImage, cardThumbnail]
+    });
+  } catch (err) {
+    console.log(err);
+  }
+  try {
+    const cardImage2 = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].cardIdB}.jpg`);
+    const cardThumbnail2 = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].thumbnailB}`);
+    const embed2 = new MessageEmbed()
+      .setColor(Client.heroCards[response.arrayNumber].diceColor)
+      .setAuthor(Client.heroCards[response.arrayNumber].hero)
+      .setTitle(`${Client.heroCards[response.arrayNumber].titleB}`)
+      .setDescription(`${Client.heroCards[response.arrayNumber].cardTypeB} \n\u200b`)
+      .addFields({
+        name:'Cost:',
+        value: `**${Client.heroCards[response.arrayNumber].costB}** <:cp_icon:876984072654684200>`,
+        inline: true
+      }, {
+        name:'Location:',
+        value: `${Client.heroCards[response.arrayNumber].locationB} \n\u200b`,
+        inline: true
+      }, {
+        name:'Activation Requirement:',
+        value: `${Client.heroCards[response.arrayNumber].reqB} \n\u200b`
+      }, {
+        name:'Ability Description:',
+        value: `${Client.heroCards[response.arrayNumber].textB} \n\u200b\n\u200b`
+      }, {
+        name:'2nd Ability:',
+        value: `**${Client.heroCards[response.arrayNumber].titleB2}** \n\u200b`
+      }, {
+        name:'Activation Requirement:',
+        value: `${Client.heroCards[response.arrayNumber].reqB2} \n\u200b`
+      },{
+        name:'Ability Description:',
+        value: `${Client.heroCards[response.arrayNumber].textB2}`
+      })
+      .setImage(`attachment://${Client.heroCards[response.arrayNumber].cardIdB}.jpg`)
+      .setThumbnail(`attachment://${Client.heroCards[response.arrayNumber].thumbnailB}`)
+    await interaction.followUp({
+      embeds: [embed2],
+      files: [cardImage2, cardThumbnail2]
+    });
+  } catch (err) {
+    console.log(err);
+  }
 }
 
-async function cardEmbed1245(client, interaction, args) {
-  console.log("1245")
+async function cardEmbed1346(client, interaction, args) {
   const response = JSON.parse(args)
-  await interaction.followUp(`card = ${response.cardId} embedType = ${response.embedType}`);
+  try {
+    const cardImage = new MessageAttachment(`./images/${response.cardId}.jpg`);
+    const cardThumbnail = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].thumbnail}`);
+    const embed = new MessageEmbed()
+      .setColor(Client.heroCards[response.arrayNumber].diceColor)
+      .setAuthor(Client.heroCards[response.arrayNumber].hero)
+      .setTitle(`${Client.heroCards[response.arrayNumber].title}`)
+      .setDescription(`${Client.heroCards[response.arrayNumber].cardType} \n\u200b`)
+      .addFields({
+        name:'Cost:',
+        value: `**${Client.heroCards[response.arrayNumber].cost}** <:cp_icon:876984072654684200>`,
+        inline: true
+      }, {
+        name:'Location:',
+        value: `${Client.heroCards[response.arrayNumber].location} \n\u200b`,
+        inline: true
+      }, {
+        name:'Activation Requirement:',
+        value: `${Client.heroCards[response.arrayNumber].req} \n\u200b`
+      }, {
+        name:'Ability Description:',
+        value: `${Client.heroCards[response.arrayNumber].text}`
+      })
+      .setImage(`attachment://${response.cardId}.jpg`)
+      .setThumbnail(`attachment://${Client.heroCards[response.arrayNumber].thumbnail}`)
+    await interaction.followUp({
+      embeds: [embed],
+      files: [cardImage, cardThumbnail]
+    });
+  } catch (err) {
+    console.log(err);
+  }
+  try {
+    const cardImage2 = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].cardIdB}.jpg`);
+    const cardThumbnail2 = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].thumbnailB}`);
+    const embed2 = new MessageEmbed()
+      .setColor(Client.heroCards[response.arrayNumber].diceColor)
+      .setAuthor(Client.heroCards[response.arrayNumber].hero)
+      .setTitle(`${Client.heroCards[response.arrayNumber].titleB}`)
+      .setDescription(`${Client.heroCards[response.arrayNumber].cardTypeB} \n\u200b`)
+      .addFields({
+        name:'Cost:',
+        value: `**${Client.heroCards[response.arrayNumber].costB}** <:cp_icon:876984072654684200>`,
+        inline: true
+      }, {
+        name:'Location:',
+        value: `${Client.heroCards[response.arrayNumber].locationB} \n\u200b`,
+        inline: true
+      }, {
+        name:'Activation Requirement:',
+        value: `${Client.heroCards[response.arrayNumber].reqB} \n\u200b`
+      }, {
+        name:'Ability Description:',
+        value: `${Client.heroCards[response.arrayNumber].textB}`
+      })
+      .setImage(`attachment://${Client.heroCards[response.arrayNumber].cardIdB}.jpg`)
+      .setThumbnail(`attachment://${Client.heroCards[response.arrayNumber].thumbnailB}`)
+    await interaction.followUp({
+      embeds: [embed2],
+      files: [cardImage2, cardThumbnail2]
+    });
+  } catch (err) {
+    console.log(err);
+  }
+  try {
+    const cardImage3 = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].cardIdC}.jpg`);
+    const cardThumbnail3 = new MessageAttachment(`./images/${Client.heroCards[response.arrayNumber].thumbnailC}`);
+    const embed3 = new MessageEmbed()
+      .setColor(Client.heroCards[response.arrayNumber].diceColor)
+      .setAuthor(Client.heroCards[response.arrayNumber].hero)
+      .setTitle(`${Client.heroCards[response.arrayNumber].titleC}`)
+      .setDescription(`${Client.heroCards[response.arrayNumber].cardTypeC} \n\u200b`)
+      .addFields({
+        name:'Cost:',
+        value: `**${Client.heroCards[response.arrayNumber].costC}** <:cp_icon:876984072654684200>`,
+        inline: true
+      }, {
+        name:'Location:',
+        value: `${Client.heroCards[response.arrayNumber].locationC} \n\u200b`,
+        inline: true
+      }, {
+        name:'Activation Requirement:',
+        value: `${Client.heroCards[response.arrayNumber].reqC} \n\u200b`
+      }, {
+        name:'Ability Description:',
+        value: `${Client.heroCards[response.arrayNumber].textC}`
+      })
+      .setImage(`attachment://${Client.heroCards[response.arrayNumber].cardIdC}.jpg`)
+      .setThumbnail(`attachment://${Client.heroCards[response.arrayNumber].thumbnailC}`)
+    await interaction.followUp({
+      embeds: [embed3],
+      files: [cardImage3, cardThumbnail3]
+    });
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 async function cardEmbed12345(client, interaction, args) {
-  console.log("12345")
-  const response = JSON.parse(args)
-  await interaction.followUp(`card = ${response.cardId} embedType = ${response.embedType}`);
 }
 
-// async function embedCreate(card, embedType) {
-//         var arrayLength = godArray.length;
-//         for (var i = 0; i < arrayLength; i++) {
-//           if (godArray[i] == lowerCase(args[0])) {
-//             var godSearched = godArray.indexOf(lowerCase(args[0]));
-//             if (bot.godData[godSearched].update == "Updated") {
-//               const embed = new Discord.MessageEmbed()
-//                 .attachFiles([
-//                   "../ErisBot/images/" +
-//                     bot.godData[godSearched].imageName +
-//                     ".jpg",
-//                 ])
-//                 .attachFiles([
-//                   "../ErisBot/images/" +
-//                     bot.godData[godSearched].imageName +
-//                     "_card.jpg",
-//                 ])
-//                 .setColor("0x" + bot.godData[godSearched].borderColor)
-//                 .addField(
-//                   bot.godData[godSearched].name,
-//                   bot.godData[godSearched].title + "\n\u200b"
-//                 )
-//                 .addField(
-//                   "Ability(updated):",
-//                   bot.godData[godSearched].updatedAbilityFormatted + "\n\u200b"
-//                 )
-//                 .addField(
-//                   "Ability(original):",
-//                   bot.godData[godSearched].originalAbilityFormatted + "\n\u200b"
-//                 )
-//                 .addFields(
-//                   { name:"Character Category:", value: bot.godData[godSearched].group, inline: true },
-//                   { name:"App Availability:", value: bot.godData[godSearched].inAppPurchase, inline: true },
-//                   { name: '\u200B', value: '\u200B' },
-//                   { name:"Banned Opponents:", value: bot.godData[godSearched].banned, inline: true },
-//                   { name:"Compatible with:", value:  bot.godData[godSearched].compatability, inline: true },
-//                 )
-//                 .setImage("attachment://" + bot.godData[godSearched].imageName + "_card.jpg")
-//                 .setThumbnail(
-//                   "attachment://" + bot.godData[godSearched].imageName + ".jpg"
-//                 );
-//               message.channel.send(embed).catch(console.error);
-//               break;
-//                 }
-//             }
-//         }
-//     };
+async function cardEmbed12346(client, interaction, args) {
+}
+
+async function cardEmbed13567(client, interaction, args) {
+}
+
+async function cardEmbed123467(client, interaction, args) {
+}
 
 module.exports = {
  embedCreate

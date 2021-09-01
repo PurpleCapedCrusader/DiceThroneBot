@@ -13,67 +13,67 @@ module.exports = {
         choices: [
           {
             name: "ADRENALINE SURGE!",
-            value: JSON.stringify({'cardId': 'barb33', 'embedType': 1, 'arrayNumber': 38})
+            value: JSON.stringify({'cardId': 'barb33', 'embedType': 2, 'arrayNumber': 38})
           },
           {
             name: "CONCUSS!",
-            value: JSON.stringify({'cardId': 'barb29', 'embedType': 1, 'arrayNumber': 39})
+            value: JSON.stringify({'cardId': 'barb29', 'embedType': 2, 'arrayNumber': 39})
           },
           {
             name: "CRIT BASH",
-            value: JSON.stringify({'cardId': 'barb_crit_bash', 'embedType': 123, 'arrayNumber': 40})
+            value: JSON.stringify({'cardId': 'barb_crit_bash', 'embedType': 12345, 'arrayNumber': 40})
           },
           {
             name: "CRIT SMASH",
-            value: JSON.stringify({'cardId': 'barb_crit_smash', 'embedType': 23, 'arrayNumber': 41})
+            value: JSON.stringify({'cardId': 'barb_crit_smash', 'embedType': 12345, 'arrayNumber': 41})
           },
           {
             name: "FEELIN' GOOD!",
-            value: JSON.stringify({'cardId': 'barb32', 'embedType': 1, 'arrayNumber': 42})
+            value: JSON.stringify({'cardId': 'barb32', 'embedType': 2, 'arrayNumber': 42})
           },
           {
             name: "FORTITUDE",
-            value: JSON.stringify({'cardId': 'barb_fortitude', 'embedType': 12, 'arrayNumber': 43})
+            value: JSON.stringify({'cardId': 'barb_fortitude', 'embedType': 134, 'arrayNumber': 43})
           },
           {
             name: "GET SOME!",
-            value: JSON.stringify({'cardId': 'barb31', 'embedType': 1, 'arrayNumber': 44})
+            value: JSON.stringify({'cardId': 'barb31', 'embedType': 12, 'arrayNumber': 44})
           },
           {
             name: "HEAD BASH!",
-            value: JSON.stringify({'cardId': 'barb30', 'embedType': 1, 'arrayNumber': 45})
+            value: JSON.stringify({'cardId': 'barb30', 'embedType': 2, 'arrayNumber': 45})
           },
           {
             name: "MIGHTY BLOW",
-            value: JSON.stringify({'cardId': 'barb_mighty_blow', 'embedType': 12, 'arrayNumber': 46})
+            value: JSON.stringify({'cardId': 'barb_mighty_blow', 'embedType': 1234, 'arrayNumber': 46})
           },
           {
             name: "OVERPOWER",
-            value: JSON.stringify({'cardId': 'barb_overpower', 'embedType': 123, 'arrayNumber': 47})
+            value: JSON.stringify({'cardId': 'barb_overpower', 'embedType': 12345, 'arrayNumber': 47})
           },
           {
             name: "RAGE!",
-            value: JSON.stringify({'cardId': 'barb_ult', 'embedType': 1, 'arrayNumber': 48})
+            value: JSON.stringify({'cardId': 'barb_ult', 'embedType': 12, 'arrayNumber': 48})
           },
           {
             name: "RECKLESS",
-            value: JSON.stringify({'cardId': 'barb_reckless', 'embedType': 12, 'arrayNumber': 49})
+            value: JSON.stringify({'cardId': 'barb_reckless', 'embedType': 1234, 'arrayNumber': 49})
           },
           {
             name: "SMACK",
-            value: JSON.stringify({'cardId': 'barb_smack', 'embedType': 124, 'arrayNumber': 50})
+            value: JSON.stringify({'cardId': 'barb_smack', 'embedType': 1346, 'arrayNumber': 50})
           },
           {
             name: "STURDY BLOW",
-            value: JSON.stringify({'cardId': 'barb_sturdy_blow', 'embedType': 124, 'arrayNumber': 51})
+            value: JSON.stringify({'cardId': 'barb_sturdy_blow', 'embedType': 12346, 'arrayNumber': 51})
           },
           {
             name: "THICK SKIN",
-            value: JSON.stringify({'cardId': 'barb_thick_skin', 'embedType': 12, 'arrayNumber': 52})
+            value: JSON.stringify({'cardId': 'barb_thick_skin', 'embedType': 1234, 'arrayNumber': 52})
           },
           {
             name: "WAR CRY",
-            value: JSON.stringify({'cardId': 'barb_war_cry', 'embedType': 23, 'arrayNumber': 53})
+            value: JSON.stringify({'cardId': 'barb_war_cry', 'embedType': 12345, 'arrayNumber': 53})
           }
         ]
     }],

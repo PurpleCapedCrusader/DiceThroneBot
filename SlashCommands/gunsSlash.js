@@ -13,75 +13,75 @@ module.exports = {
         choices: [
           {
             name: "BOUNTY HUNTER",
-            value: JSON.stringify({'card': 'guns_bounty_hunter', 'embed_type': 12, 'array_number': 88})
+            value: JSON.stringify({'cardId': 'guns_bounty_hunter', 'embedType': 1234, 'arrayNumber': 87})
           },
           {
             name: "DEADEYE",
-            value: JSON.stringify({'card': 'guns_deadeye', 'embed_type': 123, 'array_number': 89})
+            value: JSON.stringify({'cardId': 'guns_deadeye', 'embedType': 12345, 'arrayNumber': 88})
           },
           {
             name: "DUEL",
-            value: JSON.stringify({'card': 'guns_duel', 'embed_type': 12, 'array_number': 90})
+            value: JSON.stringify({'cardId': 'guns_duel', 'embedType': 1234, 'arrayNumber': 89})
           },
           {
             name: "EAT LEAD!",
-            value: JSON.stringify({'card': 'guns32', 'embed_type': 1, 'array_number': 91})
+            value: JSON.stringify({'cardId': 'guns32', 'embedType': 12, 'arrayNumber': 90})
           },
           {
             name: "ENFORCER",
-            value: JSON.stringify({'card': 'guns_enforcer', 'embed_type': 23, 'array_number': 92})
+            value: JSON.stringify({'cardId': 'guns_enforcer', 'embedType': 12345, 'arrayNumber': 91})
           },
           {
             name: "FAN THE HAMMER",
-            value: JSON.stringify({'card': 'guns_fan_the_hammer', 'embed_type': 123, 'array_number': 93})
+            value: JSON.stringify({'cardId': 'guns_fan_the_hammer', 'embedType': 12345, 'arrayNumber': 92})
           },
           {
             name: "FILL'EM WITH LEAD!",
-            value: JSON.stringify({'card': 'guns_ult', 'embed_type': 1, 'array_number': 94})
+            value: JSON.stringify({'cardId': 'guns_ult', 'embedType': 12, 'arrayNumber': 93})
           },
           {
             name: "MARK THE TARGET",
-            value: JSON.stringify({'card': 'guns_mark_the_target', 'embed_type': 23, 'array_number': 95})
+            value: JSON.stringify({'cardId': 'guns_mark_the_target', 'embedType': 12345, 'arrayNumber': 94})
           },
           {
             name: "PISTOL WHIP",
-            value: JSON.stringify({'card': 'guns_pistol_whip', 'embed_type': 23, 'array_number': 96})
+            value: JSON.stringify({'cardId': 'guns_pistol_whip', 'embedType': 12345, 'arrayNumber': 95})
           },
           {
             name: "QUICK DRAW",
-            value: JSON.stringify({'card': 'guns_quick_draw', 'embed_type': 12, 'array_number': 97})
+            value: JSON.stringify({'cardId': 'guns_quick_draw', 'embedType': 1234, 'arrayNumber': 96})
           },
           {
             name: "REVOLVER",
-            value: JSON.stringify({'card': 'guns_revolver', 'embed_type': 12, 'array_number': 98})
+            value: JSON.stringify({'cardId': 'guns_revolver', 'embedType': 134, 'arrayNumber': 97})
           },
           {
             name: "ROULETTE!",
-            value: JSON.stringify({'card': 'guns30', 'embed_type': 1, 'array_number': 99})
+            value: JSON.stringify({'cardId': 'guns30', 'embedType': 2, 'arrayNumber': 98})
           },
           {
             name: "RUN AND GUN!",
-            value: JSON.stringify({'card': 'guns33', 'embed_type': 1, 'array_number': 100})
+            value: JSON.stringify({'cardId': 'guns33', 'embedType': 2, 'arrayNumber': 99})
           },
           {
             name: "SHOWDOWN",
-            value: JSON.stringify({'card': 'guns_showdown', 'embed_type': 124, 'array_number': 101})
+            value: JSON.stringify({'cardId': 'guns_showdown', 'embedType': 12346, 'arrayNumber': 100})
           },
           {
             name: "SPIN THE CHAMBER!",
-            value: JSON.stringify({'card': 'guns29', 'embed_type': 1, 'array_number': 102})
+            value: JSON.stringify({'cardId': 'guns29', 'embedType': 2, 'arrayNumber': 101})
           },
           {
             name: "TAKE COVER",
-            value: JSON.stringify({'card': 'guns_take_cover', 'embed_type': 123, 'array_number': 103})
+            value: JSON.stringify({'cardId': 'guns_take_cover', 'embedType': 12345, 'arrayNumber': 102})
           },
           {
             name: "WANTED!",
-            value: JSON.stringify({'card': 'guns28', 'embed_type': 1, 'array_number': 104})
+            value: JSON.stringify({'cardId': 'guns28', 'embedType': 2, 'arrayNumber': 103})
           },
           {
             name: "WILD WEST!",
-            value: JSON.stringify({'card': 'guns31', 'embed_type': 1, 'array_number': 105})
+            value: JSON.stringify({'cardId': 'guns31', 'embedType': 12, 'arrayNumber': 104})
           }
         ]
     }],

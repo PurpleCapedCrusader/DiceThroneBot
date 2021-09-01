@@ -13,87 +13,87 @@ module.exports = {
         choices: [
           {
             name: "BLOOD BOIL!",
-            value: JSON.stringify({'card': 'vamp31', 'embed_type': 1, 'array_number': 310})
+            value: JSON.stringify({'cardId': 'vamp31', 'embedType': 12, 'arrayNumber': 309})
           },
           {
             name: "BLOOD FLOW!",
-            value: JSON.stringify({'card': 'vamp33', 'embed_type': 1, 'array_number': 311})
+            value: JSON.stringify({'cardId': 'vamp33', 'embedType': 2, 'arrayNumber': 310})
           },
           {
             name: "BLOOD LETTING!",
-            value: JSON.stringify({'card': 'vamp29', 'embed_type': 1, 'array_number': 312})
+            value: JSON.stringify({'cardId': 'vamp29', 'embedType': 2, 'arrayNumber': 311})
           },
           {
             name: "BLOOD MAGIC",
-            value: JSON.stringify({'card': 'vamp_blood_magic', 'embed_type': 123, 'array_number': 313})
+            value: JSON.stringify({'cardId': 'vamp_blood_magic', 'embedType': 12345, 'arrayNumber': 312})
           },
           {
             name: "BLOOD THIRST",
-            value: JSON.stringify({'card': 'vamp_blood_thirst', 'embed_type': 123, 'array_number': 314})
+            value: JSON.stringify({'cardId': 'vamp_blood_thirst', 'embedType': 12345, 'arrayNumber': 313})
           },
           {
             name: "BLOOD TIDE!",
-            value: JSON.stringify({'card': 'vamp34', 'embed_type': 1, 'array_number': 315})
+            value: JSON.stringify({'cardId': 'vamp34', 'embedType': 2, 'arrayNumber': 314})
           },
           {
             name: "CONSUME BLOOD!",
-            value: JSON.stringify({'card': 'vamp28', 'embed_type': 1, 'array_number': 316})
+            value: JSON.stringify({'cardId': 'vamp28', 'embedType': 2, 'arrayNumber': 315})
           },
           {
             name: "DARK OMEN!",
-            value: JSON.stringify({'card': 'vamp30', 'embed_type': 1, 'array_number': 317})
+            value: JSON.stringify({'cardId': 'vamp30', 'embedType': 2, 'arrayNumber': 316})
           },
           {
             name: "DRAW BLOOD",
-            value: JSON.stringify({'card': 'vamp_draw_blood', 'embed_type': 23, 'array_number': 318})
+            value: JSON.stringify({'cardId': 'vamp_draw_blood', 'embedType': 12345, 'arrayNumber': 317})
           },
           {
             name: "EXSANGUINATE!",
-            value: JSON.stringify({'card': 'vamp_ult', 'embed_type': 1, 'array_number': 319})
+            value: JSON.stringify({'cardId': 'vamp_ult', 'embedType': 12, 'arrayNumber': 318})
           },
           {
             name: "GASH",
-            value: JSON.stringify({'card': 'vamp_gash', 'embed_type': 23, 'array_number': 320})
+            value: JSON.stringify({'cardId': 'vamp_gash', 'embedType': 12345, 'arrayNumber': 319})
           },
           {
             name: "GLAMOUR",
-            value: JSON.stringify({'card': 'vamp_glamour', 'embed_type': 123, 'array_number': 321})
+            value: JSON.stringify({'cardId': 'vamp_glamour', 'embedType': 12345, 'arrayNumber': 320})
           },
           {
             name: "GOUGE",
-            value: JSON.stringify({'card': 'vamp_gouge', 'embed_type': 124, 'array_number': 322})
+            value: JSON.stringify({'cardId': 'vamp_gouge', 'embedType': 12346, 'arrayNumber': 321})
           },
           {
             name: "HEMORRHAGE",
-            value: JSON.stringify({'card': 'vamp_hemorrage', 'embed_type': 23, 'array_number': 323})
+            value: JSON.stringify({'cardId': 'vamp_hemorrage', 'embedType': 12345, 'arrayNumber': 322})
           },
           {
             name: "IMMORTAL FLESH",
-            value: JSON.stringify({'card': 'vamp_immortal_flesh', 'embed_type': 12, 'array_number': 324})
+            value: JSON.stringify({'cardId': 'vamp_immortal_flesh', 'embedType': 1234, 'arrayNumber': 323})
           },
           {
             name: "INFLUENCE",
-            value: JSON.stringify({'card': 'vamp_influence', 'embed_type': 23, 'array_number': 325})
+            value: JSON.stringify({'cardId': 'vamp_influence', 'embedType': 12345, 'arrayNumber': 324})
           },
           {
             name: "LIMB FROM LIMB!",
-            value: JSON.stringify({'card': 'vamp32', 'embed_type': 1, 'array_number': 326})
+            value: JSON.stringify({'cardId': 'vamp32', 'embedType': 12, 'arrayNumber': 325})
           },
           {
             name: "POSSESS",
-            value: JSON.stringify({'card': 'vamp_possess', 'embed_type': 123, 'array_number': 327})
+            value: JSON.stringify({'cardId': 'vamp_possess', 'embedType': 12345, 'arrayNumber': 326})
           },
           {
             name: "PRESENCE",
-            value: JSON.stringify({'card': 'vamp_presence', 'embed_type': 23, 'array_number': 328})
+            value: JSON.stringify({'cardId': 'vamp_presence', 'embedType': 12345, 'arrayNumber': 327})
           },
           {
             name: "REND",
-            value: JSON.stringify({'card': 'vamp_rend', 'embed_type': 12, 'array_number': 329})
+            value: JSON.stringify({'cardId': 'vamp_rend', 'embedType': 1234, 'arrayNumber': 328})
           },
           {
             name: "SANGUIMANCY",
-            value: JSON.stringify({'card': 'vamp_sanguimancy', 'embed_type': 123, 'array_number': 330})
+            value: JSON.stringify({'cardId': 'vamp_sanguimancy', 'embedType': 12345, 'arrayNumber': 329})
           }
         ]
     }],
