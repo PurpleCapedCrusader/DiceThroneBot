@@ -9,5 +9,6 @@ eris.js
 basic_cards.json
 *.txt
 heroCards.json
-.DS_Store
 /node_modules/
+node_modules/.DS_Store
+.DS_Store

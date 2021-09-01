@@ -13,67 +13,67 @@ module.exports = {
         choices: [
           {
             name: "PILLAGE!",
-            value: JSON.stringify({'card': 'curs26', 'embed_type': 1, 'array_number': 72})
+            value: JSON.stringify({'cardId': 'curs26', 'embedType': 2, 'arrayNumber': 71})
           },
           {
             name: "PIRATE'S LIFE!",
-            value: JSON.stringify({'card': 'curs22', 'embed_type': 1, 'array_number': 73})
+            value: JSON.stringify({'cardId': 'curs22', 'embedType': 2, 'arrayNumber': 72})
           },
           {
             name: "PIRATE'S TOUCH!",
-            value: JSON.stringify({'card': 'curs_pirates_touch', 'embed_type': 1, 'array_number': 74})
+            value: JSON.stringify({'cardId': 'curs_ult_human', 'embedType': 12, 'arrayNumber': 73})
           },
           {
             name: "RANSOM!",
-            value: JSON.stringify({'card': 'curs29', 'embed_type': 1, 'array_number': 75})
+            value: JSON.stringify({'cardId': 'curs29', 'embedType': 2, 'arrayNumber': 74})
           },
           {
             name: "RUN YA THROUGH!",
-            value: JSON.stringify({'card': 'curs30', 'embed_type': 1, 'array_number': 76})
+            value: JSON.stringify({'cardId': 'curs30', 'embedType': 12, 'arrayNumber': 75})
           },
           {
             name: "SCURVY!",
-            value: JSON.stringify({'card': 'curs27', 'embed_type': 1, 'array_number': 77})
+            value: JSON.stringify({'cardId': 'curs27', 'embedType': 2, 'arrayNumber': 76})
           },
           {
             name: "SHARK BAIT!",
-            value: JSON.stringify({'card': 'curs31', 'embed_type': 1, 'array_number': 78})
+            value: JSON.stringify({'cardId': 'curs31', 'embedType': 12, 'arrayNumber': 77})
           },
           {
             name: "SHIVER ME TIMBERS",
-            value: JSON.stringify({'card': 'curs_shiver_me_timbers', 'embed_type': 1, 'array_number': 79})
+            value: JSON.stringify({'cardId': 'curs_shiver_me_timbers', 'embedType': 12, 'arrayNumber': 78})
           },
           {
             name: "SOUL CUTLASS",
-            value: JSON.stringify({'card': 'curs_soul_cutlass', 'embed_type': 1, 'array_number': 80})
+            value: JSON.stringify({'cardId': 'curs_soul_cutlass', 'embedType': 12, 'arrayNumber': 79})
           },
           {
             name: "SWASHBUCKLE!",
-            value: JSON.stringify({'card': 'curs28', 'embed_type': 1, 'array_number': 81})
+            value: JSON.stringify({'cardId': 'curs28', 'embedType': 2, 'arrayNumber': 80})
           },
           {
-            name: "THAR SHE BLOWS",
-            value: JSON.stringify({'card': 'curs_thar_she_blows', 'embed_type': 1, 'array_number': 82})
+            name: "THAR SHE BLOWS!",
+            value: JSON.stringify({'cardId': 'curs_thar_she_blows', 'embedType': 12, 'arrayNumber': 81})
           },
           {
             name: "THE SHIVERING",
-            value: JSON.stringify({'card': 'curs_the_shivering', 'embed_type': 1, 'array_number': 83})
+            value: JSON.stringify({'cardId': 'curs_the_shivering', 'embedType': 12, 'arrayNumber': 82})
           },
           {
             name: "TRUCE!",
-            value: JSON.stringify({'card': 'curs25', 'embed_type': 1, 'array_number': 84})
+            value: JSON.stringify({'cardId': 'curs25', 'embedType': 2, 'arrayNumber': 83})
           },
           {
             name: "WALK THE PLANK",
-            value: JSON.stringify({'card': 'curs_walk_the_plank', 'embed_type': 1, 'array_number': 85})
+            value: JSON.stringify({'cardId': 'curs_walk_the_plank', 'embedType': 12, 'arrayNumber': 84})
           },
           {
             name: "X MARKS THE SPOT",
-            value: JSON.stringify({'card': 'curs_x_marks_the_spot', 'embed_type': 1, 'array_number': 86})
+            value: JSON.stringify({'cardId': 'curs_x_marks_the_spot', 'embedType': 12, 'arrayNumber': 85})
           },
           {
             name: "YO HO!",
-            value: JSON.stringify({'card': 'curs19', 'embed_type': 1, 'array_number': 87})
+            value: JSON.stringify({'cardId': 'curs19', 'embedType': 2, 'arrayNumber': 86})
           }
         ]
     }],

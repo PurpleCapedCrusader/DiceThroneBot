@@ -13,75 +13,75 @@ module.exports = {
         choices: [
           {
             name: "BLINDING SHOT",
-            value: JSON.stringify({'card': 'moon_blinding_shot', 'embed_type': 123, 'array_number': 142})
+            value: JSON.stringify({'cardId': 'moon_blinding_shot', 'embedType': 12345, 'arrayNumber': 141})
           },
           {
             name: "COVERED SHOT",
-            value: JSON.stringify({'card': 'moon_covered_shot', 'embed_type': 123, 'array_number': 143})
+            value: JSON.stringify({'cardId': 'moon_covered_shot', 'embedType': 12345, 'arrayNumber': 142})
           },
           {
             name: "DEMISING SHOT",
-            value: JSON.stringify({'card': 'moon_demising_shot', 'embed_type': 123, 'array_number': 144})
+            value: JSON.stringify({'cardId': 'moon_demising_shot', 'embedType': 12345, 'arrayNumber': 143})
           },
           {
             name: "ECLIPSE",
-            value: JSON.stringify({'card': 'moon_eclipse', 'embed_type': 123, 'array_number': 145})
+            value: JSON.stringify({'cardId': 'moon_eclipse', 'embedType': 12345, 'arrayNumber': 144})
           },
           {
             name: "ENTANGLING SHOT",
-            value: JSON.stringify({'card': 'moon_entangling_shot', 'embed_type': 12, 'array_number': 146})
+            value: JSON.stringify({'cardId': 'moon_entangling_shot', 'embedType': 1234, 'arrayNumber': 145})
           },
           {
             name: "EVADE!",
-            value: JSON.stringify({'card': 'moon32', 'embed_type': 1, 'array_number': 147})
+            value: JSON.stringify({'cardId': 'moon32', 'embedType': 2, 'arrayNumber': 146})
           },
           {
             name: "EVASIVE ACTION",
-            value: JSON.stringify({'card': 'moon_evasive_action', 'embed_type': 23, 'array_number': 148})
+            value: JSON.stringify({'cardId': 'moon_evasive_action', 'embedType': 12345, 'arrayNumber': 147})
           },
           {
             name: "EXPLODING ARROW",
-            value: JSON.stringify({'card': 'moon_exploding_arrow', 'embed_type': 124, 'array_number': 149})
+            value: JSON.stringify({'cardId': 'moon_exploding_arrow', 'embedType': 12346, 'arrayNumber': 148})
           },
           {
             name: "FOCUS",
-            value: JSON.stringify({'card': 'moon_focus', 'embed_type': 23, 'array_number': 150})
+            value: JSON.stringify({'cardId': 'moon_focus', 'embedType': 12345, 'arrayNumber': 149})
           },
           {
             name: "LONGBOW",
-            value: JSON.stringify({'card': 'moon_longbow', 'embed_type': 124, 'array_number': 151})
+            value: JSON.stringify({'cardId': 'moon_longbow', 'embedType': 1346, 'arrayNumber': 150})
           },
           {
             name: "LUNAR BLESSING",
-            value: JSON.stringify({'card': 'moon_lunar_blessing', 'embed_type': 23, 'array_number': 152})
+            value: JSON.stringify({'cardId': 'moon_lunar_blessing', 'embedType': 12345, 'arrayNumber': 151})
           },
           {
             name: "LUNAR ECLIPSE!",
-            value: JSON.stringify({'card': 'moon_ult', 'embed_type': 1, 'array_number': 153})
+            value: JSON.stringify({'cardId': 'moon_ult', 'embedType': 12, 'arrayNumber': 152})
           },
           {
             name: "LUNAR UMBRA!",
-            value: JSON.stringify({'card': 'moon33', 'embed_type': 1, 'array_number': 154})
+            value: JSON.stringify({'cardId': 'moon33', 'embedType': 2, 'arrayNumber': 153})
           },
           {
             name: "MISSED ME",
-            value: JSON.stringify({'card': 'moon_missed_me', 'embed_type': 12, 'array_number': 155})
+            value: JSON.stringify({'cardId': 'moon_missed_me', 'embedType': 1234, 'arrayNumber': 154})
           },
           {
             name: "MOON MAGIC!",
-            value: JSON.stringify({'card': 'moon29', 'embed_type': 1, 'array_number': 156})
+            value: JSON.stringify({'cardId': 'moon29', 'embedType': 2, 'arrayNumber': 155})
           },
           {
             name: "MOON SHADOW",
-            value: JSON.stringify({'card': 'moon_moon_shadow', 'embed_type': 23, 'array_number': 157})
+            value: JSON.stringify({'cardId': 'moon_moon_shadow', 'embedType': 12345, 'arrayNumber': 156})
           },
           {
             name: "TAKE THAT!",
-            value: JSON.stringify({'card': 'moon30', 'embed_type': 1, 'array_number': 158})
+            value: JSON.stringify({'cardId': 'moon30', 'embedType': 12, 'arrayNumber': 157})
           },
           {
             name: "VOLLEY!",
-            value: JSON.stringify({'card': 'moon31', 'embed_type': 1, 'array_number': 159})
+            value: JSON.stringify({'cardId': 'moon31', 'embedType': 12, 'arrayNumber': 158})
           }
         ]
     }],

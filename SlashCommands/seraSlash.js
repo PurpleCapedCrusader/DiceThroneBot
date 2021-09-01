@@ -13,79 +13,79 @@ module.exports = {
         choices: [
           {
             name: "ANGELIC COMBAT!",
-            value: JSON.stringify({'card': 'sera31', 'embed_type': 1, 'array_number': 233})
+            value: JSON.stringify({'cardId': 'sera31', 'embedType': 12, 'arrayNumber': 232})
           },
           {
             name: "ANGELIC MANTLE",
-            value: JSON.stringify({'card': 'sera_angelic_mantle', 'embed_type': 124, 'array_number': 234})
+            value: JSON.stringify({'cardId': 'sera_angelic_mantle', 'embedType': 12346, 'arrayNumber': 233})
           },
           {
             name: "ARCHANGEL'S WILL",
-            value: JSON.stringify({'card': 'sera_archangels_will', 'embed_type': 123, 'array_number': 235})
+            value: JSON.stringify({'cardId': 'sera_archangels_will', 'embedType': 12345, 'arrayNumber': 234})
           },
           {
             name: "CHERUBIM",
-            value: JSON.stringify({'card': 'sera_cherubim', 'embed_type': 2345, 'array_number': 236})
+            value: JSON.stringify({'cardId': 'sera_cherubim', 'embedType': 13567, 'arrayNumber': 235})
           },
           {
             name: "DIVINE INTERVENTION!",
-            value: JSON.stringify({'card': 'sera30', 'embed_type': 1, 'array_number': 237})
+            value: JSON.stringify({'cardId': 'sera30', 'embedType': 2, 'arrayNumber': 236})
           },
           {
             name: "DIVINE VISAGE",
-            value: JSON.stringify({'card': 'sera_divine_visage', 'embed_type': 23, 'array_number': 238})
+            value: JSON.stringify({'cardId': 'sera_divine_visage', 'embedType': 12345, 'arrayNumber': 237})
           },
           {
             name: "GLORIOUS",
-            value: JSON.stringify({'card': 'sera_glorious', 'embed_type': 123, 'array_number': 239})
+            value: JSON.stringify({'cardId': 'sera_glorious', 'embedType': 12345, 'arrayNumber': 238})
           },
           {
             name: "HEAVEN'S BLESSING",
-            value: JSON.stringify({'card': 'sera_heavens_blessing', 'embed_type': 23, 'array_number': 240})
+            value: JSON.stringify({'cardId': 'sera_heavens_blessing', 'embedType': 12345, 'arrayNumber': 239})
           },
           {
             name: "HIGHEST POWER",
-            value: JSON.stringify({'card': 'sera_highest_power', 'embed_type': 123, 'array_number': 241})
+            value: JSON.stringify({'cardId': 'sera_highest_power', 'embedType': 12345, 'arrayNumber': 240})
           },
           {
             name: "HOLIER THAN THOU!",
-            value: JSON.stringify({'card': 'sera33', 'embed_type': 1, 'array_number': 242})
+            value: JSON.stringify({'cardId': 'sera33', 'embedType': 2, 'arrayNumber': 241})
           },
           {
             name: "HOLY BLADE",
-            value: JSON.stringify({'card': 'sera_holy_blade', 'embed_type': 12345, 'array_number': 243})
+            value: JSON.stringify({'cardId': 'sera_holy_blade', 'embedType': 13567, 'arrayNumber': 242})
           },
           {
             name: "HOLY COMMAND",
-            value: JSON.stringify({'card': 'sera_command', 'embed_type': 23, 'array_number': 244})
+            value: JSON.stringify({'cardId': 'sera_command', 'embedType': 12345, 'arrayNumber': 243})
           },
           {
             name: "HOLY SMITE",
-            value: JSON.stringify({'card': 'sera_holy_smite', 'embed_type': 123, 'array_number': 245})
+            value: JSON.stringify({'cardId': 'sera_holy_smite', 'embedType': 12345, 'arrayNumber': 244})
           },
           {
             name: "PURIFY",
-            value: JSON.stringify({'card': 'sera_purify', 'embed_type': 12, 'array_number': 246})
+            value: JSON.stringify({'cardId': 'sera_purify', 'embedType': 1234, 'arrayNumber': 245})
           },
           {
             name: "SMOTE!",
-            value: JSON.stringify({'card': 'sera32', 'embed_type': 1, 'array_number': 247})
+            value: JSON.stringify({'cardId': 'sera32', 'embedType': 12, 'arrayNumber': 246})
           },
           {
             name: "SPLIT THE HEAVENS!",
-            value: JSON.stringify({'card': 'sera_ult', 'embed_type': 1, 'array_number': 248})
+            value: JSON.stringify({'cardId': 'sera_ult', 'embedType': 12, 'arrayNumber': 247})
           },
           {
             name: "TAKE FLIGHT",
-            value: JSON.stringify({'card': 'sera_take_flight', 'embed_type': 23, 'array_number': 249})
+            value: JSON.stringify({'cardId': 'sera_take_flight', 'embedType': 12345, 'arrayNumber': 248})
           },
           {
             name: "TO THE SKIES!",
-            value: JSON.stringify({'card': 'sera29', 'embed_type': 1, 'array_number': 250})
+            value: JSON.stringify({'cardId': 'sera29', 'embedType': 2, 'arrayNumber': 249})
           },
           {
             name: "TRIUMPHANT",
-            value: JSON.stringify({'card': 'sera_triumphant', 'embed_type': 12, 'array_number': 251})
+            value: JSON.stringify({'cardId': 'sera_triumphant', 'embedType': 1234, 'arrayNumber': 250})
           }
         ]
     }],

@@ -13,79 +13,79 @@ module.exports = {
       choices: [
         {
           name: "AMBUSH!",
-          value: JSON.stringify({'card': 'tact32', 'embed_type': 1, 'array_number': 270})
+          value: JSON.stringify({'cardId': 'tact32', 'embedType': 2, 'arrayNumber': 269})
         },
         {
           name: "BUNKER UP!",
-          value: JSON.stringify({'card': 'tact28', 'embed_type': 1, 'array_number': 271})
+          value: JSON.stringify({'cardId': 'tact28', 'embedType': 2, 'arrayNumber': 270})
         },
         {
           name: "CARPET BOMB",
-          value: JSON.stringify({'card': 'tact_carpet_bomb', 'embed_type': 123, 'array_number': 272})
+          value: JSON.stringify({'cardId': 'tact_carpet_bomb', 'embedType': 12345, 'arrayNumber': 271})
         },
         {
           name: "COUNTERMEASURES",
-          value: JSON.stringify({'card': 'tact_countermeasures', 'embed_type': 124, 'array_number': 273})
+          value: JSON.stringify({'cardId': 'tact_countermeasures', 'embedType': 12346, 'arrayNumber': 272})
         },
         {
           name: "DISENGAGE!",
-          value: JSON.stringify({'card': 'tact31', 'embed_type': 1, 'array_number': 274})
+          value: JSON.stringify({'cardId': 'tact31', 'embedType': 2, 'arrayNumber': 273})
         },
         {
           name: "EXPLOIT",
-          value: JSON.stringify({'card': 'tact_exploit', 'embed_type': 123, 'array_number': 275})
+          value: JSON.stringify({'cardId': 'tact_exploit', 'embedType': 12345, 'arrayNumber': 274})
         },
         {
           name: "FEIGNED RETREAT!",
-          value: JSON.stringify({'card': 'tact30', 'embed_type': 1, 'array_number': 276})
+          value: JSON.stringify({'cardId': 'tact30', 'embedType': 2, 'arrayNumber': 275})
         },
         {
           name: "FLANK",
-          value: JSON.stringify({'card': 'tact_flank', 'embed_type': 12, 'array_number': 277})
+          value: JSON.stringify({'cardId': 'tact_flank', 'embedType': 1234, 'arrayNumber': 276})
         },
         {
           name: "HIGHER GROUND!",
-          value: JSON.stringify({'card': 'tact_ult', 'embed_type': 1, 'array_number': 278})
+          value: JSON.stringify({'cardId': 'tact_ult', 'embedType': 12, 'arrayNumber': 277})
         },
         {
           name: "INDIRECT APPROACH",
-          value: JSON.stringify({'card': 'tact_indirect_approach', 'embed_type': 23, 'array_number': 279})
+          value: JSON.stringify({'cardId': 'tact_indirect_approach', 'embedType': 12345, 'arrayNumber': 278})
         },
         {
           name: "INTERDICTION",
-          value: JSON.stringify({'card': 'tact_interdiction', 'embed_type': 23, 'array_number': 280})
+          value: JSON.stringify({'cardId': 'tact_interdiction', 'embedType': 12345, 'arrayNumber': 279})
         },
         {
           name: "MANEUVER",
-          value: JSON.stringify({'card': 'tact_maneuver', 'embed_type': 123, 'array_number': 281})
+          value: JSON.stringify({'cardId': 'tact_maneuver', 'embedType': 12345, 'arrayNumber': 280})
         },
         {
           name: "PROFITEER",
-          value: JSON.stringify({'card': 'tact_profiteer', 'embed_type': 12, 'array_number': 282})
+          value: JSON.stringify({'cardId': 'tact_profiteer', 'embedType': 1234, 'arrayNumber': 281})
         },
         {
           name: "RECONNAISSANCE",
-          value: JSON.stringify({'card': 'tact_reconnaissance', 'embed_type': 23, 'array_number': 283})
+          value: JSON.stringify({'cardId': 'tact_reconnaissance', 'embedType': 12345, 'arrayNumber': 282})
         },
         {
           name: "SABER STRIKE",
-          value: JSON.stringify({'card': 'tact_saber_strike', 'embed_type': 12, 'array_number': 284})
+          value: JSON.stringify({'cardId': 'tact_saber_strike', 'embedType': 134, 'arrayNumber': 283})
         },
         {
           name: "STRATEGIC APPROACH",
-          value: JSON.stringify({'card': 'tact_strategic_approach', 'embed_type': 123, 'array_number': 285})
+          value: JSON.stringify({'cardId': 'tact_strategic_approach', 'embedType': 12345, 'arrayNumber': 284})
         },
         {
           name: "STRATEGIZE",
-          value: JSON.stringify({'card': 'tact_strategize', 'embed_type': 23, 'array_number': 286})
+          value: JSON.stringify({'cardId': 'tact_strategize', 'embedType': 12345, 'arrayNumber': 285})
         },
         {
           name: "UPPER HAND!",
-          value: JSON.stringify({'card': 'tact33', 'embed_type': 1, 'array_number': 287})
+          value: JSON.stringify({'cardId': 'tact33', 'embedType': 2, 'arrayNumber': 286})
         },
         {
           name: "WAR ROOM!",
-          value: JSON.stringify({'card': 'tact29', 'embed_type': 1, 'array_number': 288})
+          value: JSON.stringify({'cardId': 'tact29', 'embedType': 2, 'arrayNumber': 287})
         }
       ]
   }],

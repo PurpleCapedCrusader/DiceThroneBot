@@ -13,75 +13,75 @@ module.exports = {
         choices: [
           {
             name: "CARD TRICK!",
-            value: JSON.stringify({'card': 'shad32', 'embed_type': 1, 'array_number': 252})
+            value: JSON.stringify({'cardId': 'shad32', 'embedType': 2, 'arrayNumber': 251})
           },
           {
             name: "CARDUCOPIA",
-            value: JSON.stringify({'card': 'shad_carducopia', 'embed_type': 12, 'array_number': 253})
+            value: JSON.stringify({'cardId': 'shad_carducopia', 'embedType': 1234, 'arrayNumber': 252})
           },
           {
             name: "COUNTER STRIKE",
-            value: JSON.stringify({'card': 'shad_counter_strike', 'embed_type': 12, 'array_number': 254})
+            value: JSON.stringify({'cardId': 'shad_counter_strike', 'embedType': 1234, 'arrayNumber': 253})
           },
           {
             name: "DAGGER STRIKE",
-            value: JSON.stringify({'card': 'shad_dagger_strike', 'embed_type': 12, 'array_number': 255})
+            value: JSON.stringify({'cardId': 'shad_dagger_strike', 'embedType': 1234, 'arrayNumber': 254})
           },
           {
             name: "ENTER THE SHADOWS!",
-            value: JSON.stringify({'card': 'shad31', 'embed_type': 1, 'array_number': 256})
+            value: JSON.stringify({'cardId': 'shad31', 'embedType': 2, 'arrayNumber': 255})
           },
           {
             name: "INSIDIOUS STRIKE",
-            value: JSON.stringify({'card': 'shad_insidious_strike', 'embed_type': 123, 'array_number': 257})
+            value: JSON.stringify({'cardId': 'shad_insidious_strike', 'embedType': 12345, 'arrayNumber': 256})
           },
           {
             name: "PICKPOCKET",
-            value: JSON.stringify({'card': 'shad_pickpocket', 'embed_type': 12, 'array_number': 258})
+            value: JSON.stringify({'cardId': 'shad_pickpocket', 'embedType': 1234, 'arrayNumber': 257})
           },
           {
             name: "POISON WOUND!",
-            value: JSON.stringify({'card': 'shad28', 'embed_type': 1, 'array_number': 259})
+            value: JSON.stringify({'cardId': 'shad28', 'embedType': 2, 'arrayNumber': 258})
           },
           {
             name: "SHADOW COIN!",
-            value: JSON.stringify({'card': 'shad30', 'embed_type': 1, 'array_number': 260})
+            value: JSON.stringify({'cardId': 'shad30', 'embedType': 2, 'arrayNumber': 259})
           },
           {
             name: "SHADOW DANCE",
-            value: JSON.stringify({'card': 'shad_shadow_dance', 'embed_type': 12, 'array_number': 261})
+            value: JSON.stringify({'cardId': 'shad_shadow_dance', 'embedType': 1234, 'arrayNumber': 260})
           },
           {
             name: "SHADOW DEFENSE",
-            value: JSON.stringify({'card': 'shad_shadow_defense', 'embed_type': 12, 'array_number': 262})
+            value: JSON.stringify({'cardId': 'shad_shadow_defense', 'embedType': 1234, 'arrayNumber': 261})
           },
           {
             name: "SHADOW MELD!",
-            value: JSON.stringify({'card': 'shad33', 'embed_type': 1, 'array_number': 263})
+            value: JSON.stringify({'cardId': 'shad33', 'embedType': 2, 'arrayNumber': 262})
           },
           {
             name: "SHADOW SHANK!",
-            value: JSON.stringify({'card': 'shad_ult', 'embed_type': 1, 'array_number': 264})
+            value: JSON.stringify({'cardId': 'shad_ult', 'embedType': 12, 'arrayNumber': 263})
           },
           {
             name: "SHADOW STRIKE",
-            value: JSON.stringify({'card': 'shad_shadow_strike', 'embed_type': 23, 'array_number': 265})
+            value: JSON.stringify({'cardId': 'shad_shadow_strike', 'embedType': 12345, 'arrayNumber': 264})
           },
           {
             name: "SHANK ATTACK",
-            value: JSON.stringify({'card': 'shad_shank_attack', 'embed_type': 23, 'array_number': 266})
+            value: JSON.stringify({'cardId': 'shad_shank_attack', 'embedType': 12345, 'arrayNumber': 265})
           },
           {
             name: "SHIFTY STRIKE",
-            value: JSON.stringify({'card': 'shad_shifty_strike', 'embed_type': 123, 'array_number': 267})
+            value: JSON.stringify({'cardId': 'shad_shifty_strike', 'embedType': 12345, 'arrayNumber': 266})
           },
           {
             name: "SNEAKY!",
-            value: JSON.stringify({'card': 'shad27', 'embed_type': 1, 'array_number': 268})
+            value: JSON.stringify({'cardId': 'shad27', 'embedType': 2, 'arrayNumber': 267})
           },
           {
             name: "WILD SHADOW!",
-            value: JSON.stringify({'card': 'shad29', 'embed_type': 1, 'array_number': 269})
+            value: JSON.stringify({'cardId': 'shad29', 'embedType': 2, 'arrayNumber': 268})
           }
         ]
     }],

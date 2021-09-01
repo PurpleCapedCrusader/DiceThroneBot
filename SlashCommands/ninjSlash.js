@@ -13,83 +13,83 @@ module.exports = {
         choices: [
           {
             name: "ASSASSINATE!",
-            value: JSON.stringify({'card': 'ninj_ult', 'embed_type': 1, 'array_number': 160})
+            value: JSON.stringify({'cardId': 'ninj_ult', 'embedType': 12, 'arrayNumber': 159})
           },
           {
             name: "DEATH BLOSSOM",
-            value: JSON.stringify({'card': 'ninj_death_blossom', 'embed_type': 12, 'array_number': 161})
+            value: JSON.stringify({'cardId': 'ninj_death_blossom', 'embedType': 1234, 'arrayNumber': 160})
           },
           {
             name: "DOJO!",
-            value: JSON.stringify({'card': 'ninj33', 'embed_type': 1, 'array_number': 162})
+            value: JSON.stringify({'cardId': 'ninj33', 'embedType': 2, 'arrayNumber': 161})
           },
           {
             name: "ESCAPE!",
-            value: JSON.stringify({'card': 'ninj32', 'embed_type': 1, 'array_number': 163})
+            value: JSON.stringify({'cardId': 'ninj32', 'embedType': 2, 'arrayNumber': 162})
           },
           {
             name: "FAN OF KNIVES!",
-            value: JSON.stringify({'card': 'ninj29', 'embed_type': 1, 'array_number': 164})
+            value: JSON.stringify({'cardId': 'ninj29', 'embedType': 2, 'arrayNumber': 163})
           },
           {
             name: "JUGULATE",
-            value: JSON.stringify({'card': 'ninj_jugulate', 'embed_type': 23, 'array_number': 165})
+            value: JSON.stringify({'cardId': 'ninj_jugulate', 'embedType': 12345, 'arrayNumber': 164})
           },
           {
             name: "KUJI-KIRI",
-            value: JSON.stringify({'card': 'ninj_kuji_kiri', 'embed_type': 23, 'array_number': 166})
+            value: JSON.stringify({'cardId': 'ninj_kuji_kiri', 'embedType': 12345, 'arrayNumber': 165})
           },
           {
             name: "MISDIRECT",
-            value: JSON.stringify({'card': 'ninj_misdirect', 'embed_type': 23, 'array_number': 167})
+            value: JSON.stringify({'cardId': 'ninj_misdirect', 'embedType': 12345, 'arrayNumber': 166})
           },
           {
             name: "POISON BLADE",
-            value: JSON.stringify({'card': 'ninj_poison_blade', 'embed_type': 12, 'array_number': 168})
+            value: JSON.stringify({'cardId': 'ninj_poison_blade', 'embedType': 1234, 'arrayNumber': 167})
           },
           {
             name: "POISON DART!",
-            value: JSON.stringify({'card': 'ninj27', 'embed_type': 1, 'array_number': 169})
+            value: JSON.stringify({'cardId': 'ninj27', 'embedType': 2, 'arrayNumber': 168})
           },
           {
             name: "SHADE SHIFT",
-            value: JSON.stringify({'card': 'ninj_shade_shift', 'embed_type': 12, 'array_number': 170})
+            value: JSON.stringify({'cardId': 'ninj_shade_shift', 'embedType': 1234, 'arrayNumber': 169})
           },
           {
             name: "SHADEWALK",
-            value: JSON.stringify({'card': 'ninj_shadewalk', 'embed_type': 123, 'array_number': 171})
+            value: JSON.stringify({'cardId': 'ninj_shadewalk', 'embedType': 12345, 'arrayNumber': 170})
           },
           {
             name: "SHADOW FANG",
-            value: JSON.stringify({'card': 'ninj_shadow_fang', 'embed_type': 123, 'array_number': 172})
+            value: JSON.stringify({'cardId': 'ninj_shadow_fang', 'embedType': 12345, 'arrayNumber': 171})
           },
           {
             name: "SLASH",
-            value: JSON.stringify({'card': 'ninj_slash', 'embed_type': 12, 'array_number': 173})
+            value: JSON.stringify({'cardId': 'ninj_slash', 'embedType': 134, 'arrayNumber': 172})
           },
           {
             name: "SMOKE OFFERING!",
-            value: JSON.stringify({'card': 'ninj30', 'embed_type': 1, 'array_number': 174})
+            value: JSON.stringify({'cardId': 'ninj30', 'embedType': 2, 'arrayNumber': 173})
           },
           {
             name: "SMOKE SCREEN",
-            value: JSON.stringify({'card': 'ninj_smoke_screen', 'embed_type': 123, 'array_number': 175})
+            value: JSON.stringify({'cardId': 'ninj_smoke_screen', 'embedType': 12345, 'arrayNumber': 174})
           },
           {
             name: "THROWING STARS!",
-            value: JSON.stringify({'card': 'ninj28', 'embed_type': 1, 'array_number': 176})
+            value: JSON.stringify({'cardId': 'ninj28', 'embedType': 12, 'arrayNumber': 175})
           },
           {
             name: "TIP OF THE BLADE",
-            value: JSON.stringify({'card': 'ninj_tip_of_the_blade', 'embed_type': 23, 'array_number': 177})
+            value: JSON.stringify({'cardId': 'ninj_tip_of_the_blade', 'embedType': 12345, 'arrayNumber': 176})
           },
           {
             name: "TRAIN!",
-            value: JSON.stringify({'card': 'ninj31', 'embed_type': 1, 'array_number': 178})
+            value: JSON.stringify({'cardId': 'ninj31', 'embedType': 2, 'arrayNumber': 177})
           },
           {
             name: "WALK THE LINE",
-            value: JSON.stringify({'card': 'ninj_walk_the_line', 'embed_type': 123, 'array_number': 179})
+            value: JSON.stringify({'cardId': 'ninj_walk_the_line', 'embedType': 12345, 'arrayNumber': 178})
           }
         ]
     }],

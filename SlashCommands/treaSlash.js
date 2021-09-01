@@ -13,87 +13,87 @@ module.exports = {
         choices: [
           {
             name: "BITTERROOT",
-            value: JSON.stringify({'card': 'trea_bitterroot', 'embed_type': 23, 'array_number': 289})
+            value: JSON.stringify({'cardId': 'trea_bitterroot', 'embedType': 12345, 'arrayNumber': 288})
           },
           {
             name: "CALL OF THE WILD",
-            value: JSON.stringify({'card': 'trea_call_of_the_wild', 'embed_type': 123, 'array_number': 290})
+            value: JSON.stringify({'cardId': 'trea_call_of_the_wild', 'embedType': 12345, 'arrayNumber': 289})
           },
           {
             name: "CULTIVATE",
-            value: JSON.stringify({'card': 'trea_cultivate', 'embed_type': 23, 'array_number': 291})
+            value: JSON.stringify({'cardId': 'trea_cultivate', 'embedType': 12345, 'arrayNumber': 290})
           },
           {
             name: "CULTIVATE!",
-            value: JSON.stringify({'card': 'trea28', 'embed_type': 1, 'array_number': 292})
+            value: JSON.stringify({'cardId': 'trea28', 'embedType': 2, 'arrayNumber': 291})
           },
           {
             name: "DOWN POUR!",
-            value: JSON.stringify({'card': 'trea30', 'embed_type': 1, 'array_number': 293})
+            value: JSON.stringify({'cardId': 'trea30', 'embedType': 2, 'arrayNumber': 292})
           },
           {
             name: "DRINK DEEP!",
-            value: JSON.stringify({'card': 'trea32', 'embed_type': 1, 'array_number': 294})
+            value: JSON.stringify({'cardId': 'trea32', 'embedType': 2, 'arrayNumber': 293})
           },
           {
             name: "ENRAPTURE",
-            value: JSON.stringify({'card': 'trea_enrapture', 'embed_type': 23, 'array_number': 295})
+            value: JSON.stringify({'cardId': 'trea_enrapture', 'embedType': 12345, 'arrayNumber': 294})
           },
           {
             name: "FERTILIZE",
-            value: JSON.stringify({'card': 'trea_fertilize', 'embed_type': 1, 'array_number': 296})
+            value: JSON.stringify({'cardId': 'trea_fertilize', 'embedType': 12, 'arrayNumber': 295})
           },
           {
             name: "HARVEST!",
-            value: JSON.stringify({'card': 'trea27', 'embed_type': 1, 'array_number': 297})
+            value: JSON.stringify({'cardId': 'trea27', 'embedType': 2, 'arrayNumber': 296})
           },
           {
             name: "MOTHER TREE!",
-            value: JSON.stringify({'card': 'trea33', 'embed_type': 1, 'array_number': 298})
+            value: JSON.stringify({'cardId': 'trea33', 'embedType': 2, 'arrayNumber': 297})
           },
           {
             name: "NATURE'S BLESSING",
-            value: JSON.stringify({'card': 'trea_natures_blessing', 'embed_type': 23, 'array_number': 299})
+            value: JSON.stringify({'cardId': 'trea_natures_blessing', 'embedType': 12345, 'arrayNumber': 298})
           },
           {
             name: "NATURE'S GRASP",
-            value: JSON.stringify({'card': 'trea_natures_grasp', 'embed_type': 123, 'array_number': 300})
+            value: JSON.stringify({'cardId': 'trea_natures_grasp', 'embedType': 12345, 'arrayNumber': 299})
           },
           {
             name: "OVERGROWTH",
-            value: JSON.stringify({'card': 'trea_overgrowth', 'embed_type': 123, 'array_number': 301})
+            value: JSON.stringify({'cardId': 'trea_overgrowth', 'embedType': 12345, 'arrayNumber': 300})
           },
           {
             name: "PLANT",
-            value: JSON.stringify({'card': 'trea_plant', 'embed_type': 23, 'array_number': 302})
+            value: JSON.stringify({'cardId': 'trea_plant', 'embedType': 12345, 'arrayNumber': 301})
           },
           {
             name: "ROOTED",
-            value: JSON.stringify({'card': 'trea_rooted', 'embed_type': 12, 'array_number': 303})
+            value: JSON.stringify({'cardId': 'trea_rooted', 'embedType': 1234, 'arrayNumber': 302})
           },
           {
             name: "SPLINTER",
-            value: JSON.stringify({'card': 'trea_splinter', 'embed_type': 124, 'array_number': 304})
+            value: JSON.stringify({'cardId': 'trea_splinter', 'embedType': 12346, 'arrayNumber': 303})
           },
           {
             name: "STOMP!",
-            value: JSON.stringify({'card': 'trea31', 'embed_type': 1, 'array_number': 305})
+            value: JSON.stringify({'cardId': 'trea31', 'embedType': 12, 'arrayNumber': 304})
           },
           {
             name: "TEND",
-            value: JSON.stringify({'card': 'trea_tend', 'embed_type': 123, 'array_number': 306})
+            value: JSON.stringify({'cardId': 'trea_tend', 'embedType': 12345, 'arrayNumber': 305})
           },
           {
             name: "VENGEFUL VINES",
-            value: JSON.stringify({'card': 'trea_vengeful_vines', 'embed_type': 123, 'array_number': 307})
+            value: JSON.stringify({'cardId': 'trea_vengeful_vines', 'embedType': 12345, 'arrayNumber': 306})
           },
           {
             name: "WAKE THE FOREST!",
-            value: JSON.stringify({'card': 'trea_ult', 'embed_type': 1, 'array_number': 308})
+            value: JSON.stringify({'cardId': 'trea_ult', 'embedType': 12, 'arrayNumber': 307})
           },
           {
             name: "WILL O' WISP!",
-            value: JSON.stringify({'card': 'trea29', 'embed_type': 1, 'array_number': 309})
+            value: JSON.stringify({'cardId': 'trea29', 'embedType': 2, 'arrayNumber': 308})
           }
         ]
     }],
