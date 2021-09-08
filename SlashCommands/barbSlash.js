@@ -13,67 +13,67 @@ module.exports = {
         choices: [
           {
             name: "ADRENALINE SURGE!",
-            value: JSON.stringify({'cardId': 'barb33', 'embedType': 2, 'arrayNumber': 38})
+            value: "adrenaline_surge"
           },
           {
             name: "CONCUSS!",
-            value: JSON.stringify({'cardId': 'barb29', 'embedType': 2, 'arrayNumber': 39})
+            value: "concuss"
           },
           {
             name: "CRIT BASH",
-            value: JSON.stringify({'cardId': 'barb_crit_bash', 'embedType': 12345, 'arrayNumber': 40})
+            value: "crit_bash"
           },
           {
             name: "CRIT SMASH",
-            value: JSON.stringify({'cardId': 'barb_crit_smash', 'embedType': 12345, 'arrayNumber': 41})
+            value: "crit_smash"
           },
           {
             name: "FEELIN' GOOD!",
-            value: JSON.stringify({'cardId': 'barb32', 'embedType': 2, 'arrayNumber': 42})
+            value: "feelin_good"
           },
           {
             name: "FORTITUDE",
-            value: JSON.stringify({'cardId': 'barb_fortitude', 'embedType': 134, 'arrayNumber': 43})
+            value: "fortitude"
           },
           {
             name: "GET SOME!",
-            value: JSON.stringify({'cardId': 'barb31', 'embedType': 12, 'arrayNumber': 44})
+            value: "get_some"
           },
           {
             name: "HEAD BASH!",
-            value: JSON.stringify({'cardId': 'barb30', 'embedType': 2, 'arrayNumber': 45})
+            value: "head_bash"
           },
           {
             name: "MIGHTY BLOW",
-            value: JSON.stringify({'cardId': 'barb_mighty_blow', 'embedType': 1234, 'arrayNumber': 46})
+            value: "mighty_blow"
           },
           {
             name: "OVERPOWER",
-            value: JSON.stringify({'cardId': 'barb_overpower', 'embedType': 12345, 'arrayNumber': 47})
+            value: "overpower"
           },
           {
             name: "RAGE!",
-            value: JSON.stringify({'cardId': 'barb_ult', 'embedType': 12, 'arrayNumber': 48})
+            value: "rage"
           },
           {
             name: "RECKLESS",
-            value: JSON.stringify({'cardId': 'barb_reckless', 'embedType': 1234, 'arrayNumber': 49})
+            value: "reckless"
           },
           {
             name: "SMACK",
-            value: JSON.stringify({'cardId': 'barb_smack', 'embedType': 1346, 'arrayNumber': 50})
+            value: "smack"
           },
           {
             name: "STURDY BLOW",
-            value: JSON.stringify({'cardId': 'barb_sturdy_blow', 'embedType': 12346, 'arrayNumber': 51})
+            value: "sturdy_blow"
           },
           {
             name: "THICK SKIN",
-            value: JSON.stringify({'cardId': 'barb_thick_skin', 'embedType': 1234, 'arrayNumber': 52})
+            value: "thick_skin"
           },
           {
             name: "WAR CRY",
-            value: JSON.stringify({'cardId': 'barb_war_cry', 'embedType': 12345, 'arrayNumber': 53})
+            value: "war_cry"
           }
         ]
     }],

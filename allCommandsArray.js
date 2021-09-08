@@ -1,1407 +1,1322 @@
 [
   {
     name: "BETTER D!",
-    value: JSON.stringify({'cardId': 'basic_hero17', 'embedType': 2, 'arrayNumber': 0})
+    value: "better_d"
   },
   {
     name: "BUH, BYE!",
-    value: JSON.stringify({'cardId': 'basic_hero07', 'embedType': 2, 'arrayNumber': 1})
+    value: "buh_bye"
   },
   {
     name: "DOUBLE UP!",
-    value: JSON.stringify({'cardId': 'basic_hero06', 'embedType': 2, 'arrayNumber': 2})
+    value: "double_up"
   },
   {
     name: "GET THAT OUTTA HERE!",
-    value: JSON.stringify({'cardId': 'basic_hero04', 'embedType': 2, 'arrayNumber': 3})
+    value: "get_that_outta_here"
   },
   {
     name: "GETTING PAID!",
-    value: JSON.stringify({'cardId': 'basic_hero09', 'embedType': 2, 'arrayNumber': 4})
+    value: "getting_paid"
   },
   {
     name: "HELPING HAND!",
-    value: JSON.stringify({'cardId': 'basic_hero16', 'embedType': 2, 'arrayNumber': 5})
+    value: "helping_hand"
   },
   {
     name: "NOT THIS TIME!",
-    value: JSON.stringify({'cardId': 'basic_hero10', 'embedType': 2, 'arrayNumber': 6})
+    value: "not_this_time"
   },
   {
     name: "ONE MORE TIME!",
-    value: JSON.stringify({'cardId': 'basic_hero15', 'embedType': 2, 'arrayNumber': 7})
+    value: "one_more_time"
   },
   {
     name: "SAMESIES!",
-    value: JSON.stringify({'cardId': 'basic_hero14', 'embedType': 2, 'arrayNumber': 8})
+    value: "samesies"
   },
   {
     name: "SIX-IT!",
-    value: JSON.stringify({'cardId': 'basic_hero18', 'embedType': 2, 'arrayNumber': 9})
+    value: "sixit"
   },
   {
     name: "SO WILD!",
-    value: JSON.stringify({'cardId': 'basic_hero13', 'embedType': 2, 'arrayNumber': 10})
+    value: "so_wild"
   },
   {
     name: "TIP IT!",
-    value: JSON.stringify({'cardId': 'basic_hero08', 'embedType': 2, 'arrayNumber': 11})
+    value: "tip_it"
   },
   {
     name: "TRANSFERENCE!",
-    value: JSON.stringify({'cardId': 'basic_hero01', 'embedType': 2, 'arrayNumber': 12})
+    value: "transference"
   },
   {
     name: "TRIPLE UP!",
-    value: JSON.stringify({'cardId': 'basic_hero05', 'embedType': 2, 'arrayNumber': 13})
+    value: "triple_up"
   },
   {
     name: "TRY, TRY AGAIN!",
-    value: JSON.stringify({'cardId': 'basic_hero12', 'embedType': 2, 'arrayNumber': 14})
+    value: "try_try_again"
   },
   {
     name: "TWICE AS WILD!",
-    value: JSON.stringify({'cardId': 'basic_hero11', 'embedType': 2, 'arrayNumber': 15})
+    value: "twice_as_wild"
   },
   {
     name: "VEGAS BABY!",
-    value: JSON.stringify({'cardId': 'basic_hero03', 'embedType': 2, 'arrayNumber': 16})
+    value: "vegas_baby"
   },
   {
     name: "WHAT STATUS EFFECTS?",
-    value: JSON.stringify({'cardId': 'basic_hero02', 'embedType': 2, 'arrayNumber': 17})
+    value: "what_status_effects"
   },
-
-
-
-
-
   {
     name: "ARCING SHIELD",
-    value: JSON.stringify({'cardId': 'arti27', 'embedType': 2, 'arrayNumber': 18})
+    value: "arcing_shield"
   },
   {
     name: "CONDUCTIVITY!",
-    value: JSON.stringify({'cardId': 'arti31', 'embedType': 2, 'arrayNumber': 19})
+    value: "conductivity"
   },
   {
     name: "EUREKA",
-    value: JSON.stringify({'cardId': 'arti_eureka', 'embedType': 12345, 'arrayNumber': 20})
+    value: "eureka"
   },
   {
     name: "HIGH VOLTAGE!",
-    value: JSON.stringify({'cardId': 'arti29', 'embedType': 2, 'arrayNumber': 21})
+    value: "high_voltage"
   },
   {
     name: "JOLT",
-    value: JSON.stringify({'cardId': 'arti_jolt', 'embedType': 12345, 'arrayNumber': 22})
+    value: "jolt"
   },
   {
     name: "MAXIMUM POWER!",
-    value: JSON.stringify({'cardId': 'arti_ult', 'embedType': 12, 'arrayNumber': 23})
+    value: "maximum_power"
   },
   {
     name: "NANITE ASSAULT!",
-    value: JSON.stringify({'cardId': 'arti30', 'embedType': 2, 'arrayNumber': 24})
+    value: "nanite_assault"
   },
   {
     name: "NUTS N' BOLTS",
-    value: JSON.stringify({'cardId': 'arti_nuts_n_bolts', 'embedType': 12345, 'arrayNumber': 25})
+    value: "nuts_n_bolts"
   },
   {
     name: "OOOH SHINY!",
-    value: JSON.stringify({'cardId': 'arti32', 'embedType': 2, 'arrayNumber': 26})
+    value: "oooh_shiny"
   },
   {
     name: "OVERCLOCK",
-    value: JSON.stringify({'cardId': 'arti_overclock', 'embedType': 12345, 'arrayNumber': 27})
+    value: "overclock"
   },
   {
     name: "POWER UP",
-    value: JSON.stringify({'cardId': 'arti_power_up', 'embedType': 12345, 'arrayNumber': 28})
+    value: "power_up"
   },
   {
     name: "RATCHET UP",
-    value: JSON.stringify({'cardId': 'arti_ratchet_up', 'embedType': 1234, 'arrayNumber': 29})
+    value: "ratchet_up"
   },
   {
     name: "ROBO REVENGE!",
-    value: JSON.stringify({'cardId': 'arti28', 'embedType': 2, 'arrayNumber': 30})
+    value: "robo_revenge"
   },
   {
     name: "SCHEMATICS",
-    value: JSON.stringify({'cardId': 'arti_schematics', 'embedType': 1234, 'arrayNumber': 31})
+    value: "schematics"
   },
   {
     name: "SCRAP COLLECTOR",
-    value: JSON.stringify({'cardId': 'arti_scrap_collector', 'embedType': 1234, 'arrayNumber': 32})
+    value: "scrap_collector"
   },
   {
     name: "SCRATCH BUILT",
-    value: JSON.stringify({'cardId': 'arti_scratch_built', 'embedType': 12345, 'arrayNumber': 33})
+    value: "scratch_built"
   },
   {
     name: "SPANNER STRIKE",
-    value: JSON.stringify({'cardId': 'arti_spanner_strike', 'embedType': 1234, 'arrayNumber': 34})
+    value: "spanner_strike"
   },
   {
     name: "SWARMING BOTS",
-    value: JSON.stringify({'cardId': 'arti_swarming_bots', 'embedType': 12345, 'arrayNumber': 35})
+    value: "swarming_bots"
   },
   {
     name: "SYNTHESIZE!",
-    value: JSON.stringify({'cardId': 'arti33', 'embedType': 2, 'arrayNumber': 36})
+    value: "synthesize"
   },
   {
     name: "ZAPPPP!",
-    value: JSON.stringify({'cardId': 'arti_zapppp', 'embedType': 12345, 'arrayNumber': 37})
+    value: "zapppp"
   },
-
-
-
-
-
   {
     name: "ADRENALINE SURGE!",
-    value: JSON.stringify({'cardId': 'barb33', 'embedType': 2, 'arrayNumber': 38})
+    value: "adrenaline_surge"
   },
   {
     name: "CONCUSS!",
-    value: JSON.stringify({'cardId': 'barb29', 'embedType': 2, 'arrayNumber': 39})
+    value: "concuss"
   },
   {
     name: "CRIT BASH",
-    value: JSON.stringify({'cardId': 'barb_crit_bash', 'embedType': 12345, 'arrayNumber': 40})
+    value: "crit_bash"
   },
   {
     name: "CRIT SMASH",
-    value: JSON.stringify({'cardId': 'barb_crit_smash', 'embedType': 12345, 'arrayNumber': 41})
+    value: "crit_smash"
   },
   {
     name: "FEELIN' GOOD!",
-    value: JSON.stringify({'cardId': 'barb32', 'embedType': 2, 'arrayNumber': 42})
+    value: "feelin_good"
   },
   {
     name: "FORTITUDE",
-    value: JSON.stringify({'cardId': 'barb_fortitude', 'embedType': 134, 'arrayNumber': 43})
+    value: "fortitude"
   },
   {
     name: "GET SOME!",
-    value: JSON.stringify({'cardId': 'barb31', 'embedType': 12, 'arrayNumber': 44})
+    value: "get_some"
   },
   {
     name: "HEAD BASH!",
-    value: JSON.stringify({'cardId': 'barb30', 'embedType': 2, 'arrayNumber': 45})
+    value: "head_bash"
   },
   {
     name: "MIGHTY BLOW",
-    value: JSON.stringify({'cardId': 'barb_mighty_blow', 'embedType': 1234, 'arrayNumber': 46})
+    value: "mighty_blow"
   },
   {
     name: "OVERPOWER",
-    value: JSON.stringify({'cardId': 'barb_overpower', 'embedType': 12345, 'arrayNumber': 47})
+    value: "overpower"
   },
   {
     name: "RAGE!",
-    value: JSON.stringify({'cardId': 'barb_ult', 'embedType': 12, 'arrayNumber': 48})
+    value: "rage"
   },
   {
     name: "RECKLESS",
-    value: JSON.stringify({'cardId': 'barb_reckless', 'embedType': 1234, 'arrayNumber': 49})
+    value: "reckless"
   },
   {
     name: "SMACK",
-    value: JSON.stringify({'cardId': 'barb_smack', 'embedType': 1346, 'arrayNumber': 50})
+    value: "smack"
   },
   {
     name: "STURDY BLOW",
-    value: JSON.stringify({'cardId': 'barb_sturdy_blow', 'embedType': 12346, 'arrayNumber': 51})
+    value: "sturdy_blow"
   },
   {
     name: "THICK SKIN",
-    value: JSON.stringify({'cardId': 'barb_thick_skin', 'embedType': 1234, 'arrayNumber': 52})
+    value: "thick_skin"
   },
   {
     name: "WAR CRY",
-    value: JSON.stringify({'cardId': 'barb_war_cry', 'embedType': 12345, 'arrayNumber': 53})
+    value: "war_cry"
   },
-
-
-
-
-
   {
     name: "ABYSSAL WALK",
-    value: JSON.stringify({'cardId': 'curs_abyssal_walk', 'embedType': 12, 'arrayNumber': 54})
+    value: "abyssal_walk"
   },
   {
     name: "AHOY MATEY",
-    value: JSON.stringify({'cardId': 'curs_ahoy_matey', 'embedType': 12, 'arrayNumber': 55})
+    value: "ahoy_matey"
   },
   {
     name: "AVAST YE",
-    value: JSON.stringify({'cardId': 'curs_avast_ye', 'embedType': 12, 'arrayNumber': 56})
+    value: "avast_ye"
   },
   {
     name: "BATTEN DOWN!",
-    value: JSON.stringify({'cardId': 'curs32', 'embedType': 2, 'arrayNumber': 57})
+    value: "batten_down"
   },
   {
     name: "BLACK SOUL",
-    value: JSON.stringify({'cardId': 'curs_black_soul', 'embedType': 12, 'arrayNumber': 58})
+    value: "black_soul"
   },
   {
     name: "BLACK SPOT",
-    value: JSON.stringify({'cardId': 'curs_black_spot', 'embedType': 12, 'arrayNumber': 59})
+    value: "black_spot"
   },
   {
     name: "CROW'S NEST!",
-    value: JSON.stringify({'cardId': 'curs24', 'embedType': 2, 'arrayNumber': 60})
+    value: "crows_nest"
   },
   {
     name: "CURSED",
-    value: JSON.stringify({'cardId': 'curs_cursed', 'embedType': 12, 'arrayNumber': 61})
+    value: "cursed"
   },
   {
     name: "CURSED CARDS!",
-    value: JSON.stringify({'cardId': 'curs33', 'embedType': 2, 'arrayNumber': 62})
+    value: "cursed_cards"
   },
   {
     name: "CURSED TOUCH!",
-    value: JSON.stringify({'cardId': 'curs_ult_cursed', 'embedType': 12, 'arrayNumber': 63})
+    value: "cursed_touch"
   },
   {
     name: "CUTLASS STRIKE",
-    value: JSON.stringify({'cardId': 'curs_cutlass_strike', 'embedType': 12, 'arrayNumber': 64})
+    value: "cutlass_strike"
   },
   {
     name: "DREAD MARK",
-    value: JSON.stringify({'cardId': 'curs_dread_mark', 'embedType': 12, 'arrayNumber': 65})
+    value: "dread_mark"
   },
   {
     name: "FEED THE FISH!",
-    value: JSON.stringify({'cardId': 'curs21', 'embedType': 2, 'arrayNumber': 66})
+    value: "feed_the_fish"
   },
   {
     name: "HEAVE-HO!",
-    value: JSON.stringify({'cardId': 'curs34', 'embedType': 2, 'arrayNumber': 67})
+    value: "heaveho"
   },
   {
     name: "HIGH STAKES!",
-    value: JSON.stringify({'cardId': 'curs23', 'embedType': 2, 'arrayNumber': 68})
+    value: "high_stakes"
   },
   {
     name: "LIGHT IT UP!",
-    value: JSON.stringify({'cardId': 'curs20', 'embedType': 2, 'arrayNumber': 69})
+    value: "light_it_up"
   },
   {
     name: "LIGHT THE FUSE",
-    value: JSON.stringify({'cardId': 'curs_light_the_fuse', 'embedType': 12, 'arrayNumber': 70})
+    value: "light_the_fuse"
   },
-
-
-
-
-  
   {
     name: "PILLAGE!",
-    value: JSON.stringify({'cardId': 'curs26', 'embedType': 2, 'arrayNumber': 71})
+    value: "pillage"
   },
   {
     name: "PIRATE'S LIFE!",
-    value: JSON.stringify({'cardId': 'curs22', 'embedType': 2, 'arrayNumber': 72})
+    value: "pirates_life"
   },
   {
     name: "PIRATE'S TOUCH!",
-    value: JSON.stringify({'cardId': 'curs_ult_human', 'embedType': 12, 'arrayNumber': 73})
+    value: "pirates_touch"
   },
   {
     name: "RANSOM!",
-    value: JSON.stringify({'cardId': 'curs29', 'embedType': 2, 'arrayNumber': 74})
+    value: "ransom"
   },
   {
     name: "RUN YA THROUGH!",
-    value: JSON.stringify({'cardId': 'curs30', 'embedType': 12, 'arrayNumber': 75})
+    value: "run_ya_through"
   },
   {
     name: "SCURVY!",
-    value: JSON.stringify({'cardId': 'curs27', 'embedType': 2, 'arrayNumber': 76})
+    value: "scurvy"
   },
   {
     name: "SHARK BAIT!",
-    value: JSON.stringify({'cardId': 'curs31', 'embedType': 12, 'arrayNumber': 77})
+    value: "shark_bait"
   },
   {
     name: "SHIVER ME TIMBERS",
-    value: JSON.stringify({'cardId': 'curs_shiver_me_timbers', 'embedType': 12, 'arrayNumber': 78})
+    value: "shiver_me_timbers"
   },
   {
     name: "SOUL CUTLASS",
-    value: JSON.stringify({'cardId': 'curs_soul_cutlass', 'embedType': 12, 'arrayNumber': 79})
+    value: "soul_cutlass"
   },
   {
     name: "SWASHBUCKLE!",
-    value: JSON.stringify({'cardId': 'curs28', 'embedType': 2, 'arrayNumber': 80})
+    value: "swashbuckle"
   },
   {
     name: "THAR SHE BLOWS!",
-    value: JSON.stringify({'cardId': 'curs_thar_she_blows', 'embedType': 12, 'arrayNumber': 81})
+    value: "thar_she_blows"
   },
   {
     name: "THE SHIVERING",
-    value: JSON.stringify({'cardId': 'curs_the_shivering', 'embedType': 12, 'arrayNumber': 82})
+    value: "the_shivering"
   },
   {
     name: "TRUCE!",
-    value: JSON.stringify({'cardId': 'curs25', 'embedType': 2, 'arrayNumber': 83})
+    value: "truce"
   },
   {
     name: "WALK THE PLANK",
-    value: JSON.stringify({'cardId': 'curs_walk_the_plank', 'embedType': 12, 'arrayNumber': 84})
+    value: "walk_the_plank"
   },
   {
     name: "X MARKS THE SPOT",
-    value: JSON.stringify({'cardId': 'curs_x_marks_the_spot', 'embedType': 12, 'arrayNumber': 85})
+    value: "x_marks_the_spot"
   },
   {
     name: "YO HO!",
-    value: JSON.stringify({'cardId': 'curs19', 'embedType': 2, 'arrayNumber': 86})
+    value: "yo_ho"
   },
-
-
-
-
-
   {
     name: "BOUNTY HUNTER",
-    value: JSON.stringify({'cardId': 'guns_bounty_hunter', 'embedType': 1234, 'arrayNumber': 87})
+    value: "bounty_hunter"
   },
   {
     name: "DEADEYE",
-    value: JSON.stringify({'cardId': 'guns_deadeye', 'embedType': 12345, 'arrayNumber': 88})
+    value: "deadeye"
   },
   {
     name: "DUEL",
-    value: JSON.stringify({'cardId': 'guns_duel', 'embedType': 1234, 'arrayNumber': 89})
+    value: "duel"
   },
   {
     name: "EAT LEAD!",
-    value: JSON.stringify({'cardId': 'guns32', 'embedType': 12, 'arrayNumber': 90})
+    value: "eat_lead"
   },
   {
     name: "ENFORCER",
-    value: JSON.stringify({'cardId': 'guns_enforcer', 'embedType': 12345, 'arrayNumber': 91})
+    value: "enforcer"
   },
   {
     name: "FAN THE HAMMER",
-    value: JSON.stringify({'cardId': 'guns_fan_the_hammer', 'embedType': 12345, 'arrayNumber': 92})
+    value: "fan_the_hammer"
   },
   {
     name: "FILL'EM WITH LEAD!",
-    value: JSON.stringify({'cardId': 'guns_ult', 'embedType': 12, 'arrayNumber': 93})
+    value: "fillem_with_lead"
   },
   {
     name: "MARK THE TARGET",
-    value: JSON.stringify({'cardId': 'guns_mark_the_target', 'embedType': 12345, 'arrayNumber': 94})
+    value: "mark_the_target"
   },
   {
     name: "PISTOL WHIP",
-    value: JSON.stringify({'cardId': 'guns_pistol_whip', 'embedType': 12345, 'arrayNumber': 95})
+    value: "pistol_whip"
   },
   {
     name: "QUICK DRAW",
-    value: JSON.stringify({'cardId': 'guns_quick_draw', 'embedType': 1234, 'arrayNumber': 96})
+    value: "quick_draw"
   },
   {
     name: "REVOLVER",
-    value: JSON.stringify({'cardId': 'guns_revolver', 'embedType': 134, 'arrayNumber': 97})
+    value: "revolver"
   },
   {
     name: "ROULETTE!",
-    value: JSON.stringify({'cardId': 'guns30', 'embedType': 2, 'arrayNumber': 98})
+    value: "roulette"
   },
   {
     name: "RUN AND GUN!",
-    value: JSON.stringify({'cardId': 'guns33', 'embedType': 2, 'arrayNumber': 99})
+    value: "run_and_gun"
   },
   {
     name: "SHOWDOWN",
-    value: JSON.stringify({'cardId': 'guns_showdown', 'embedType': 12346, 'arrayNumber': 100})
+    value: "showdown"
   },
   {
     name: "SPIN THE CHAMBER!",
-    value: JSON.stringify({'cardId': 'guns29', 'embedType': 2, 'arrayNumber': 101})
+    value: "spin_the_chamber"
   },
   {
     name: "TAKE COVER",
-    value: JSON.stringify({'cardId': 'guns_take_cover', 'embedType': 12345, 'arrayNumber': 102})
+    value: "take_cover"
   },
   {
     name: "WANTED!",
-    value: JSON.stringify({'cardId': 'guns28', 'embedType': 2, 'arrayNumber': 103})
+    value: "wanted"
   },
   {
     name: "WILD WEST!",
-    value: JSON.stringify({'cardId': 'guns31', 'embedType': 12, 'arrayNumber': 104})
+    value: "wild_west"
   },
-
-
-
-
-
   {
     name: "ANIMALISTIC",
-    value: JSON.stringify({'cardId': 'hunt_animalistic', 'embedType': 134, 'arrayNumber': 105})
+    value: "animalistic"
   },
   {
     name: "BLOOD BOND!",
-    value: JSON.stringify({'cardId': 'hunt28', 'embedType': 2, 'arrayNumber': 106})
+    value: "blood_bond"
   },
   {
     name: "FERAL",
-    value: JSON.stringify({'cardId': 'hunt_feral', 'embedType': 12345, 'arrayNumber': 107})
+    value: "feral"
   },
   {
     name: "FERAL INSTINCTS",
-    value: JSON.stringify({'cardId': 'hunt_feral_instincts', 'embedType': 12345, 'arrayNumber': 108})
+    value: "feral_instincts"
   },
   {
     name: "FEROCIOUS",
-    value: JSON.stringify({'cardId': 'hunt_ferocious', 'embedType': 12345, 'arrayNumber': 109})
+    value: "ferocious"
   },
   {
     name: "HUNT",
-    value: JSON.stringify({'cardId': 'hunt_hunt', 'embedType': 12345, 'arrayNumber': 110})
+    value: "hunt"
   },
   {
     name: "JUGULAR",
-    value: JSON.stringify({'cardId': 'hunt_jugular', 'embedType': 12345, 'arrayNumber': 111})
+    value: "jugular"
   },
   {
     name: "JUNGLE FURY!",
-    value: JSON.stringify({'cardId': 'hunt_ult', 'embedType': 12, 'arrayNumber': 112})
+    value: "jungle_fury"
   },
   {
     name: "MATERNAL BOND",
-    value: JSON.stringify({'cardId': 'hunt_maternal_bond', 'embedType': 12346, 'arrayNumber': 113})
+    value: "maternal_bond"
   },
   {
     name: "ONSLAUGHT",
-    value: JSON.stringify({'cardId': 'hunt_onslaught', 'embedType': 1234, 'arrayNumber': 114})
+    value: "onslaught"
   },
   {
     name: "POUNCE!",
-    value: JSON.stringify({'cardId': 'hunt30', 'embedType': 12, 'arrayNumber': 115})
+    value: "pounce"
   },
   {
     name: "PREDATORY ADVANCE",
-    value: JSON.stringify({'cardId': 'hunt_predatory_advance', 'embedType': 12345, 'arrayNumber': 116})
+    value: "predatory_advance"
   },
   {
     name: "PRIMAL ROAR!",
-    value: JSON.stringify({'cardId': 'hunt33', 'embedType': 2, 'arrayNumber': 117})
+    value: "primal_roar"
   },
   {
     name: "PROWL!",
-    value: JSON.stringify({'cardId': 'hunt31', 'embedType': 12, 'arrayNumber': 118})
+    value: "prowl"
   },
   {
     name: "RESILIENT!",
-    value: JSON.stringify({'cardId': 'hunt32', 'embedType': 2, 'arrayNumber': 119})
+    value: "resilient"
   },
   {
     name: "RESUSCITATE",
-    value: JSON.stringify({'cardId': 'hunt_resuscitate', 'embedType': 1234, 'arrayNumber': 120})
+    value: "resuscitate"
   },
   {
     name: "SAVAGE",
-    value: JSON.stringify({'cardId': 'hunt_savage', 'embedType': 12345, 'arrayNumber': 121})
+    value: "savage"
   },
   {
     name: "SAVAGE SLASH!",
-    value: JSON.stringify({'cardId': 'hunt29', 'embedType': 2, 'arrayNumber': 122})
+    value: "savage_slash"
   },
   {
     name: "SWIPE",
-    value: JSON.stringify({'cardId': 'hunt_swipe', 'embedType': 12345, 'arrayNumber': 123})
+    value: "swipe"
   },
-
-
-
-
-
   {
     name: "COMBO STRIKE",
-    value: JSON.stringify({'cardId': 'monk_combo_strike', 'embedType': 1234, 'arrayNumber': 124})
+    value: "combo_strike"
   },
   {
     name: "CONTEMPLATE!",
-    value: JSON.stringify({'cardId': 'monk32', 'embedType': 2, 'arrayNumber': 125})
+    value: "contemplate"
   },
   {
     name: "ENLIGHTENMENT!",
-    value: JSON.stringify({'cardId': 'monk33', 'embedType': 2, 'arrayNumber': 126})
+    value: "enlightenment"
   },
   {
     name: "FIST OF HARMONY",
-    value: JSON.stringify({'cardId': 'monk_fist_of_harmony', 'embedType': 1234, 'arrayNumber': 127})
+    value: "fist_of_harmony"
   },
   {
     name: "FIST OF TRANQUILITY",
-    value: JSON.stringify({'cardId': 'monk_fist_of_tranquility', 'embedType': 12345, 'arrayNumber': 128})
+    value: "fist_of_tranquility"
   },
   {
     name: "FIST STRIKE",
-    value: JSON.stringify({'cardId': 'monk_fist_strike', 'embedType': 136, 'arrayNumber': 129})
+    value: "fist_strike"
   },
   {
     name: "LOTUS STRIKE",
-    value: JSON.stringify({'cardId': 'monk_lotus_strike', 'embedType': 12345, 'arrayNumber': 130})
+    value: "lotus_strike"
   },
   {
     name: "MEDITATE",
-    value: JSON.stringify({'cardId': 'monk_meditate', 'embedType': 12345, 'arrayNumber': 131})
+    value: "meditate"
   },
   {
     name: "MYSTIC MANTRA!",
-    value: JSON.stringify({'cardId': 'monk30', 'embedType': 2, 'arrayNumber': 132})
+    value: "mystic_mantra"
   },
   {
     name: "PALM STRIKE!",
-    value: JSON.stringify({'cardId': 'monk29', 'embedType': 2, 'arrayNumber': 133})
+    value: "palm_strike"
   },
   {
     name: "RUMINATE!",
-    value: JSON.stringify({'cardId': 'monk31', 'embedType': 2, 'arrayNumber': 134})
+    value: "ruminate"
   },
   {
     name: "SERENITY",
-    value: JSON.stringify({'cardId': 'monk_serenity', 'embedType': 12346, 'arrayNumber': 135})
+    value: "serenity"
   },
   {
     name: "TEMPEST RUSH",
-    value: JSON.stringify({'cardId': 'monk_tempest_rush', 'embedType': 1234, 'arrayNumber': 136})
+    value: "tempest_rush"
   },
   {
     name: "TRANSCENDENCE!",
-    value: JSON.stringify({'cardId': 'monk_ult', 'embedType': 12, 'arrayNumber': 137})
+    value: "transcendence"
   },
   {
     name: "WAY OF THE LOTUS",
-    value: JSON.stringify({'cardId': 'monk_way_of_the_lotus', 'embedType': 12345, 'arrayNumber': 138})
+    value: "way_of_the_lotus"
   },
   {
     name: "WAY OF THE MONK",
-    value: JSON.stringify({'cardId': 'monk_way_of_the_monk', 'embedType': 12345, 'arrayNumber': 139})
+    value: "way_of_the_monk"
   },
   {
     name: "ZEN STRIKE",
-    value: JSON.stringify({'cardId': 'monk_zen_strike', 'embedType': 12345, 'arrayNumber': 140})
+    value: "zen_strike"
   },
-
-
-
-
-
   {
     name: "BLINDING SHOT",
-    value: JSON.stringify({'cardId': 'moon_blinding_shot', 'embedType': 12345, 'arrayNumber': 141})
+    value: "blinding_shot"
   },
   {
     name: "COVERED SHOT",
-    value: JSON.stringify({'cardId': 'moon_covered_shot', 'embedType': 12345, 'arrayNumber': 142})
+    value: "covered_shot"
   },
   {
     name: "DEMISING SHOT",
-    value: JSON.stringify({'cardId': 'moon_demising_shot', 'embedType': 12345, 'arrayNumber': 143})
+    value: "demising_shot"
   },
   {
     name: "ECLIPSE",
-    value: JSON.stringify({'cardId': 'moon_eclipse', 'embedType': 12345, 'arrayNumber': 144})
+    value: "eclipse"
   },
   {
     name: "ENTANGLING SHOT",
-    value: JSON.stringify({'cardId': 'moon_entangling_shot', 'embedType': 1234, 'arrayNumber': 145})
+    value: "entangling_shot"
   },
   {
     name: "EVADE!",
-    value: JSON.stringify({'cardId': 'moon32', 'embedType': 2, 'arrayNumber': 146})
+    value: "evade"
   },
   {
     name: "EVASIVE ACTION",
-    value: JSON.stringify({'cardId': 'moon_evasive_action', 'embedType': 12345, 'arrayNumber': 147})
+    value: "evasive_action"
   },
   {
     name: "EXPLODING ARROW",
-    value: JSON.stringify({'cardId': 'moon_exploding_arrow', 'embedType': 12346, 'arrayNumber': 148})
+    value: "exploding_arrow"
   },
   {
     name: "FOCUS",
-    value: JSON.stringify({'cardId': 'moon_focus', 'embedType': 12345, 'arrayNumber': 149})
+    value: "focus"
   },
   {
     name: "LONGBOW",
-    value: JSON.stringify({'cardId': 'moon_longbow', 'embedType': 1346, 'arrayNumber': 150})
+    value: "longbow"
   },
   {
     name: "LUNAR BLESSING",
-    value: JSON.stringify({'cardId': 'moon_lunar_blessing', 'embedType': 12345, 'arrayNumber': 151})
+    value: "lunar_blessing"
   },
   {
     name: "LUNAR ECLIPSE!",
-    value: JSON.stringify({'cardId': 'moon_ult', 'embedType': 12, 'arrayNumber': 152})
+    value: "lunar_eclipse"
   },
   {
     name: "LUNAR UMBRA!",
-    value: JSON.stringify({'cardId': 'moon33', 'embedType': 2, 'arrayNumber': 153})
+    value: "lunar_umbra"
   },
   {
     name: "MISSED ME",
-    value: JSON.stringify({'cardId': 'moon_missed_me', 'embedType': 1234, 'arrayNumber': 154})
+    value: "missed_me"
   },
   {
     name: "MOON MAGIC!",
-    value: JSON.stringify({'cardId': 'moon29', 'embedType': 2, 'arrayNumber': 155})
+    value: "moon_magic"
   },
   {
     name: "MOON SHADOW",
-    value: JSON.stringify({'cardId': 'moon_moon_shadow', 'embedType': 12345, 'arrayNumber': 156})
+    value: "moon_shadow"
   },
   {
     name: "TAKE THAT!",
-    value: JSON.stringify({'cardId': 'moon30', 'embedType': 12, 'arrayNumber': 157})
+    value: "take_that"
   },
   {
     name: "VOLLEY!",
-    value: JSON.stringify({'cardId': 'moon31', 'embedType': 12, 'arrayNumber': 158})
+    value: "volley"
   },
-
-
-
-
-
   {
     name: "ASSASSINATE!",
-    value: JSON.stringify({'cardId': 'ninj_ult', 'embedType': 12, 'arrayNumber': 159})
+    value: "assassinate"
   },
   {
     name: "DEATH BLOSSOM",
-    value: JSON.stringify({'cardId': 'ninj_death_blossom', 'embedType': 1234, 'arrayNumber': 160})
+    value: "death_blossom"
   },
   {
     name: "DOJO!",
-    value: JSON.stringify({'cardId': 'ninj33', 'embedType': 2, 'arrayNumber': 161})
+    value: "dojo"
   },
   {
     name: "ESCAPE!",
-    value: JSON.stringify({'cardId': 'ninj32', 'embedType': 2, 'arrayNumber': 162})
+    value: "escape"
   },
   {
     name: "FAN OF KNIVES!",
-    value: JSON.stringify({'cardId': 'ninj29', 'embedType': 2, 'arrayNumber': 163})
+    value: "fan_of_knives"
   },
   {
     name: "JUGULATE",
-    value: JSON.stringify({'cardId': 'ninj_jugulate', 'embedType': 12345, 'arrayNumber': 164})
+    value: "jugulate"
   },
   {
     name: "KUJI-KIRI",
-    value: JSON.stringify({'cardId': 'ninj_kuji_kiri', 'embedType': 12345, 'arrayNumber': 165})
+    value: "kujikiri"
   },
   {
     name: "MISDIRECT",
-    value: JSON.stringify({'cardId': 'ninj_misdirect', 'embedType': 12345, 'arrayNumber': 166})
+    value: "misdirect"
   },
   {
     name: "POISON BLADE",
-    value: JSON.stringify({'cardId': 'ninj_poison_blade', 'embedType': 1234, 'arrayNumber': 167})
+    value: "poison_blade"
   },
   {
     name: "POISON DART!",
-    value: JSON.stringify({'cardId': 'ninj27', 'embedType': 2, 'arrayNumber': 168})
+    value: "poison_dart"
   },
   {
     name: "SHADE SHIFT",
-    value: JSON.stringify({'cardId': 'ninj_shade_shift', 'embedType': 1234, 'arrayNumber': 169})
+    value: "shade_shift"
   },
   {
     name: "SHADEWALK",
-    value: JSON.stringify({'cardId': 'ninj_shadewalk', 'embedType': 12345, 'arrayNumber': 170})
+    value: "shadewalk"
   },
   {
     name: "SHADOW FANG",
-    value: JSON.stringify({'cardId': 'ninj_shadow_fang', 'embedType': 12345, 'arrayNumber': 171})
+    value: "shadow_fang"
   },
   {
     name: "SLASH",
-    value: JSON.stringify({'cardId': 'ninj_slash', 'embedType': 134, 'arrayNumber': 172})
+    value: "slash"
   },
   {
     name: "SMOKE OFFERING!",
-    value: JSON.stringify({'cardId': 'ninj30', 'embedType': 2, 'arrayNumber': 173})
+    value: "smoke_offering"
   },
   {
     name: "SMOKE SCREEN",
-    value: JSON.stringify({'cardId': 'ninj_smoke_screen', 'embedType': 12345, 'arrayNumber': 174})
+    value: "smoke_screen"
   },
   {
     name: "THROWING STARS!",
-    value: JSON.stringify({'cardId': 'ninj28', 'embedType': 12, 'arrayNumber': 175})
+    value: "throwing_stars"
   },
   {
     name: "TIP OF THE BLADE",
-    value: JSON.stringify({'cardId': 'ninj_tip_of_the_blade', 'embedType': 12345, 'arrayNumber': 176})
+    value: "tip_of_the_blade"
   },
   {
     name: "TRAIN!",
-    value: JSON.stringify({'cardId': 'ninj31', 'embedType': 2, 'arrayNumber': 177})
+    value: "train"
   },
   {
     name: "WALK THE LINE",
-    value: JSON.stringify({'cardId': 'ninj_walk_the_line', 'embedType': 12345, 'arrayNumber': 178})
+    value: "walk_the_line"
   },
-
-
-
-
-
   {
     name: "ABSOLUTION!",
-    value: JSON.stringify({'cardId': 'pala32', 'embedType': 2, 'arrayNumber': 179})
+    value: "absolution"
   },
   {
     name: "BLESSED!",
-    value: JSON.stringify({'cardId': 'pala31', 'embedType': 2, 'arrayNumber': 180})
+    value: "blessed"
   },
   {
     name: "CONSECRATION!",
-    value: JSON.stringify({'cardId': 'pala30', 'embedType': 2, 'arrayNumber': 181})
+    value: "consecration"
   },
   {
     name: "DIVINE DEFENSE",
-    value: JSON.stringify({'cardId': 'pala_divine_defense', 'embedType': 12346, 'arrayNumber': 182})
+    value: "divine_defense"
   },
   {
     name: "DIVINE FAVOR!",
-    value: JSON.stringify({'cardId': 'pala33', 'embedType': 2, 'arrayNumber': 183})
+    value: "divine_favor"
   },
   {
     name: "HOLY ATTACK",
-    value: JSON.stringify({'cardId': 'pala_holy_attack', 'embedType': 1234, 'arrayNumber': 184})
+    value: "holy_attack"
   },
   {
     name: "HOLY LIGHT",
-    value: JSON.stringify({'cardId': 'pala_holy_light', 'embedType': 1234, 'arrayNumber': 185})
+    value: "holy_light"
   },
   {
     name: "MIGHTY PRAYER",
-    value: JSON.stringify({'cardId': 'pala_mighty_prayer', 'embedType': 12345, 'arrayNumber': 186})
+    value: "mighty_prayer"
   },
   {
     name: "MIGHTY!",
-    value: JSON.stringify({'cardId': 'pala29', 'embedType': 2, 'arrayNumber': 187})
+    value: "mighty"
   },
   {
     name: "OFFENSIVE STANCE",
-    value: JSON.stringify({'cardId': 'pala_offensive_stance', 'embedType': 12345, 'arrayNumber': 188})
+    value: "offensive_stance"
   },
   {
     name: "PROSPERITY",
-    value: JSON.stringify({'cardId': 'pala_prosperity', 'embedType': 12345, 'arrayNumber': 189})
+    value: "prosperity"
   },
   {
     name: "REQUITAL",
-    value: JSON.stringify({'cardId': 'pala_requital', 'embedType': 12345, 'arrayNumber': 190})
+    value: "requital"
   },
   {
     name: "RESOLUTE FAITH!",
-    value: JSON.stringify({'cardId': 'pala_ult', 'embedType': 12, 'arrayNumber': 191})
+    value: "resolute_faith"
   },
   {
     name: "RETALIATE",
-    value: JSON.stringify({'cardId': 'pala_retaliate', 'embedType': 12345, 'arrayNumber': 192})
+    value: "retaliate"
   },
   {
     name: "RIGHTEOUS COMBAT",
-    value: JSON.stringify({'cardId': 'pala_righteous_combat', 'embedType': 123467, 'arrayNumber': 193})
+    value: "righteous_combat"
   },
   {
     name: "RIGHTEOUS PRAYER",
-    value: JSON.stringify({'cardId': 'pala_righteous_prayer', 'embedType': 12345, 'arrayNumber': 194})
+    value: "righteous_prayer"
   },
   {
     name: "STEADFAST",
-    value: JSON.stringify({'cardId': 'pala_steadfast', 'embedType': 123467, 'arrayNumber': 195})
+    value: "steadfast"
   },
   {
     name: "TITHE",
-    value: JSON.stringify({'cardId': 'pala_tithe', 'embedType': 1234, 'arrayNumber': 196})
+    value: "tithe"
   },
-
-
-
-
-
   {
     name: "BLAZING SOUL",
-    value: JSON.stringify({'cardId': 'pyro_blazing_soul', 'embedType': 12345, 'arrayNumber': 197})
+    value: "blazing_soul"
   },
   {
     name: "BURNING SOUL",
-    value: JSON.stringify({'cardId': 'pyro_burning_soul', 'embedType': 1234, 'arrayNumber': 198})
+    value: "burning_soul"
   },
   {
     name: "COMBUSTION",
-    value: JSON.stringify({'cardId': 'pyro_combustion', 'embedType': 1234, 'arrayNumber': 199})
+    value: "combustion"
   },
   {
     name: "FIRE UP!",
-    value: JSON.stringify({'cardId': 'pyro30', 'embedType': 2, 'arrayNumber': 200})
+    value: "fire_up"
   },
   {
     name: "FIREBALL",
-    value: JSON.stringify({'cardId': 'pyro_fireball', 'embedType': 1234, 'arrayNumber': 201})
+    value: "fireball"
   },
   {
     name: "HOT STREAK",
-    value: JSON.stringify({'cardId': 'pyro_hot_streak', 'embedType': 12345, 'arrayNumber': 202})
+    value: "hot_streak"
   },
   {
     name: "HUZZAH!",
-    value: JSON.stringify({'cardId': 'pyro32', 'embedType': 12, 'arrayNumber': 203})
+    value: "huzzah"
   },
   {
     name: "IGNITE",
-    value: JSON.stringify({'cardId': 'pyro_ignite', 'embedType': 12345, 'arrayNumber': 204})
+    value: "ignite"
   },
   {
     name: "INFERNAL INFUSION!",
-    value: JSON.stringify({'cardId': 'pyro33', 'embedType': 2, 'arrayNumber': 205})
+    value: "infernal_infusion"
   },
   {
     name: "METEORITE",
-    value: JSON.stringify({'cardId': 'pyro_meteorite', 'embedType': 12345, 'arrayNumber': 206})
+    value: "meteorite"
   },
   {
     name: "METEOROID",
-    value: JSON.stringify({'cardId': 'pyro_meteoroid', 'embedType': 12345, 'arrayNumber': 207})
+    value: "meteoroid"
   },
   {
     name: "MOLTEN ARMOR",
-    value: JSON.stringify({'cardId': 'pyro_molten_armor', 'embedType': 12346, 'arrayNumber': 208})
+    value: "molten_armor"
   },
   {
     name: "PYROBLAST",
-    value: JSON.stringify({'cardId': 'pyro_pyroblast', 'embedType': 12346, 'arrayNumber': 209})
+    value: "pyroblast"
   },
   {
     name: "RED HOT!",
-    value: JSON.stringify({'cardId': 'pyro31', 'embedType': 12, 'arrayNumber': 210})
+    value: "red_hot"
   },
   {
     name: "SCORCH",
-    value: JSON.stringify({'cardId': 'pyro_scorch', 'embedType': 12345, 'arrayNumber': 211})
+    value: "scorch"
   },
   {
     name: "SCORCH THE EARTH!",
-    value: JSON.stringify({'cardId': 'pyro_ult', 'embedType': 12, 'arrayNumber': 212})
+    value: "scorch_the_earth"
   },
   {
     name: "WARM UP!",
-    value: JSON.stringify({'cardId': 'pyro29', 'embedType': 2, 'arrayNumber': 213})
+    value: "warm_up"
   },
-
-
-
-
-
   {
     name: "BUDO",
-    value: JSON.stringify({'cardId': 'samu_budo', 'embedType': 1234, 'arrayNumber': 214})
+    value: "budo"
   },
   {
     name: "BUSHIDO",
-    value: JSON.stringify({'cardId': 'samu_bushido', 'embedType': 12, 'arrayNumber': 215})
+    value: "bushido"
   },
   {
     name: "DON'T BACK DOWN!",
-    value: JSON.stringify({'cardId': 'samu30', 'embedType': 2, 'arrayNumber': 216})
+    value: "dont_back_down"
   },
   {
     name: "EMPOWER",
-    value: JSON.stringify({'cardId': 'samu_empower', 'embedType': 12345, 'arrayNumber': 217})
+    value: "empower"
   },
   {
     name: "FOLLOW THROUGH!",
-    value: JSON.stringify({'cardId': 'samu32', 'embedType': 12, 'arrayNumber': 218})
+    value: "follow_through"
   },
   {
     name: "GISHI!",
-    value: JSON.stringify({'cardId': 'samu31', 'embedType': 12, 'arrayNumber': 219})
+    value: "gishi"
   },
   {
     name: "HAGA",
-    value: JSON.stringify({'cardId': 'samu_haga', 'embedType': 12345, 'arrayNumber': 220})
+    value: "haga"
   },
   {
     name: "HAGAKURE",
-    value: JSON.stringify({'cardId': 'samu_hagakure', 'embedType': 12345, 'arrayNumber': 221})
+    value: "hagakure"
   },
   {
     name: "HONORABLE!",
-    value: JSON.stringify({'cardId': 'samu28', 'embedType': 2, 'arrayNumber': 222})
+    value: "honorable"
   },
   {
     name: "KATANA SLICE",
-    value: JSON.stringify({'cardId': 'samu_katana_slice', 'embedType': 1346, 'arrayNumber': 223})
+    value: "katana_slice"
   },
   {
     name: "KENSEI!",
-    value: JSON.stringify({'cardId': 'samu33', 'embedType': 2, 'arrayNumber': 224})
+    value: "kensei"
   },
   {
     name: "MASAMUNE",
-    value: JSON.stringify({'cardId': 'samu_masamune', 'embedType': 12345, 'arrayNumber': 225})
+    value: "masamune"
   },
   {
     name: "SHAME ON YOU!",
-    value: JSON.stringify({'cardId': 'samu29', 'embedType': 2, 'arrayNumber': 226})
+    value: "shame_on_you"
   },
   {
     name: "SHOGUN!",
-    value: JSON.stringify({'cardId': 'samu_ult', 'embedType': 12, 'arrayNumber': 227})
+    value: "shogun"
   },
   {
     name: "SOLEMN",
-    value: JSON.stringify({'cardId': 'samu_solemn', 'embedType': 12345, 'arrayNumber': 228})
+    value: "solemn"
   },
   {
     name: "SOLEMNITY",
-    value: JSON.stringify({'cardId': 'samu_solemnity', 'embedType': 12345, 'arrayNumber': 229})
+    value: "solemnity"
   },
   {
     name: "STAND TALL",
-    value: JSON.stringify({'cardId': 'samu_stand_tall', 'embedType': 1234, 'arrayNumber': 230})
+    value: "stand_tall"
   },
   {
     name: "WAKIZASHI",
-    value: JSON.stringify({'cardId': 'samu_wakizashi', 'embedType': 12346, 'arrayNumber': 231})
+    value: "wakizashi"
   },
-
-
-
-
-
   {
     name: "ANGELIC COMBAT!",
-    value: JSON.stringify({'cardId': 'sera31', 'embedType': 12, 'arrayNumber': 232})
+    value: "angelic_combat"
   },
   {
     name: "ANGELIC MANTLE",
-    value: JSON.stringify({'cardId': 'sera_angelic_mantle', 'embedType': 12346, 'arrayNumber': 233})
+    value: "angelic_mantle"
   },
   {
     name: "ARCHANGEL'S WILL",
-    value: JSON.stringify({'cardId': 'sera_archangels_will', 'embedType': 12345, 'arrayNumber': 234})
+    value: "archangels_will"
   },
   {
     name: "CHERUBIM",
-    value: JSON.stringify({'cardId': 'sera_cherubim', 'embedType': 13567, 'arrayNumber': 235})
+    value: "cherubim"
   },
   {
     name: "DIVINE INTERVENTION!",
-    value: JSON.stringify({'cardId': 'sera30', 'embedType': 2, 'arrayNumber': 236})
+    value: "divine_intervention"
   },
   {
     name: "DIVINE VISAGE",
-    value: JSON.stringify({'cardId': 'sera_divine_visage', 'embedType': 12345, 'arrayNumber': 237})
+    value: "divine_visage"
   },
   {
     name: "GLORIOUS",
-    value: JSON.stringify({'cardId': 'sera_glorious', 'embedType': 12345, 'arrayNumber': 238})
+    value: "glorious"
   },
   {
     name: "HEAVEN'S BLESSING",
-    value: JSON.stringify({'cardId': 'sera_heavens_blessing', 'embedType': 12345, 'arrayNumber': 239})
+    value: "heavens_blessing"
   },
   {
     name: "HIGHEST POWER",
-    value: JSON.stringify({'cardId': 'sera_highest_power', 'embedType': 12345, 'arrayNumber': 240})
+    value: "highest_power"
   },
   {
     name: "HOLIER THAN THOU!",
-    value: JSON.stringify({'cardId': 'sera33', 'embedType': 2, 'arrayNumber': 241})
+    value: "holier_than_thou"
   },
   {
     name: "HOLY BLADE",
-    value: JSON.stringify({'cardId': 'sera_holy_blade', 'embedType': 13567, 'arrayNumber': 242})
+    value: "holy_blade"
   },
   {
     name: "HOLY COMMAND",
-    value: JSON.stringify({'cardId': 'sera_command', 'embedType': 12345, 'arrayNumber': 243})
+    value: "holy_command"
   },
   {
     name: "HOLY SMITE",
-    value: JSON.stringify({'cardId': 'sera_holy_smite', 'embedType': 12345, 'arrayNumber': 244})
+    value: "holy_smite"
   },
   {
     name: "PURIFY",
-    value: JSON.stringify({'cardId': 'sera_purify', 'embedType': 1234, 'arrayNumber': 245})
+    value: "purify"
   },
   {
     name: "SMOTE!",
-    value: JSON.stringify({'cardId': 'sera32', 'embedType': 12, 'arrayNumber': 246})
+    value: "smote"
   },
   {
     name: "SPLIT THE HEAVENS!",
-    value: JSON.stringify({'cardId': 'sera_ult', 'embedType': 12, 'arrayNumber': 247})
+    value: "split_the_heavens"
   },
   {
     name: "TAKE FLIGHT",
-    value: JSON.stringify({'cardId': 'sera_take_flight', 'embedType': 12345, 'arrayNumber': 248})
+    value: "take_flight"
   },
   {
     name: "TO THE SKIES!",
-    value: JSON.stringify({'cardId': 'sera29', 'embedType': 2, 'arrayNumber': 249})
+    value: "to_the_skies"
   },
   {
     name: "TRIUMPHANT",
-    value: JSON.stringify({'cardId': 'sera_triumphant', 'embedType': 1234, 'arrayNumber': 250})
+    value: "triumphant"
   },
-
-
-
-
-
   {
     name: "CARD TRICK!",
-    value: JSON.stringify({'cardId': 'shad32', 'embedType': 2, 'arrayNumber': 251})
+    value: "card_trick"
   },
   {
     name: "CARDUCOPIA",
-    value: JSON.stringify({'cardId': 'shad_carducopia', 'embedType': 1234, 'arrayNumber': 252})
+    value: "carducopia"
   },
   {
     name: "COUNTER STRIKE",
-    value: JSON.stringify({'cardId': 'shad_counter_strike', 'embedType': 1234, 'arrayNumber': 253})
+    value: "counter_strike"
   },
   {
     name: "DAGGER STRIKE",
-    value: JSON.stringify({'cardId': 'shad_dagger_strike', 'embedType': 1234, 'arrayNumber': 254})
+    value: "dagger_strike"
   },
   {
     name: "ENTER THE SHADOWS!",
-    value: JSON.stringify({'cardId': 'shad31', 'embedType': 2, 'arrayNumber': 255})
+    value: "enter_the_shadows"
   },
   {
     name: "INSIDIOUS STRIKE",
-    value: JSON.stringify({'cardId': 'shad_insidious_strike', 'embedType': 12345, 'arrayNumber': 256})
+    value: "insidious_strike"
   },
   {
     name: "PICKPOCKET",
-    value: JSON.stringify({'cardId': 'shad_pickpocket', 'embedType': 1234, 'arrayNumber': 257})
+    value: "pickpocket"
   },
   {
     name: "POISON WOUND!",
-    value: JSON.stringify({'cardId': 'shad28', 'embedType': 2, 'arrayNumber': 258})
+    value: "poison_wound"
   },
   {
     name: "SHADOW COIN!",
-    value: JSON.stringify({'cardId': 'shad30', 'embedType': 2, 'arrayNumber': 259})
+    value: "shadow_coin"
   },
   {
     name: "SHADOW DANCE",
-    value: JSON.stringify({'cardId': 'shad_shadow_dance', 'embedType': 1234, 'arrayNumber': 260})
+    value: "shadow_dance"
   },
   {
     name: "SHADOW DEFENSE",
-    value: JSON.stringify({'cardId': 'shad_shadow_defense', 'embedType': 1234, 'arrayNumber': 261})
+    value: "shadow_defense"
   },
   {
     name: "SHADOW MELD!",
-    value: JSON.stringify({'cardId': 'shad33', 'embedType': 2, 'arrayNumber': 262})
+    value: "shadow_meld"
   },
   {
     name: "SHADOW SHANK!",
-    value: JSON.stringify({'cardId': 'shad_ult', 'embedType': 12, 'arrayNumber': 263})
+    value: "shadow_shank"
   },
   {
     name: "SHADOW STRIKE",
-    value: JSON.stringify({'cardId': 'shad_shadow_strike', 'embedType': 12345, 'arrayNumber': 264})
+    value: "shadow_strike"
   },
   {
     name: "SHANK ATTACK",
-    value: JSON.stringify({'cardId': 'shad_shank_attack', 'embedType': 12345, 'arrayNumber': 265})
+    value: "shank_attack"
   },
   {
     name: "SHIFTY STRIKE",
-    value: JSON.stringify({'cardId': 'shad_shifty_strike', 'embedType': 12345, 'arrayNumber': 266})
+    value: "shifty_strike"
   },
   {
     name: "SNEAKY!",
-    value: JSON.stringify({'cardId': 'shad27', 'embedType': 2, 'arrayNumber': 267})
+    value: "sneaky"
   },
   {
     name: "WILD SHADOW!",
-    value: JSON.stringify({'cardId': 'shad29', 'embedType': 2, 'arrayNumber': 268})
+    value: "wild_shadow"
   },
-
-
-
-
-
   {
     name: "AMBUSH!",
-    value: JSON.stringify({'cardId': 'tact32', 'embedType': 2, 'arrayNumber': 269})
+    value: "ambush"
   },
   {
     name: "BUNKER UP!",
-    value: JSON.stringify({'cardId': 'tact28', 'embedType': 2, 'arrayNumber': 270})
+    value: "bunker_up"
   },
   {
     name: "CARPET BOMB",
-    value: JSON.stringify({'cardId': 'tact_carpet_bomb', 'embedType': 12345, 'arrayNumber': 271})
+    value: "carpet_bomb"
   },
   {
     name: "COUNTERMEASURES",
-    value: JSON.stringify({'cardId': 'tact_countermeasures', 'embedType': 12346, 'arrayNumber': 272})
+    value: "countermeasures"
   },
   {
     name: "DISENGAGE!",
-    value: JSON.stringify({'cardId': 'tact31', 'embedType': 2, 'arrayNumber': 273})
+    value: "disengage"
   },
   {
     name: "EXPLOIT",
-    value: JSON.stringify({'cardId': 'tact_exploit', 'embedType': 12345, 'arrayNumber': 274})
+    value: "exploit"
   },
   {
     name: "FEIGNED RETREAT!",
-    value: JSON.stringify({'cardId': 'tact30', 'embedType': 2, 'arrayNumber': 275})
+    value: "feigned_retreat"
   },
   {
     name: "FLANK",
-    value: JSON.stringify({'cardId': 'tact_flank', 'embedType': 1234, 'arrayNumber': 276})
+    value: "flank"
   },
   {
     name: "HIGHER GROUND!",
-    value: JSON.stringify({'cardId': 'tact_ult', 'embedType': 12, 'arrayNumber': 277})
+    value: "higher_ground"
   },
   {
     name: "INDIRECT APPROACH",
-    value: JSON.stringify({'cardId': 'tact_indirect_approach', 'embedType': 12345, 'arrayNumber': 278})
+    value: "indirect_approach"
   },
   {
     name: "INTERDICTION",
-    value: JSON.stringify({'cardId': 'tact_interdiction', 'embedType': 12345, 'arrayNumber': 279})
+    value: "interdiction"
   },
   {
     name: "MANEUVER",
-    value: JSON.stringify({'cardId': 'tact_maneuver', 'embedType': 12345, 'arrayNumber': 280})
+    value: "maneuver"
   },
   {
     name: "PROFITEER",
-    value: JSON.stringify({'cardId': 'tact_profiteer', 'embedType': 1234, 'arrayNumber': 281})
+    value: "profiteer"
   },
   {
     name: "RECONNAISSANCE",
-    value: JSON.stringify({'cardId': 'tact_reconnaissance', 'embedType': 12345, 'arrayNumber': 282})
+    value: "reconnaissance"
   },
   {
     name: "SABER STRIKE",
-    value: JSON.stringify({'cardId': 'tact_saber_strike', 'embedType': 134, 'arrayNumber': 283})
+    value: "saber_strike"
   },
   {
     name: "STRATEGIC APPROACH",
-    value: JSON.stringify({'cardId': 'tact_strategic_approach', 'embedType': 12345, 'arrayNumber': 284})
+    value: "strategic_approach"
   },
   {
     name: "STRATEGIZE",
-    value: JSON.stringify({'cardId': 'tact_strategize', 'embedType': 12345, 'arrayNumber': 285})
+    value: "strategize"
   },
   {
     name: "UPPER HAND!",
-    value: JSON.stringify({'cardId': 'tact33', 'embedType': 2, 'arrayNumber': 286})
+    value: "upper_hand"
   },
   {
     name: "WAR ROOM!",
-    value: JSON.stringify({'cardId': 'tact29', 'embedType': 2, 'arrayNumber': 287})
+    value: "war_room"
   },
-
-
-
-
-
   {
     name: "BITTERROOT",
-    value: JSON.stringify({'cardId': 'trea_bitterroot', 'embedType': 12345, 'arrayNumber': 288})
+    value: "bitterroot"
   },
   {
     name: "CALL OF THE WILD",
-    value: JSON.stringify({'cardId': 'trea_call_of_the_wild', 'embedType': 12345, 'arrayNumber': 289})
+    value: "call_of_the_wild"
   },
   {
     name: "CULTIVATE",
-    value: JSON.stringify({'cardId': 'trea_cultivate', 'embedType': 12345, 'arrayNumber': 290})
+    value: "cultivate"
   },
   {
     name: "CULTIVATE!",
-    value: JSON.stringify({'cardId': 'trea28', 'embedType': 2, 'arrayNumber': 291})
+    value: "cultivate"
   },
   {
     name: "DOWN POUR!",
-    value: JSON.stringify({'cardId': 'trea30', 'embedType': 2, 'arrayNumber': 292})
+    value: "down_pour"
   },
   {
     name: "DRINK DEEP!",
-    value: JSON.stringify({'cardId': 'trea32', 'embedType': 2, 'arrayNumber': 293})
+    value: "drink_deep"
   },
   {
     name: "ENRAPTURE",
-    value: JSON.stringify({'cardId': 'trea_enrapture', 'embedType': 12345, 'arrayNumber': 294})
+    value: "enrapture"
   },
   {
     name: "FERTILIZE",
-    value: JSON.stringify({'cardId': 'trea_fertilize', 'embedType': 12, 'arrayNumber': 295})
+    value: "fertilize"
   },
   {
     name: "HARVEST!",
-    value: JSON.stringify({'cardId': 'trea27', 'embedType': 2, 'arrayNumber': 296})
+    value: "harvest"
   },
   {
     name: "MOTHER TREE!",
-    value: JSON.stringify({'cardId': 'trea33', 'embedType': 2, 'arrayNumber': 297})
+    value: "mother_tree"
   },
   {
     name: "NATURE'S BLESSING",
-    value: JSON.stringify({'cardId': 'trea_natures_blessing', 'embedType': 12345, 'arrayNumber': 298})
+    value: "natures_blessing"
   },
   {
     name: "NATURE'S GRASP",
-    value: JSON.stringify({'cardId': 'trea_natures_grasp', 'embedType': 12345, 'arrayNumber': 299})
+    value: "natures_grasp"
   },
   {
     name: "OVERGROWTH",
-    value: JSON.stringify({'cardId': 'trea_overgrowth', 'embedType': 12345, 'arrayNumber': 300})
+    value: "overgrowth"
   },
   {
     name: "PLANT",
-    value: JSON.stringify({'cardId': 'trea_plant', 'embedType': 12345, 'arrayNumber': 301})
+    value: "plant"
   },
   {
     name: "ROOTED",
-    value: JSON.stringify({'cardId': 'trea_rooted', 'embedType': 1234, 'arrayNumber': 302})
+    value: "rooted"
   },
   {
     name: "SPLINTER",
-    value: JSON.stringify({'cardId': 'trea_splinter', 'embedType': 12346, 'arrayNumber': 303})
+    value: "splinter"
   },
   {
     name: "STOMP!",
-    value: JSON.stringify({'cardId': 'trea31', 'embedType': 12, 'arrayNumber': 304})
+    value: "stomp"
   },
   {
     name: "TEND",
-    value: JSON.stringify({'cardId': 'trea_tend', 'embedType': 12345, 'arrayNumber': 305})
+    value: "tend"
   },
   {
     name: "VENGEFUL VINES",
-    value: JSON.stringify({'cardId': 'trea_vengeful_vines', 'embedType': 12345, 'arrayNumber': 306})
+    value: "vengeful_vines"
   },
   {
     name: "WAKE THE FOREST!",
-    value: JSON.stringify({'cardId': 'trea_ult', 'embedType': 12, 'arrayNumber': 307})
+    value: "wake_the_forest"
   },
   {
     name: "WILL O' WISP!",
-    value: JSON.stringify({'cardId': 'trea29', 'embedType': 2, 'arrayNumber': 308})
+    value: "will_o_wisp"
   },
-
-
-
-
-
   {
     name: "BLOOD BOIL!",
-    value: JSON.stringify({'cardId': 'vamp31', 'embedType': 12, 'arrayNumber': 309})
+    value: "blood_boil"
   },
   {
     name: "BLOOD FLOW!",
-    value: JSON.stringify({'cardId': 'vamp33', 'embedType': 2, 'arrayNumber': 310})
+    value: "blood_flow"
   },
   {
     name: "BLOOD LETTING!",
-    value: JSON.stringify({'cardId': 'vamp29', 'embedType': 2, 'arrayNumber': 311})
+    value: "blood_letting"
   },
   {
     name: "BLOOD MAGIC",
-    value: JSON.stringify({'cardId': 'vamp_blood_magic', 'embedType': 12345, 'arrayNumber': 312})
+    value: "blood_magic"
   },
   {
     name: "BLOOD THIRST",
-    value: JSON.stringify({'cardId': 'vamp_blood_thirst', 'embedType': 12345, 'arrayNumber': 313})
+    value: "blood_thirst"
   },
   {
     name: "BLOOD TIDE!",
-    value: JSON.stringify({'cardId': 'vamp34', 'embedType': 2, 'arrayNumber': 314})
+    value: "blood_tide"
   },
   {
     name: "CONSUME BLOOD!",
-    value: JSON.stringify({'cardId': 'vamp28', 'embedType': 2, 'arrayNumber': 315})
+    value: "consume_blood"
   },
   {
     name: "DARK OMEN!",
-    value: JSON.stringify({'cardId': 'vamp30', 'embedType': 2, 'arrayNumber': 316})
+    value: "dark_omen"
   },
   {
     name: "DRAW BLOOD",
-    value: JSON.stringify({'cardId': 'vamp_draw_blood', 'embedType': 12345, 'arrayNumber': 317})
+    value: "draw_blood"
   },
   {
     name: "EXSANGUINATE!",
-    value: JSON.stringify({'cardId': 'vamp_ult', 'embedType': 12, 'arrayNumber': 318})
+    value: "exsanguinate"
   },
   {
     name: "GASH",
-    value: JSON.stringify({'cardId': 'vamp_gash', 'embedType': 12345, 'arrayNumber': 319})
+    value: "gash"
   },
   {
     name: "GLAMOUR",
-    value: JSON.stringify({'cardId': 'vamp_glamour', 'embedType': 12345, 'arrayNumber': 320})
+    value: "glamour"
   },
   {
     name: "GOUGE",
-    value: JSON.stringify({'cardId': 'vamp_gouge', 'embedType': 12346, 'arrayNumber': 321})
+    value: "gouge"
   },
   {
     name: "HEMORRHAGE",
-    value: JSON.stringify({'cardId': 'vamp_hemorrage', 'embedType': 12345, 'arrayNumber': 322})
+    value: "hemorrhage"
   },
   {
     name: "IMMORTAL FLESH",
-    value: JSON.stringify({'cardId': 'vamp_immortal_flesh', 'embedType': 1234, 'arrayNumber': 323})
+    value: "immortal_flesh"
   },
   {
     name: "INFLUENCE",
-    value: JSON.stringify({'cardId': 'vamp_influence', 'embedType': 12345, 'arrayNumber': 324})
+    value: "influence"
   },
   {
     name: "LIMB FROM LIMB!",
-    value: JSON.stringify({'cardId': 'vamp32', 'embedType': 12, 'arrayNumber': 325})
+    value: "limb_from_limb"
   },
   {
     name: "POSSESS",
-    value: JSON.stringify({'cardId': 'vamp_possess', 'embedType': 12345, 'arrayNumber': 326})
+    value: "possess"
   },
   {
     name: "PRESENCE",
-    value: JSON.stringify({'cardId': 'vamp_presence', 'embedType': 12345, 'arrayNumber': 327})
+    value: "presence"
   },
   {
     name: "REND",
-    value: JSON.stringify({'cardId': 'vamp_rend', 'embedType': 1234, 'arrayNumber': 328})
+    value: "rend"
   },
   {
     name: "SANGUIMANCY",
-    value: JSON.stringify({'cardId': 'vamp_sanguimancy', 'embedType': 12345, 'arrayNumber': 329})
+    value: "sanguimancy"
   }
 ]

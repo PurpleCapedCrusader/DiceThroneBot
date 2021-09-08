@@ -24,9 +24,9 @@ require("./handler")(client);
 
 // Link to hero data
 client.heroCards = require("./heroCards.json")
-client.allHeroesArray = require("./allHeroesArray.js");
+client.dataIndex = require("./dataIndex.js");
 client.standardResponse = require("./standardResponse.js");
-const heroArray = client.allHeroesArray.allHeroes;
+const heroArray = client.dataIndex.allHeroesIndex;
 
 // Ready statement
 client.once("ready", async () => {

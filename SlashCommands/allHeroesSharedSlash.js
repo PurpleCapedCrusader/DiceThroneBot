@@ -12,75 +12,75 @@ module.exports = {
         choices: [
           {
             name: "BETTER D!",
-            value: JSON.stringify({'cardId': 'basic_hero17', 'embedType': 2, 'arrayNumber': 0})
+            value: "better_d"
           },
           {
             name: "BUH, BYE!",
-            value: JSON.stringify({'cardId': 'basic_hero07', 'embedType': 2, 'arrayNumber': 1})
+            value: "buh_bye"
           },
           {
             name: "DOUBLE UP!",
-            value: JSON.stringify({'cardId': 'basic_hero06', 'embedType': 2, 'arrayNumber': 2})
+            value: "double_up"
           },
           {
             name: "GET THAT OUTTA HERE!",
-            value: JSON.stringify({'cardId': 'basic_hero04', 'embedType': 2, 'arrayNumber': 3})
+            value: "get_that_outta_here"
           },
           {
             name: "GETTING PAID!",
-            value: JSON.stringify({'cardId': 'basic_hero09', 'embedType': 2, 'arrayNumber': 4})
+            value: "getting_paid"
           },
           {
             name: "HELPING HAND!",
-            value: JSON.stringify({'cardId': 'basic_hero16', 'embedType': 2, 'arrayNumber': 5})
+            value: "helping_hand"
           },
           {
             name: "NOT THIS TIME!",
-            value: JSON.stringify({'cardId': 'basic_hero10', 'embedType': 2, 'arrayNumber': 6})
+            value: "not_this_time"
           },
           {
             name: "ONE MORE TIME!",
-            value: JSON.stringify({'cardId': 'basic_hero15', 'embedType': 2, 'arrayNumber': 7})
+            value: "one_more_time"
           },
           {
             name: "SAMESIES!",
-            value: JSON.stringify({'cardId': 'basic_hero14', 'embedType': 2, 'arrayNumber': 8})
+            value: "samesies"
           },
           {
             name: "SIX-IT!",
-            value: JSON.stringify({'cardId': 'basic_hero18', 'embedType': 2, 'arrayNumber': 9})
+            value: "sixit"
           },
           {
             name: "SO WILD!",
-            value: JSON.stringify({'cardId': 'basic_hero13', 'embedType': 2, 'arrayNumber': 10})
+            value: "so_wild"
           },
           {
             name: "TIP IT!",
-            value: JSON.stringify({'cardId': 'basic_hero08', 'embedType': 2, 'arrayNumber': 11})
+            value: "tip_it"
           },
           {
             name: "TRANSFERENCE!",
-            value: JSON.stringify({'cardId': 'basic_hero01', 'embedType': 2, 'arrayNumber': 12})
+            value: "transference"
           },
           {
             name: "TRIPLE UP!",
-            value: JSON.stringify({'cardId': 'basic_hero05', 'embedType': 2, 'arrayNumber': 13})
+            value: "triple_up"
           },
           {
             name: "TRY, TRY AGAIN!",
-            value: JSON.stringify({'cardId': 'basic_hero12', 'embedType': 2, 'arrayNumber': 14})
+            value: "try_try_again"
           },
           {
             name: "TWICE AS WILD!",
-            value: JSON.stringify({'cardId': 'basic_hero11', 'embedType': 2, 'arrayNumber': 15})
+            value: "twice_as_wild"
           },
           {
             name: "VEGAS BABY!",
-            value: JSON.stringify({'cardId': 'basic_hero03', 'embedType': 2, 'arrayNumber': 16})
+            value: "vegas_baby"
           },
           {
             name: "WHAT STATUS EFFECTS?",
-            value: JSON.stringify({'cardId': 'basic_hero02', 'embedType': 2, 'arrayNumber': 17})
+            value: "what_status_effects"
           }
         ]
     }],
