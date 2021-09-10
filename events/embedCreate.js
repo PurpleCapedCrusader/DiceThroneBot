@@ -814,6 +814,107 @@ async function cardEmbed13567(client, interaction, args, cardIndex) {
 }
 
 async function cardEmbed123467(client, interaction, args, cardIndex) {
+  try {
+    const cardImage = new MessageAttachment(`./images/${Client.heroCards[cardIndex].cardId}.jpg`);
+    const cardThumbnail = new MessageAttachment(`./images/${Client.heroCards[cardIndex].thumbnail}`);
+    const embed = new MessageEmbed()
+      .setColor(Client.heroCards[cardIndex].diceColor)
+      .setAuthor(Client.heroCards[cardIndex].hero)
+      .setTitle(`${Client.heroCards[cardIndex].title}`)
+      .setDescription(`${Client.heroCards[cardIndex].cardType} \n\u200b`)
+      .addFields({
+        name:'Location:',
+        value: `${Client.heroCards[cardIndex].location} \n\u200b`,
+        inline: true
+      }, {
+        name:'Activation Requirement:',
+        value: `${Client.heroCards[cardIndex].req} \n\u200b`
+      }, {
+        name:'Ability Description:',
+        value: `${Client.heroCards[cardIndex].text}`
+      })
+      .setImage(`attachment://${Client.heroCards[cardIndex].cardId}.jpg`)
+      .setThumbnail(`attachment://${Client.heroCards[cardIndex].thumbnail}`)
+    await interaction.followUp({
+      embeds: [embed],
+      files: [cardImage, cardThumbnail]
+    });
+  } catch (err) {
+    console.log(err);
+  }
+  try {
+    const cardImage2 = new MessageAttachment(`./images/${Client.heroCards[cardIndex].cardIdB}.jpg`);
+    const cardThumbnail2 = new MessageAttachment(`./images/${Client.heroCards[cardIndex].thumbnailB}`);
+    const embed2 = new MessageEmbed()
+      .setColor(Client.heroCards[cardIndex].diceColor)
+      .setAuthor(Client.heroCards[cardIndex].hero)
+      .setTitle(`${Client.heroCards[cardIndex].titleB}`)
+      .setDescription(`${Client.heroCards[cardIndex].cardTypeB} \n\u200b`)
+      .addFields({
+        name:'Cost:',
+        value: `**${Client.heroCards[cardIndex].costB}** <:cp_icon:876984072654684200>`,
+        inline: true
+      }, {
+        name:'Location:',
+        value: `${Client.heroCards[cardIndex].locationB} \n\u200b`,
+        inline: true
+      }, {
+        name:'Activation Requirement:',
+        value: `${Client.heroCards[cardIndex].reqB} \n\u200b`
+      }, {
+        name:'Ability Description:',
+        value: `${Client.heroCards[cardIndex].textB}`
+      })
+      .setImage(`attachment://${Client.heroCards[cardIndex].cardIdB}.jpg`)
+      .setThumbnail(`attachment://${Client.heroCards[cardIndex].thumbnailB}`)
+    await interaction.followUp({
+      embeds: [embed2],
+      files: [cardImage2, cardThumbnail2]
+    });
+  } catch (err) {
+    console.log(err);
+  }
+  try {
+    const cardImage3 = new MessageAttachment(`./images/${Client.heroCards[cardIndex].cardIdC}.jpg`);
+    const cardThumbnail3 = new MessageAttachment(`./images/${Client.heroCards[cardIndex].thumbnailC}`);
+    const embed3 = new MessageEmbed()
+      .setColor(Client.heroCards[cardIndex].diceColor)
+      .setAuthor(Client.heroCards[cardIndex].hero)
+      .setTitle(`${Client.heroCards[cardIndex].titleC}`)
+      .setDescription(`${Client.heroCards[cardIndex].cardTypeC} \n\u200b`)
+      .addFields({
+        name:'Cost:',
+        value: `**${Client.heroCards[cardIndex].costC}** <:cp_icon:876984072654684200>`,
+        inline: true
+      }, {
+        name:'Location:',
+        value: `${Client.heroCards[cardIndex].locationC} \n\u200b`,
+        inline: true
+      }, {
+        name:'Activation Requirement:',
+        value: `${Client.heroCards[cardIndex].reqC} \n\u200b`
+      }, {
+        name:'Ability Description:',
+        value: `${Client.heroCards[cardIndex].textC}`
+      }, {
+        name:'2nd Ability:',
+        value: `**${Client.heroCards[cardIndex].titleC2}** \n\u200b`
+      }, {
+        name:'Activation Requirement:',
+        value: `${Client.heroCards[cardIndex].reqC2} \n\u200b`
+      },{
+        name:'Ability Description:',
+        value: `${Client.heroCards[cardIndex].textC2}`
+      })
+      .setImage(`attachment://${Client.heroCards[cardIndex].cardIdC}.jpg`)
+      .setThumbnail(`attachment://${Client.heroCards[cardIndex].thumbnailC}`)
+    await interaction.followUp({
+      embeds: [embed3],
+      files: [cardImage3, cardThumbnail3]
+    });
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 module.exports = {
