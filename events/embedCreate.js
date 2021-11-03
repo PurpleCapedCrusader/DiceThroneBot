@@ -532,6 +532,7 @@ async function cardEmbed12345(client, interaction, args, cardIndex) {
     await interaction.followUp({
       embeds: [embed],
       files: [cardImage, cardThumbnail]
+      // files: [cardThumbnail]
     });
   } catch (err) {
     console.log(err);
@@ -573,6 +574,7 @@ async function cardEmbed12345(client, interaction, args, cardIndex) {
     await interaction.followUp({
       embeds: [embed2],
       files: [cardImage2, cardThumbnail2]
+      // files: [cardThumbnail2]
     });
   } catch (err) {
     console.log(err);
