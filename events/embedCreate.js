@@ -12,8 +12,8 @@ const { get } = require('lodash');
 async function embedCreate(client, interaction, args) {
   // const response = JSON.parse(args);
   console.log(`ARGS = ${args}`)
-  console.log(`asdfa,sbfa,dfns = ${cardSlashIndex[43]}`)
   const cardIndex = cardSlashIndex.indexOf(`${args}`);
+  console.log(`Card from index = ${cardSlashIndex[cardIndex]}`)
   const embedType = Client.heroCards[cardIndex].embedType;
 
   // console.log(`CLIENT = ${JSON.stringify(client)}`);
