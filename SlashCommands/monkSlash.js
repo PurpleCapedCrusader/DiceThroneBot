@@ -13,71 +13,71 @@ module.exports = {
         choices: [
           {
             name: "COMBO STRIKE",
-            value: JSON.stringify({'cardId': 'monk_combo_strike', 'embedType': 1234, 'arrayNumber': 124})
+            value: "combo_strike"
           },
           {
             name: "CONTEMPLATE!",
-            value: JSON.stringify({'cardId': 'monk32', 'embedType': 2, 'arrayNumber': 125})
+            value: "contemplate"
           },
           {
             name: "ENLIGHTENMENT!",
-            value: JSON.stringify({'cardId': 'monk33', 'embedType': 2, 'arrayNumber': 126})
+            value: "enlightenment"
           },
           {
             name: "FIST OF HARMONY",
-            value: JSON.stringify({'cardId': 'monk_fist_of_harmony', 'embedType': 1234, 'arrayNumber': 127})
+            value: "fist_of_harmony"
           },
           {
             name: "FIST OF TRANQUILITY",
-            value: JSON.stringify({'cardId': 'monk_fist_of_tranquility', 'embedType': 12345, 'arrayNumber': 128})
+            value: "fist_of_tranquility"
           },
           {
             name: "FIST STRIKE",
-            value: JSON.stringify({'cardId': 'monk_fist_strike', 'embedType': 136, 'arrayNumber': 129})
+            value: "fist_strike"
           },
           {
             name: "LOTUS STRIKE",
-            value: JSON.stringify({'cardId': 'monk_lotus_strike', 'embedType': 12345, 'arrayNumber': 130})
+            value: "lotus_strike"
           },
           {
             name: "MEDITATE",
-            value: JSON.stringify({'cardId': 'monk_meditate', 'embedType': 12345, 'arrayNumber': 131})
+            value: "meditate"
           },
           {
             name: "MYSTIC MANTRA!",
-            value: JSON.stringify({'cardId': 'monk30', 'embedType': 2, 'arrayNumber': 132})
+            value: "mystic_mantra"
           },
           {
             name: "PALM STRIKE!",
-            value: JSON.stringify({'cardId': 'monk29', 'embedType': 2, 'arrayNumber': 133})
+            value: "palm_strike"
           },
           {
             name: "RUMINATE!",
-            value: JSON.stringify({'cardId': 'monk31', 'embedType': 2, 'arrayNumber': 134})
+            value: "ruminate"
           },
           {
             name: "SERENITY",
-            value: JSON.stringify({'cardId': 'monk_serenity', 'embedType': 12346, 'arrayNumber': 135})
+            value: "serenity"
           },
           {
             name: "TEMPEST RUSH",
-            value: JSON.stringify({'cardId': 'monk_tempest_rush', 'embedType': 1234, 'arrayNumber': 136})
+            value: "tempest_rush"
           },
           {
             name: "TRANSCENDENCE!",
-            value: JSON.stringify({'cardId': 'monk_ult', 'embedType': 12, 'arrayNumber': 137})
+            value: "transcendence"
           },
           {
             name: "WAY OF THE LOTUS",
-            value: JSON.stringify({'cardId': 'monk_way_of_the_lotus', 'embedType': 12345, 'arrayNumber': 138})
+            value: "way_of_the_lotus"
           },
           {
             name: "WAY OF THE MONK",
-            value: JSON.stringify({'cardId': 'monk_way_of_the_monk', 'embedType': 12345, 'arrayNumber': 139})
+            value: "way_of_the_monk"
           },
           {
             name: "ZEN STRIKE",
-            value: JSON.stringify({'cardId': 'monk_zen_strike', 'embedType': 12345, 'arrayNumber': 140})
+            value: "zen_strike"
           }
         ]
     }],

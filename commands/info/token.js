@@ -1,4 +1,8 @@
-const { Message, Client } = require("discord.js");
+const {
+    Message,
+    Client,
+    GuildEmoji
+} = require("discord.js");
 
 module.exports = {
     name: "token",
@@ -9,7 +13,11 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-        // console.log("commands/ping.js -----------------------------------------------")
         console.log(message.guild.emojis.cache)
-    },
+        // new Collection.Collection(message.guild.emojis.cache);
+        // collection
+        //     .each(GuildEmoji => console.log(GuildEmoji.name))
+        //     // .filter(user => user.bot)
+        //     // .each(user => console.log(user.username));
+    }
 };

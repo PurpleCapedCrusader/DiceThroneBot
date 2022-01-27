@@ -13,83 +13,83 @@ module.exports = {
         choices: [
           {
             name: "ARCING SHIELD",
-            value: JSON.stringify({'cardId': 'arti27', 'embedType': 2, 'arrayNumber': 18})
+            value: "arcing_shield"
           },
           {
             name: "CONDUCTIVITY!",
-            value: JSON.stringify({'cardId': 'arti31', 'embedType': 2, 'arrayNumber': 19})
+            value: "conductivity"
           },
           {
             name: "EUREKA",
-            value: JSON.stringify({'cardId': 'arti_eureka', 'embedType': 12345, 'arrayNumber': 20})
+            value: "eureka"
           },
           {
             name: "HIGH VOLTAGE!",
-            value: JSON.stringify({'cardId': 'arti29', 'embedType': 2, 'arrayNumber': 21})
+            value: "high_voltage"
           },
           {
             name: "JOLT",
-            value: JSON.stringify({'cardId': 'arti_jolt', 'embedType': 12345, 'arrayNumber': 22})
+            value: "jolt"
           },
           {
             name: "MAXIMUM POWER!",
-            value: JSON.stringify({'cardId': 'arti_ult', 'embedType': 12, 'arrayNumber': 23})
+            value: "maximum_power"
           },
           {
             name: "NANITE ASSAULT!",
-            value: JSON.stringify({'cardId': 'arti30', 'embedType': 2, 'arrayNumber': 24})
+            value: "nanite_assault"
           },
           {
             name: "NUTS N' BOLTS",
-            value: JSON.stringify({'cardId': 'arti_nuts_n_bolts', 'embedType': 12345, 'arrayNumber': 25})
+            value: "nuts_n_bolts"
           },
           {
             name: "OOOH SHINY!",
-            value: JSON.stringify({'cardId': 'arti32', 'embedType': 2, 'arrayNumber': 26})
+            value: "oooh_shiny"
           },
           {
             name: "OVERCLOCK",
-            value: JSON.stringify({'cardId': 'arti_overclock', 'embedType': 12345, 'arrayNumber': 27})
+            value: "overclock"
           },
           {
             name: "POWER UP",
-            value: JSON.stringify({'cardId': 'arti_power_up', 'embedType': 12345, 'arrayNumber': 28})
+            value: "power_up"
           },
           {
             name: "RATCHET UP",
-            value: JSON.stringify({'cardId': 'arti_ratchet_up', 'embedType': 1234, 'arrayNumber': 29})
+            value: "ratchet_up"
           },
           {
             name: "ROBO REVENGE!",
-            value: JSON.stringify({'cardId': 'arti28', 'embedType': 2, 'arrayNumber': 30})
+            value: "robo_revenge"
           },
           {
             name: "SCHEMATICS",
-            value: JSON.stringify({'cardId': 'arti_schematics', 'embedType': 1234, 'arrayNumber': 31})
+            value: "schematics"
           },
           {
             name: "SCRAP COLLECTOR",
-            value: JSON.stringify({'cardId': 'arti_scrap_collector', 'embedType': 1234, 'arrayNumber': 32})
+            value: "scrap_collector"
           },
           {
             name: "SCRATCH BUILT",
-            value: JSON.stringify({'cardId': 'arti_scratch_built', 'embedType': 12345, 'arrayNumber': 33})
+            value: "scratch_built"
           },
           {
             name: "SPANNER STRIKE",
-            value: JSON.stringify({'cardId': 'arti_spanner_strike', 'embedType': 1234, 'arrayNumber': 34})
+            value: "spanner_strike"
           },
           {
             name: "SWARMING BOTS",
-            value: JSON.stringify({'cardId': 'arti_swarming_bots', 'embedType': 12345, 'arrayNumber': 35})
+            value: "swarming_bots"
           },
           {
             name: "SYNTHESIZE!",
-            value: JSON.stringify({'cardId': 'arti33', 'embedType': 2, 'arrayNumber': 36})
+            value: "synthesize"
           },
           {
             name: "ZAPPPP!",
-            value: JSON.stringify({'cardId': 'arti_zapppp', 'embedType': 12345, 'arrayNumber': 37})
+            value: "zapppp"
           }
         ]
     }],

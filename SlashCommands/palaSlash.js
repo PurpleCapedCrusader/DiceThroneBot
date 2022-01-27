@@ -13,75 +13,75 @@ module.exports = {
         choices: [
           {
             name: "ABSOLUTION!",
-            value: JSON.stringify({'cardId': 'pala32', 'embedType': 2, 'arrayNumber': 179})
+            value: "absolution"
           },
           {
             name: "BLESSED!",
-            value: JSON.stringify({'cardId': 'pala31', 'embedType': 2, 'arrayNumber': 180})
+            value: "blessed"
           },
           {
             name: "CONSECRATION!",
-            value: JSON.stringify({'cardId': 'pala30', 'embedType': 2, 'arrayNumber': 181})
+            value: "consecration"
           },
           {
             name: "DIVINE DEFENSE",
-            value: JSON.stringify({'cardId': 'pala_divine_defense', 'embedType': 12346, 'arrayNumber': 182})
+            value: "divine_defense"
           },
           {
             name: "DIVINE FAVOR!",
-            value: JSON.stringify({'cardId': 'pala33', 'embedType': 2, 'arrayNumber': 183})
+            value: "divine_favor"
           },
           {
             name: "HOLY ATTACK",
-            value: JSON.stringify({'cardId': 'pala_holy_attack', 'embedType': 1234, 'arrayNumber': 184})
+            value: "holy_attack"
           },
           {
             name: "HOLY LIGHT",
-            value: JSON.stringify({'cardId': 'pala_holy_light', 'embedType': 1234, 'arrayNumber': 185})
+            value: "holy_light"
           },
           {
             name: "MIGHTY PRAYER",
-            value: JSON.stringify({'cardId': 'pala_mighty_prayer', 'embedType': 12345, 'arrayNumber': 186})
+            value: "mighty_prayer"
           },
           {
             name: "MIGHTY!",
-            value: JSON.stringify({'cardId': 'pala29', 'embedType': 2, 'arrayNumber': 187})
+            value: "mighty"
           },
           {
             name: "OFFENSIVE STANCE",
-            value: JSON.stringify({'cardId': 'pala_offensive_stance', 'embedType': 12345, 'arrayNumber': 188})
+            value: "offensive_stance"
           },
           {
             name: "PROSPERITY",
-            value: JSON.stringify({'cardId': 'pala_prosperity', 'embedType': 12345, 'arrayNumber': 189})
+            value: "prosperity"
           },
           {
             name: "REQUITAL",
-            value: JSON.stringify({'cardId': 'pala_requital', 'embedType': 12345, 'arrayNumber': 190})
+            value: "requital"
           },
           {
             name: "RESOLUTE FAITH!",
-            value: JSON.stringify({'cardId': 'pala_ult', 'embedType': 12, 'arrayNumber': 191})
+            value: "resolute_faith"
           },
           {
             name: "RETALIATE",
-            value: JSON.stringify({'cardId': 'pala_retaliate', 'embedType': 12345, 'arrayNumber': 192})
+            value: "retaliate"
           },
           {
             name: "RIGHTEOUS COMBAT",
-            value: JSON.stringify({'cardId': 'pala_righteous_combat', 'embedType': 123467, 'arrayNumber': 193})
+            value: "righteous_combat"
           },
           {
             name: "RIGHTEOUS PRAYER",
-            value: JSON.stringify({'cardId': 'pala_righteous_prayer', 'embedType': 12345, 'arrayNumber': 194})
+            value: "righteous_prayer"
           },
           {
             name: "STEADFAST",
-            value: JSON.stringify({'cardId': 'pala_steadfast', 'embedType': 123467, 'arrayNumber': 195})
+            value: "steadfast"
           },
           {
             name: "TITHE",
-            value: JSON.stringify({'cardId': 'pala_tithe', 'embedType': 1234, 'arrayNumber': 196})
+            value: "tithe"
           }
         ]
     }],

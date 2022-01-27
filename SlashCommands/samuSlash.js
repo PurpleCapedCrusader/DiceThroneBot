@@ -13,75 +13,75 @@ module.exports = {
         choices: [
           {
             name: "BUDO",
-            value: JSON.stringify({'cardId': 'samu_budo', 'embedType': 1234, 'arrayNumber': 214})
+            value: "budo"
           },
           {
             name: "BUSHIDO",
-            value: JSON.stringify({'cardId': 'samu_bushido', 'embedType': 12, 'arrayNumber': 215})
+            value: "bushido"
           },
           {
             name: "DON'T BACK DOWN!",
-            value: JSON.stringify({'cardId': 'samu30', 'embedType': 2, 'arrayNumber': 216})
+            value: "dont_back_down"
           },
           {
             name: "EMPOWER",
-            value: JSON.stringify({'cardId': 'samu_empower', 'embedType': 12345, 'arrayNumber': 217})
+            value: "empower"
           },
           {
             name: "FOLLOW THROUGH!",
-            value: JSON.stringify({'cardId': 'samu32', 'embedType': 12, 'arrayNumber': 218})
+            value: "follow_through"
           },
           {
             name: "GISHI!",
-            value: JSON.stringify({'cardId': 'samu31', 'embedType': 12, 'arrayNumber': 219})
+            value: "gishi"
           },
           {
             name: "HAGA",
-            value: JSON.stringify({'cardId': 'samu_haga', 'embedType': 12345, 'arrayNumber': 220})
+            value: "haga"
           },
           {
             name: "HAGAKURE",
-            value: JSON.stringify({'cardId': 'samu_hagakure', 'embedType': 12345, 'arrayNumber': 221})
+            value: "hagakure"
           },
           {
             name: "HONORABLE!",
-            value: JSON.stringify({'cardId': 'samu28', 'embedType': 2, 'arrayNumber': 222})
+            value: "honorable"
           },
           {
             name: "KATANA SLICE",
-            value: JSON.stringify({'cardId': 'samu_katana_slice', 'embedType': 1346, 'arrayNumber': 223})
+            value: "katana_slice"
           },
           {
             name: "KENSEI!",
-            value: JSON.stringify({'cardId': 'samu33', 'embedType': 2, 'arrayNumber': 224})
+            value: "kensei"
           },
           {
             name: "MASAMUNE",
-            value: JSON.stringify({'cardId': 'samu_masamune', 'embedType': 12345, 'arrayNumber': 225})
+            value: "masamune"
           },
           {
             name: "SHAME ON YOU!",
-            value: JSON.stringify({'cardId': 'samu29', 'embedType': 2, 'arrayNumber': 226})
+            value: "shame_on_you"
           },
           {
             name: "SHOGUN!",
-            value: JSON.stringify({'cardId': 'samu_ult', 'embedType': 12, 'arrayNumber': 227})
+            value: "shogun"
           },
           {
             name: "SOLEMN",
-            value: JSON.stringify({'cardId': 'samu_solemn', 'embedType': 12345, 'arrayNumber': 228})
+            value: "solemn"
           },
           {
             name: "SOLEMNITY",
-            value: JSON.stringify({'cardId': 'samu_solemnity', 'embedType': 12345, 'arrayNumber': 229})
+            value: "solemnity"
           },
           {
             name: "STAND TALL",
-            value: JSON.stringify({'cardId': 'samu_stand_tall', 'embedType': 1234, 'arrayNumber': 230})
+            value: "stand_tall"
           },
           {
             name: "WAKIZASHI",
-            value: JSON.stringify({'cardId': 'samu_wakizashi', 'embedType': 12346, 'arrayNumber': 231})
+            value: "wakizashi"
           }
         ]
     }],

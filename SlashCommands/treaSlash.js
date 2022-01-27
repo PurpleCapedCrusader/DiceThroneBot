@@ -13,87 +13,87 @@ module.exports = {
         choices: [
           {
             name: "BITTERROOT",
-            value: JSON.stringify({'cardId': 'trea_bitterroot', 'embedType': 12345, 'arrayNumber': 288})
+            value: "bitterroot"
           },
           {
             name: "CALL OF THE WILD",
-            value: JSON.stringify({'cardId': 'trea_call_of_the_wild', 'embedType': 12345, 'arrayNumber': 289})
+            value: "call_of_the_wild"
           },
           {
             name: "CULTIVATE",
-            value: JSON.stringify({'cardId': 'trea_cultivate', 'embedType': 12345, 'arrayNumber': 290})
+            value: "cultivate"
           },
           {
             name: "CULTIVATE!",
-            value: JSON.stringify({'cardId': 'trea28', 'embedType': 2, 'arrayNumber': 291})
+            value: "cultivate"
           },
           {
             name: "DOWN POUR!",
-            value: JSON.stringify({'cardId': 'trea30', 'embedType': 2, 'arrayNumber': 292})
+            value: "down_pour"
           },
           {
             name: "DRINK DEEP!",
-            value: JSON.stringify({'cardId': 'trea32', 'embedType': 2, 'arrayNumber': 293})
+            value: "drink_deep"
           },
           {
             name: "ENRAPTURE",
-            value: JSON.stringify({'cardId': 'trea_enrapture', 'embedType': 12345, 'arrayNumber': 294})
+            value: "enrapture"
           },
           {
             name: "FERTILIZE",
-            value: JSON.stringify({'cardId': 'trea_fertilize', 'embedType': 12, 'arrayNumber': 295})
+            value: "fertilize"
           },
           {
             name: "HARVEST!",
-            value: JSON.stringify({'cardId': 'trea27', 'embedType': 2, 'arrayNumber': 296})
+            value: "harvest"
           },
           {
             name: "MOTHER TREE!",
-            value: JSON.stringify({'cardId': 'trea33', 'embedType': 2, 'arrayNumber': 297})
+            value: "mother_tree"
           },
           {
             name: "NATURE'S BLESSING",
-            value: JSON.stringify({'cardId': 'trea_natures_blessing', 'embedType': 12345, 'arrayNumber': 298})
+            value: "natures_blessing"
           },
           {
             name: "NATURE'S GRASP",
-            value: JSON.stringify({'cardId': 'trea_natures_grasp', 'embedType': 12345, 'arrayNumber': 299})
+            value: "natures_grasp"
           },
           {
             name: "OVERGROWTH",
-            value: JSON.stringify({'cardId': 'trea_overgrowth', 'embedType': 12345, 'arrayNumber': 300})
+            value: "overgrowth"
           },
           {
             name: "PLANT",
-            value: JSON.stringify({'cardId': 'trea_plant', 'embedType': 12345, 'arrayNumber': 301})
+            value: "plant"
           },
           {
             name: "ROOTED",
-            value: JSON.stringify({'cardId': 'trea_rooted', 'embedType': 1234, 'arrayNumber': 302})
+            value: "rooted"
           },
           {
             name: "SPLINTER",
-            value: JSON.stringify({'cardId': 'trea_splinter', 'embedType': 12346, 'arrayNumber': 303})
+            value: "splinter"
           },
           {
             name: "STOMP!",
-            value: JSON.stringify({'cardId': 'trea31', 'embedType': 12, 'arrayNumber': 304})
+            value: "stomp"
           },
           {
             name: "TEND",
-            value: JSON.stringify({'cardId': 'trea_tend', 'embedType': 12345, 'arrayNumber': 305})
+            value: "tend"
           },
           {
             name: "VENGEFUL VINES",
-            value: JSON.stringify({'cardId': 'trea_vengeful_vines', 'embedType': 12345, 'arrayNumber': 306})
+            value: "vengeful_vines"
           },
           {
             name: "WAKE THE FOREST!",
-            value: JSON.stringify({'cardId': 'trea_ult', 'embedType': 12, 'arrayNumber': 307})
+            value: "wake_the_forest"
           },
           {
             name: "WILL O' WISP!",
-            value: JSON.stringify({'cardId': 'trea29', 'embedType': 2, 'arrayNumber': 308})
+            value: "will_o_wisp"
           }
         ]
     }],

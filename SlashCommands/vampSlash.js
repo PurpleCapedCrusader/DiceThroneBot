@@ -13,87 +13,87 @@ module.exports = {
         choices: [
           {
             name: "BLOOD BOIL!",
-            value: JSON.stringify({'cardId': 'vamp31', 'embedType': 12, 'arrayNumber': 309})
+            value: "blood_boil"
           },
           {
             name: "BLOOD FLOW!",
-            value: JSON.stringify({'cardId': 'vamp33', 'embedType': 2, 'arrayNumber': 310})
+            value: "blood_flow"
           },
           {
             name: "BLOOD LETTING!",
-            value: JSON.stringify({'cardId': 'vamp29', 'embedType': 2, 'arrayNumber': 311})
+            value: "blood_letting"
           },
           {
             name: "BLOOD MAGIC",
-            value: JSON.stringify({'cardId': 'vamp_blood_magic', 'embedType': 12345, 'arrayNumber': 312})
+            value: "blood_magic"
           },
           {
             name: "BLOOD THIRST",
-            value: JSON.stringify({'cardId': 'vamp_blood_thirst', 'embedType': 12345, 'arrayNumber': 313})
+            value: "blood_thirst"
           },
           {
             name: "BLOOD TIDE!",
-            value: JSON.stringify({'cardId': 'vamp34', 'embedType': 2, 'arrayNumber': 314})
+            value: "blood_tide"
           },
           {
             name: "CONSUME BLOOD!",
-            value: JSON.stringify({'cardId': 'vamp28', 'embedType': 2, 'arrayNumber': 315})
+            value: "consume_blood"
           },
           {
             name: "DARK OMEN!",
-            value: JSON.stringify({'cardId': 'vamp30', 'embedType': 2, 'arrayNumber': 316})
+            value: "dark_omen"
           },
           {
             name: "DRAW BLOOD",
-            value: JSON.stringify({'cardId': 'vamp_draw_blood', 'embedType': 12345, 'arrayNumber': 317})
+            value: "draw_blood"
           },
           {
             name: "EXSANGUINATE!",
-            value: JSON.stringify({'cardId': 'vamp_ult', 'embedType': 12, 'arrayNumber': 318})
+            value: "exsanguinate"
           },
           {
             name: "GASH",
-            value: JSON.stringify({'cardId': 'vamp_gash', 'embedType': 12345, 'arrayNumber': 319})
+            value: "gash"
           },
           {
             name: "GLAMOUR",
-            value: JSON.stringify({'cardId': 'vamp_glamour', 'embedType': 12345, 'arrayNumber': 320})
+            value: "glamour"
           },
           {
             name: "GOUGE",
-            value: JSON.stringify({'cardId': 'vamp_gouge', 'embedType': 12346, 'arrayNumber': 321})
+            value: "gouge"
           },
           {
             name: "HEMORRHAGE",
-            value: JSON.stringify({'cardId': 'vamp_hemorrage', 'embedType': 12345, 'arrayNumber': 322})
+            value: "hemorrhage"
           },
           {
             name: "IMMORTAL FLESH",
-            value: JSON.stringify({'cardId': 'vamp_immortal_flesh', 'embedType': 1234, 'arrayNumber': 323})
+            value: "immortal_flesh"
           },
           {
             name: "INFLUENCE",
-            value: JSON.stringify({'cardId': 'vamp_influence', 'embedType': 12345, 'arrayNumber': 324})
+            value: "influence"
           },
           {
             name: "LIMB FROM LIMB!",
-            value: JSON.stringify({'cardId': 'vamp32', 'embedType': 12, 'arrayNumber': 325})
+            value: "limb_from_limb"
           },
           {
             name: "POSSESS",
-            value: JSON.stringify({'cardId': 'vamp_possess', 'embedType': 12345, 'arrayNumber': 326})
+            value: "possess"
           },
           {
             name: "PRESENCE",
-            value: JSON.stringify({'cardId': 'vamp_presence', 'embedType': 12345, 'arrayNumber': 327})
+            value: "presence"
           },
           {
             name: "REND",
-            value: JSON.stringify({'cardId': 'vamp_rend', 'embedType': 1234, 'arrayNumber': 328})
+            value: "rend"
           },
           {
             name: "SANGUIMANCY",
-            value: JSON.stringify({'cardId': 'vamp_sanguimancy', 'embedType': 12345, 'arrayNumber': 329})
+            value: "sanguimancy"
           }
         ]
     }],

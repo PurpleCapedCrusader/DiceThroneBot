@@ -13,71 +13,71 @@ module.exports = {
         choices: [
           {
             name: "BLAZING SOUL",
-            value: JSON.stringify({'cardId': 'pyro_blazing_soul', 'embedType': 12345, 'arrayNumber': 197})
+            value: "blazing_soul"
           },
           {
             name: "BURNING SOUL",
-            value: JSON.stringify({'cardId': 'pyro_burning_soul', 'embedType': 1234, 'arrayNumber': 198})
+            value: "burning_soul"
           },
           {
             name: "COMBUSTION",
-            value: JSON.stringify({'cardId': 'pyro_combustion', 'embedType': 1234, 'arrayNumber': 199})
+            value: "combustion"
           },
           {
             name: "FIRE UP!",
-            value: JSON.stringify({'cardId': 'pyro30', 'embedType': 2, 'arrayNumber': 200})
+            value: "fire_up"
           },
           {
             name: "FIREBALL",
-            value: JSON.stringify({'cardId': 'pyro_fireball', 'embedType': 1234, 'arrayNumber': 201})
+            value: "fireball"
           },
           {
             name: "HOT STREAK",
-            value: JSON.stringify({'cardId': 'pyro_hot_streak', 'embedType': 12345, 'arrayNumber': 202})
+            value: "hot_streak"
           },
           {
             name: "HUZZAH!",
-            value: JSON.stringify({'cardId': 'pyro32', 'embedType': 12, 'arrayNumber': 203})
+            value: "huzzah"
           },
           {
             name: "IGNITE",
-            value: JSON.stringify({'cardId': 'pyro_ignite', 'embedType': 12345, 'arrayNumber': 204})
+            value: "ignite"
           },
           {
             name: "INFERNAL INFUSION!",
-            value: JSON.stringify({'cardId': 'pyro33', 'embedType': 2, 'arrayNumber': 205})
+            value: "infernal_infusion"
           },
           {
             name: "METEORITE",
-            value: JSON.stringify({'cardId': 'pyro_meteorite', 'embedType': 12345, 'arrayNumber': 206})
+            value: "meteorite"
           },
           {
             name: "METEOROID",
-            value: JSON.stringify({'cardId': 'pyro_meteoroid', 'embedType': 12345, 'arrayNumber': 207})
+            value: "meteoroid"
           },
           {
             name: "MOLTEN ARMOR",
-            value: JSON.stringify({'cardId': 'pyro_molten_armor', 'embedType': 12346, 'arrayNumber': 208})
+            value: "molten_armor"
           },
           {
             name: "PYROBLAST",
-            value: JSON.stringify({'cardId': 'pyro_pyroblast', 'embedType': 12346, 'arrayNumber': 209})
+            value: "pyroblast"
           },
           {
             name: "RED HOT!",
-            value: JSON.stringify({'cardId': 'pyro31', 'embedType': 12, 'arrayNumber': 210})
+            value: "red_hot"
           },
           {
             name: "SCORCH",
-            value: JSON.stringify({'cardId': 'pyro_scorch', 'embedType': 12345, 'arrayNumber': 211})
+            value: "scorch"
           },
           {
             name: "SCORCH THE EARTH!",
-            value: JSON.stringify({'cardId': 'pyro_ult', 'embedType': 12, 'arrayNumber': 212})
+            value: "scorch_the_earth"
           },
           {
             name: "WARM UP!",
-            value: JSON.stringify({'cardId': 'pyro29', 'embedType': 2, 'arrayNumber': 213})
+            value: "warm_up"
           }
         ]
     }],
