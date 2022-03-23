@@ -1,4 +1,4 @@
-const { Client,CommandInteraction } = require("discord.js");
+const { Client, CommandInteraction } = require("discord.js");
 const embedCreate = require("../events/embedCreate.js");
 
 module.exports = {
